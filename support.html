@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support — AI-Outfits</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #555;
+    --accent: #2b6cb0;
+    --border: #e2e2e2;
+    --code-bg: #f5f5f5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121212;
+      --fg: #e8e8e8;
+      --muted: #a0a0a0;
+      --accent: #63b3ed;
+      --border: #2a2a2a;
+      --code-bg: #1e1e1e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--fg);
+    background: var(--bg);
+    margin: 0;
+    padding: 24px 16px 64px;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 2em; margin-top: 0.2em; }
+  h2 { font-size: 1.35em; margin-top: 2em; border-bottom: 1px solid var(--border); padding-bottom: 0.3em; }
+  h3 { font-size: 1.1em; margin-top: 1.5em; margin-bottom: 0.3em; }
+  .meta { color: var(--muted); font-size: 0.95em; margin-bottom: 2em; }
+  a { color: var(--accent); }
+  ul { padding-left: 1.4em; }
+  li { margin-bottom: 0.3em; }
+  code { background: var(--code-bg); padding: 0.1em 0.3em; border-radius: 3px; font-size: 0.9em; }
+  .contact-card {
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1em 1.2em;
+    margin: 1.2em 0;
+  }
+  .faq h3 { cursor: default; }
+  .faq p { margin-top: 0.2em; color: var(--fg); }
+  details {
+    border-bottom: 1px solid var(--border);
+    padding: 0.8em 0;
+  }
+  details summary {
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    font-size: 1.05em;
+  }
+  details summary::-webkit-details-marker { display: none; }
+  details summary::before {
+    content: "+ ";
+    color: var(--accent);
+    font-weight: 700;
+  }
+  details[open] summary::before { content: "− "; }
+  details[open] summary { margin-bottom: 0.5em; }
+  @media (max-width: 600px) {
+    body { font-size: 16px; }
+    h1 { font-size: 1.6em; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>AI-Outfits Support</h1>
+  <p class="meta">We're a small, solo-developer operation. Here's how to get in touch and quick answers to common questions.</p>
+
+  <div class="contact-card">
+    <h3 style="margin-top:0">Contact</h3>
+    <p><strong>Email:</strong> <a href="mailto:batchcompressvideos@gmail.com">batchcompressvideos@gmail.com</a></p>
+    <p><strong>Typical response time:</strong> within 3 business days.</p>
+    <p>When you email, it helps if you include: your account email, iPhone model + iOS version, what you were trying to do, and (if relevant) a screenshot.</p>
+  </div>
+
+  <h2>Frequently asked questions</h2>
+
+  <div class="faq">
+
+    <details>
+      <summary>How do credits work?</summary>
+      <p>Each virtual try-on render costs one credit. New accounts get a small number of free credits to try out the app. Pro subscribers receive a monthly credit allowance, and you can check your current balance on the home screen.</p>
+      <p>Credits reset at the start of each billing period for Pro users. Free-tier credits do not reset — once they're used, you'll need to subscribe to Pro to keep rendering.</p>
+    </details>
+
+    <details>
+      <summary>What does the Pro subscription include?</summary>
+      <p>Pro unlocks a larger monthly credit allowance for try-ons, plus any Pro-only features shown on the paywall screen. Pricing and renewal terms are always displayed before you confirm a purchase.</p>
+      <p>Pro is billed through your Apple ID and auto-renews until you cancel.</p>
+    </details>
+
+    <details>
+      <summary>How do I cancel my subscription?</summary>
+      <p>Subscriptions are managed by Apple, not by us. To cancel:</p>
+      <ol>
+        <li>Open the <strong>Settings</strong> app on your iPhone.</li>
+        <li>Tap your name at the top.</li>
+        <li>Tap <strong>Subscriptions</strong>.</li>
+        <li>Tap <strong>AI-Outfits</strong>.</li>
+        <li>Tap <strong>Cancel Subscription</strong>.</li>
+      </ol>
+      <p>You'll keep Pro access until the end of the current billing period. You can also manage subscriptions on Apple's site: <a href="https://apps.apple.com/account/subscriptions" target="_blank" rel="noopener">apps.apple.com/account/subscriptions</a>.</p>
+    </details>
+
+    <details>
+      <summary>How do I request a refund?</summary>
+      <p>All charges are processed by Apple, so refunds come from Apple too. Request one at <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>. If you think a charge is clearly wrong — for example, you were double-billed or the app failed to deliver what you paid for — email us and we'll help advocate with Apple.</p>
+    </details>
+
+    <details>
+      <summary>A try-on render came out bad. What can I do?</summary>
+      <p>AI-generated renders are not perfect. Things like unusual poses, busy backgrounds, tight crops, or uncommon garment types can trip up the model. A few things that help:</p>
+      <ul>
+        <li>Use a clear, front-facing avatar photo with good lighting.</li>
+        <li>Use a garment photo on a plain background if possible.</li>
+        <li>Try re-running the render — results vary each time.</li>
+      </ul>
+      <p>If a render is badly broken, tap the <strong>Report bad render</strong> button on the result screen. Your report helps us improve. For cases where a render clearly fails (for example, nothing is generated), email us and we'll credit you back.</p>
+    </details>
+
+    <details>
+      <summary>How do I delete my account and data?</summary>
+      <p>Open the app, go to <strong>Settings → Account → Delete Account</strong>. This removes your profile and cloud-stored data within 30 days. Wardrobe items, outfits, and trip data stored on your iPhone are removed when you uninstall the app.</p>
+      <p>If you can't access the in-app option, email <a href="mailto:batchcompressvideos@gmail.com">batchcompressvideos@gmail.com</a> from the email address linked to your account and we'll delete it manually.</p>
+    </details>
+
+    <details>
+      <summary>Why didn't I get free credits on a new account?</summary>
+      <p>We use an Apple technology called DeviceCheck to prevent the same iPhone from creating unlimited free accounts. It stores two bits of information on Apple's servers per device — it does not identify you and cannot be used to track you across other apps. It only tells us "this device has already claimed free starter credits."</p>
+      <p>If you believe this is a mistake (for example, you bought a used iPhone that had the app before), email us and we can look into it.</p>
+    </details>
+
+    <details>
+      <summary>What data does the app collect?</summary>
+      <p>Short version: your email and display name, photos you upload for try-on, the wardrobe items you enter, usage events, and crash logs. Full details are in our <a href="privacy.html">Privacy Policy</a>.</p>
+    </details>
+
+    <details>
+      <summary>Are my photos used to train AI models?</summary>
+      <p>We don't train AI models on your photos. Your avatar and garment photos are sent to third-party try-on providers only to generate the render you requested. Each provider has its own privacy policy — links are in our <a href="privacy.html#third-party-services">Privacy Policy</a>.</p>
+    </details>
+
+    <details>
+      <summary>The app crashed / a feature isn't working.</summary>
+      <p>First, make sure you're on the latest version from the App Store and your iPhone is running iOS 17 or later. If the issue persists, email us with your iPhone model, iOS version, and a description (screenshots help). Crash reports are automatically collected via Firebase Crashlytics, which helps us identify common issues faster.</p>
+    </details>
+
+    <details>
+      <summary>Is AI-Outfits available on Android or web?</summary>
+      <p>Not right now. AI-Outfits is an iOS-only app for iPhone running iOS 17 or later.</p>
+    </details>
+
+    <details>
+      <summary>Is there a minimum age?</summary>
+      <p>Yes — you must be at least 13 years old to use AI-Outfits.</p>
+    </details>
+
+  </div>
+
+  <h2>Legal</h2>
+  <ul>
+    <li><a href="privacy.html">Privacy Policy</a></li>
+    <li><a href="terms.html">Terms of Service</a></li>
+  </ul>
+
+</main>
+</body>
+</html>
