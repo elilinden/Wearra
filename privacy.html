@@ -74,110 +74,151 @@
   <ul>
     <li><strong>Account info.</strong> When you sign in with Google, we receive your email address and display name.</li>
     <li><strong>Photos you upload.</strong> Wardrobe item photos, avatar photos, and garment photos you submit for virtual try-on rendering.</li>
-    <li><strong>Wardrobe details.</strong> Outfit notes, purchase prices, brand names, and style preferences you enter.</li>
-    <li><strong>Feedback.</strong> Bad-render reports or other feedback you send us.</li>
+    <li><strong>Wardrobe details.</strong> Outfit notes, purchase prices, brand names, wear counts, tags, categories, and style preferences you enter.</li>
+    <li><strong>Feedback.</strong> Bad-render reports, attached photos, and any log bundles you choose to send through the in-app "Send to Developer" option.</li>
   </ul>
+
+  <h3>Device permissions we request</h3>
+  <ul>
+    <li><strong>Camera.</strong> To photograph clothing items and create your avatar.</li>
+    <li><strong>Photo Library.</strong> To import clothing photos and save try-on renders.</li>
+    <li><strong>Location (while using the app).</strong> For weather-appropriate outfit suggestions. We pass your latitude and longitude to Open-Meteo — no account identifier is sent.</li>
+    <li><strong>Calendar (read-only).</strong> To suggest outfits appropriate for your day's events. Calendar contents are read on-device and are not uploaded to our servers.</li>
+    <li><strong>Notifications.</strong> For optional reminders and alerts (for example, when a render finishes).</li>
+  </ul>
+  <p>You can revoke any of these at any time in iOS <strong>Settings → AI-Outfits</strong>.</p>
 
   <h3>Information collected automatically</h3>
   <ul>
-    <li><strong>Device information.</strong> Device model and iOS version.</li>
-    <li><strong>Crash reports.</strong> Diagnostic data when the app crashes, collected via Firebase Crashlytics.</li>
-    <li><strong>Usage events.</strong> Which features you use and when, via Firebase Analytics. This helps us understand how the app is used and fix problems.</li>
-    <li><strong>DeviceCheck token.</strong> An opaque, per-device token provided by Apple's DeviceCheck. This is <em>not</em> your Apple ID, not the IDFA, and cannot be used to identify you across other apps. We use it only to store two bits of information per device to prevent abuse of free credits (see "How we use it" below).</li>
+    <li><strong>Device information.</strong> Device model, iOS version, app version, locale, and session length.</li>
+    <li><strong>Crash reports.</strong> Stack traces and non-fatal errors via Firebase Crashlytics.</li>
+    <li><strong>Usage events.</strong> Screen views and custom events (e.g., render start/finish, button taps) via Firebase Analytics.</li>
+    <li><strong>Approximate location.</strong> Country-level, derived from IP by Firebase Analytics. No precise GPS is sent with analytics events.</li>
+    <li><strong>DeviceCheck token.</strong> An opaque, per-device token provided by Apple's DeviceCheck. This is <em>not</em> your Apple ID, not the IDFA, and cannot be used to identify you across other apps. We use it only to store two bits of information per device to prevent abuse of our free-credits flow.</li>
   </ul>
 
   <h3>Information stored only on your device</h3>
-  <p>Your full wardrobe, outfit history, and packing/trip data are stored locally on your iPhone using Apple's SwiftData framework. They are not uploaded to our servers unless you explicitly choose a feature that requires it (for example, uploading a specific garment for try-on rendering).</p>
-
-  <h3>Information uploaded to Firebase</h3>
-  <p>The following is stored on Google Firebase under our account:</p>
+  <p>The following is stored locally on your iPhone using Apple's SwiftData framework and is not uploaded unless you explicitly use a feature that requires it:</p>
   <ul>
-    <li>User profile (email, display name, subscription status)</li>
-    <li>Credit grant records and transaction history</li>
-    <li>Photos submitted for try-on rendering (temporarily, while being processed)</li>
-    <li>Bad-render reports and attached images</li>
-    <li>Debug logs for troubleshooting</li>
+    <li>Your full wardrobe (photos, names, prices, brands, purchase dates, wear counts, tags, categories)</li>
+    <li>Outfits and outfit history (compositions, hero images, notes)</li>
+    <li>Packing trips</li>
+    <li>Style preferences</li>
+    <li>A cached snapshot of your profile (credit counts)</li>
+  </ul>
+  <p>Uninstalling the app removes this data from your device.</p>
+
+  <h3>Information stored in our cloud (Google Firestore)</h3>
+  <ul>
+    <li><code>/users/{uid}</code> — email, display name, monthly render count, subscription snapshot</li>
+    <li><code>/users/{uid}/creditGrants/{id}</code> — credit history (amount, reason, source, timestamps)</li>
+    <li><code>/users/{uid}/badRenderReports/{id}</code> — photos, notes, item IDs, and the provider that produced the problematic render</li>
+    <li><code>/users/{uid}/logDumps/{id}</code> — optional log bundles you send via "Send to Developer"</li>
+    <li><code>/debug_logs/{id}</code> — render debug info (photos, provider, input params) generated when a try-on runs, so we can diagnose issues</li>
+    <li><code>/redeemCodes/{code}</code> — promo code state (we manage this; it isn't user-editable)</li>
   </ul>
 
   <h2>How we use it</h2>
   <ul>
-    <li><strong>To run the core try-on feature:</strong> we send your avatar and garment photos to third-party AI providers (listed below) so they can generate a rendered image of you wearing the item.</li>
-    <li><strong>To power AI outfit suggestions and chat:</strong> your prompts and wardrobe context may be sent to Google Gemini.</li>
-    <li><strong>To manage your subscription:</strong> Apple handles billing; we receive subscription status so we can unlock Pro features.</li>
-    <li><strong>To prevent abuse:</strong> we use Apple's DeviceCheck to flag devices that have already claimed free starter credits, so the same iPhone cannot create unlimited free accounts.</li>
-    <li><strong>To fix bugs and improve the app:</strong> crash reports and usage analytics.</li>
-    <li><strong>To respond to you:</strong> when you email us for support.</li>
+    <li><strong>Virtual try-on rendering.</strong> We send your avatar and garment photos to one of the third-party AI providers listed below so they can generate the rendered image you requested.</li>
+    <li><strong>AI chat and outfit suggestions.</strong> Your prompts and the wardrobe context you share with the assistant are sent to Google Gemini 2.5 Flash.</li>
+    <li><strong>Automatic item tagging.</strong> When you add a clothing photo, it may be sent to Google Gemini for vision-based categorization (type, color, style).</li>
+    <li><strong>Weather-aware suggestions.</strong> Your coordinates are sent to Open-Meteo to fetch the local forecast.</li>
+    <li><strong>Subscription management.</strong> Apple handles billing; we receive subscription status through StoreKit so we can unlock Pro features.</li>
+    <li><strong>Abuse prevention.</strong> We use Apple's DeviceCheck to flag devices that have already claimed free starter credits, so the same iPhone cannot create unlimited free accounts.</li>
+    <li><strong>Debugging and improvement.</strong> Crash reports, usage analytics, and opt-in debug log uploads.</li>
+    <li><strong>Support.</strong> To respond when you email us.</li>
   </ul>
 
-  <p>We do not sell your personal information. We do not show ads. We do not use your photos to train AI models on our end, and we contractually require our try-on providers to process them only for the purpose of returning a render to you. You should still review each provider's policy (below) to understand their own practices.</p>
+  <p>We do not sell or share your personal information. We do not show ads. We do not use your photos to train AI models on our end, and our try-on providers receive photos only to return a render to you. Each provider has its own policy — please review the links below to understand their practices.</p>
 
-  <h2>Third-party services</h2>
-  <p>The following third parties receive some of your data in order for AI-Outfits to function. Clicking a link will take you to each provider's own privacy policy.</p>
+  <h2 id="third-party-services">Third-party services</h2>
+  <p>The following third parties receive data from AI-Outfits in order for the app to function. Click a provider to open their privacy policy.</p>
 
+  <h3>Google</h3>
+  <table>
+    <thead>
+      <tr><th>Service</th><th>Purpose</th><th>Data shared</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Firebase Authentication</td><td>Sign-in via Google OAuth</td><td>Email, display name</td></tr>
+      <tr><td>Firebase Firestore</td><td>User profile, credit records, reports, debug logs</td><td>Account data, uploaded photos, app events</td></tr>
+      <tr><td>Firebase Storage</td><td>Debug photo uploads when a render fails</td><td>Photos from the failed render</td></tr>
+      <tr><td>Firebase Remote Config</td><td>Feature flags and API keys delivered at runtime</td><td>App/device metadata only</td></tr>
+      <tr><td>Firebase Analytics</td><td>Usage events and device telemetry</td><td>Device model, iOS version, app version, locale, events, IP-derived country</td></tr>
+      <tr><td>Firebase Crashlytics</td><td>Crash and non-fatal error reporting</td><td>Stack traces, device state at crash</td></tr>
+      <tr><td>Google Cloud Functions</td><td>Server-side logic: <code>claimFreeCredits</code>, <code>redeemCode</code>, <code>submitBadRenderReport</code>, <code>alertWebhook</code></td><td>Request payloads relevant to each function (e.g., DeviceCheck token, promo code, report content)</td></tr>
+      <tr><td>Google Gemini 2.5 Flash</td><td>Chat, outfit suggestions, and item categorization</td><td>Your prompts, wardrobe context, and item photos for tagging</td></tr>
+      <tr><td>Google Gemini 2.5 Flash Image</td><td>Virtual try-on rendering</td><td>Avatar photo, garment photo(s)</td></tr>
+      <tr><td>Google Vertex AI (<code>virtual-try-on-001</code>)</td><td>Virtual try-on rendering</td><td>Avatar photo, garment photo(s)</td></tr>
+    </tbody>
+  </table>
+  <p>Google's privacy policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>. Firebase-specific details: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a>.</p>
+
+  <h3>Apple</h3>
+  <table>
+    <thead>
+      <tr><th>Service</th><th>Purpose</th><th>Data shared</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>StoreKit 2</td><td>Subscription and in-app purchase billing, refunds, receipts</td><td>Purchase receipts; Apple handles payment data</td></tr>
+      <tr><td>DeviceCheck</td><td>Abuse prevention (2 bits of state per physical device)</td><td>Opaque per-device token</td></tr>
+      <tr><td>Apple Push Notification service (APNs)</td><td>Delivery of push notifications</td><td>APNs device token</td></tr>
+    </tbody>
+  </table>
+  <p>Apple's privacy policy: <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a>.</p>
+
+  <h3>Third-party AI rendering providers</h3>
+  <p>When you run a try-on, your request is routed to one of the following providers. Only the <strong>avatar photo and garment photo(s)</strong> are sent — no email address, display name, or Firebase user ID is attached to the call.</p>
+  <table>
+    <thead>
+      <tr><th>Provider</th><th>Role</th><th>Endpoint</th><th>Policy</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>FASHN.ai</td>
+        <td>Try-on model + hosting</td>
+        <td><code>api.fashn.ai/v1/run</code></td>
+        <td><a href="https://fashn.ai/privacy" target="_blank" rel="noopener">fashn.ai/privacy</a></td>
+      </tr>
+      <tr>
+        <td>fal.ai</td>
+        <td>Hosting platform (data controller for the endpoint)</td>
+        <td><code>fal.run/fal-ai/kling/v1-5/kolors-virtual-try-on</code></td>
+        <td><a href="https://fal.ai/privacy" target="_blank" rel="noopener">fal.ai/privacy</a></td>
+      </tr>
+      <tr>
+        <td>Kling / Kuaishou</td>
+        <td>Underlying try-on model served through fal.ai</td>
+        <td>(via fal.ai above)</td>
+        <td><a href="https://klingai.com/release/privacy_policy" target="_blank" rel="noopener">klingai.com/release/privacy_policy</a></td>
+      </tr>
+      <tr>
+        <td>LightX</td>
+        <td>Try-on model + hosting</td>
+        <td><code>api.lightxeditor.com/external/api/v2/*</code></td>
+        <td><a href="https://www.lightxeditor.com/privacy-policy" target="_blank" rel="noopener">lightxeditor.com/privacy-policy</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Weather</h3>
   <table>
     <thead>
       <tr><th>Provider</th><th>Purpose</th><th>Data shared</th><th>Policy</th></tr>
     </thead>
     <tbody>
       <tr>
-        <td>Google (Firebase Auth, Firestore, Storage, Remote Config, Analytics, Crashlytics, Cloud Functions)</td>
-        <td>Account auth, backend storage, analytics, crash reporting, server-side logic</td>
-        <td>Email, display name, photos submitted for try-on, app events, crash diagnostics</td>
-        <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></td>
-      </tr>
-      <tr>
-        <td>Google (Sign-In)</td>
-        <td>Authentication</td>
-        <td>Email, display name</td>
-        <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td>
-      </tr>
-      <tr>
-        <td>Google Gemini</td>
-        <td>Outfit suggestions and chat</td>
-        <td>Prompts, wardrobe context you share with the assistant</td>
-        <td><a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">ai.google.dev/gemini-api/terms</a></td>
-      </tr>
-      <tr>
-        <td>Fashn AI</td>
-        <td>Virtual try-on image rendering</td>
-        <td>Avatar photo, garment photo</td>
-        <td><a href="https://fashn.ai/privacy-policy" target="_blank" rel="noopener">fashn.ai/privacy-policy</a></td>
-      </tr>
-      <tr>
-        <td>Kling AI (Kuaishou)</td>
-        <td>Virtual try-on image rendering</td>
-        <td>Avatar photo, garment photo</td>
-        <td><a href="https://klingai.com/legal/privacy-policy" target="_blank" rel="noopener">klingai.com/legal/privacy-policy</a></td>
-      </tr>
-      <tr>
-        <td>LightX</td>
-        <td>Virtual try-on image rendering</td>
-        <td>Avatar photo, garment photo</td>
-        <td><a href="https://www.lightxeditor.com/privacy-policy/" target="_blank" rel="noopener">lightxeditor.com/privacy-policy</a></td>
-      </tr>
-      <tr>
-        <td>Fal.ai</td>
-        <td>Virtual try-on image rendering</td>
-        <td>Avatar photo, garment photo</td>
-        <td><a href="https://fal.ai/privacy-policy" target="_blank" rel="noopener">fal.ai/privacy-policy</a></td>
-      </tr>
-      <tr>
-        <td>Pixelcut</td>
-        <td>Virtual try-on / image processing</td>
-        <td>Avatar photo, garment photo</td>
-        <td><a href="https://www.pixelcut.ai/privacy" target="_blank" rel="noopener">pixelcut.ai/privacy</a></td>
-      </tr>
-      <tr>
-        <td>Apple (DeviceCheck, StoreKit)</td>
-        <td>Abuse prevention, subscription billing</td>
-        <td>Opaque per-device token, purchase receipts</td>
-        <td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a></td>
+        <td>Open-Meteo</td>
+        <td>Local weather forecast for outfit suggestions</td>
+        <td>Latitude and longitude only — no identifier</td>
+        <td><a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">open-meteo.com/en/terms</a></td>
       </tr>
     </tbody>
   </table>
 
   <div class="callout">
-    <strong>About try-on providers.</strong> When you run a try-on, we route your request to one of the providers above. Your photos are transmitted to that provider, rendered, and returned. We do not control how each provider retains or processes data on their side — please check their policy if that matters to you.
+    <strong>About retention on the provider side.</strong> We do not control how each third-party AI provider retains or processes data once it reaches them. Please check their policy if that matters to you.
   </div>
 
   <h2>Your rights</h2>
@@ -186,7 +227,7 @@
   <ul>
     <li><strong>Access:</strong> request a copy of the data we hold about you.</li>
     <li><strong>Correction:</strong> ask us to fix inaccurate data.</li>
-    <li><strong>Deletion:</strong> delete your account and associated cloud data from within the app, or email us and we'll do it for you.</li>
+    <li><strong>Deletion:</strong> delete your account and associated cloud data from within the app (<strong>Settings → Account → Delete Account</strong>), or email us and we'll do it for you.</li>
   </ul>
 
   <h3>California residents (CCPA / CPRA)</h3>
@@ -198,7 +239,7 @@
     <li>Opt out of the "sale" or "sharing" of your personal information. <strong>We do not sell or share your personal information</strong> as those terms are defined by the CCPA.</li>
     <li>Not be discriminated against for exercising these rights.</li>
   </ul>
-  <p>To exercise any of these rights, email <a href="mailto:batchcompressvideos@gmail.com">batchcompressvideos@gmail.com</a>. We will verify your request using the email address associated with your account.</p>
+  <p>To exercise any of these rights, email <a href="mailto:batchcompressvideos@gmail.com">batchcompressvideos@gmail.com</a>. We verify requests using the email address associated with your account.</p>
 
   <h3>EU / UK residents (GDPR / UK GDPR)</h3>
   <p>If you are in the European Economic Area, the United Kingdom, or Switzerland, you have the right to:</p>
@@ -209,15 +250,15 @@
     <li>Withdraw consent at any time where processing is based on consent.</li>
     <li>Lodge a complaint with your local data protection authority.</li>
   </ul>
-  <p>Our legal bases for processing are: <strong>contract</strong> (to provide the try-on service you requested), <strong>legitimate interest</strong> (abuse prevention, debugging, improving the app), and <strong>consent</strong> (optional analytics where required). When your data is transferred outside the EEA/UK — for example, to our servers or to US-based AI providers — we rely on standard contractual clauses or the providers' own transfer mechanisms.</p>
+  <p>Our legal bases for processing are: <strong>contract</strong> (to provide the try-on service you requested), <strong>legitimate interest</strong> (abuse prevention, debugging, improving the app), and <strong>consent</strong> (optional analytics and notifications where required). When your data is transferred outside the EEA/UK — for example, to our US-based backend or to US-based AI providers — we rely on standard contractual clauses or the providers' own transfer mechanisms.</p>
 
   <h2>Data retention</h2>
   <ul>
-    <li><strong>Try-on photos.</strong> Stored briefly during processing and deleted from our Firebase Storage after the render completes or within 30 days, whichever is sooner. Retention on the third-party provider's side is governed by their policy.</li>
+    <li><strong>Try-on photos.</strong> Stored briefly during processing and removed from our Firebase Storage after the render completes or within 30 days, whichever is sooner. Retention on the third-party provider's side is governed by their policy.</li>
     <li><strong>Account data.</strong> Kept for as long as your account is active.</li>
-    <li><strong>Account deletion.</strong> When you request account deletion, we delete your Firebase data within 30 days. Some information may remain in backups for a short additional period before being overwritten.</li>
+    <li><strong>Account deletion.</strong> When you delete your account (in-app or by email), we delete your Firestore documents, associated storage, and your Firebase Auth record within 30 days. Routine backups may retain a copy for a short additional period before being overwritten.</li>
     <li><strong>On-device data.</strong> Your wardrobe, outfit history, and trip data stay on your iPhone and are removed when you uninstall the app.</li>
-    <li><strong>Crash/analytics logs.</strong> Retained according to Firebase's defaults (typically up to 14 months for analytics; shorter for crash logs).</li>
+    <li><strong>Analytics and crash logs.</strong> Retained according to Firebase's defaults (typically up to 14 months for analytics; shorter for crash logs).</li>
   </ul>
 
   <h2>Children's privacy</h2>
@@ -227,7 +268,7 @@
   <p>Data in transit is encrypted using TLS. Data at rest in Firebase is encrypted by Google. Access to our backend is restricted. No system is perfectly secure, but we take reasonable steps to protect your information.</p>
 
   <h2>Changes to this policy</h2>
-  <p>If we make material changes, we'll update the effective date at the top of this page and, for significant changes, show a notice inside the app the next time you open it. Your continued use of AI-Outfits after the change means you accept the updated policy.</p>
+  <p>If we make material changes, we'll update the effective date at the top of this page and, for significant changes, show a notice inside the app the next time you open it. Continuing to use AI-Outfits after the change means you accept the updated policy.</p>
 
   <h2>Contact</h2>
   <p>Questions, requests, or concerns? Email <a href="mailto:batchcompressvideos@gmail.com">batchcompressvideos@gmail.com</a>. We respond within 3 business days.</p>

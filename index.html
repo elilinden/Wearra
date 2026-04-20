@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-Outfits</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #555;
+    --accent: #2b6cb0;
+    --border: #e2e2e2;
+    --card-bg: #f7f7f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121212;
+      --fg: #e8e8e8;
+      --muted: #a0a0a0;
+      --accent: #63b3ed;
+      --border: #2a2a2a;
+      --card-bg: #1c1c1c;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--fg);
+    background: var(--bg);
+    margin: 0;
+    padding: 48px 16px 64px;
+  }
+  main { max-width: 640px; margin: 0 auto; }
+  h1 { font-size: 2.2em; margin: 0 0 0.2em; }
+  .tagline { color: var(--muted); margin-top: 0; margin-bottom: 2.5em; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .cards { display: grid; grid-template-columns: 1fr; gap: 12px; margin: 1.5em 0; }
+  .card {
+    display: block;
+    padding: 18px 20px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--fg);
+  }
+  .card:hover { border-color: var(--accent); text-decoration: none; }
+  .card h2 { margin: 0 0 0.2em; font-size: 1.15em; }
+  .card p { margin: 0; color: var(--muted); font-size: 0.95em; }
+  footer { margin-top: 3em; font-size: 0.9em; color: var(--muted); }
+  @media (max-width: 600px) {
+    body { padding-top: 32px; }
+    h1 { font-size: 1.8em; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>AI-Outfits</h1>
+  <p class="tagline">Legal and support pages for the AI-Outfits iOS app.</p>
+
+  <div class="cards">
+    <a class="card" href="privacy.html">
+      <h2>Privacy Policy</h2>
+      <p>What we collect, who we share it with, and your rights.</p>
+    </a>
+    <a class="card" href="terms.html">
+      <h2>Terms of Service</h2>
+      <p>Rules for using the app, subscription details, and acceptable use.</p>
+    </a>
+    <a class="card" href="support.html">
+      <h2>Support &amp; FAQ</h2>
+      <p>Contact info and answers to common questions.</p>
+    </a>
+  </div>
+
+  <footer>
+    Contact: <a href="mailto:batchcompressvideos@gmail.com">batchcompressvideos@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
