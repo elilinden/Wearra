@@ -72,7 +72,7 @@
 
   <h3>Information you give us directly</h3>
   <ul>
-    <li><strong>Account info.</strong> When you sign in with Google, we receive your email address and display name.</li>
+    <li><strong>Account info.</strong> When you sign in with Google, we receive your email address and display name. We assign you an internal user ID (a Firebase UID) that links your account to your data across the app's backend.</li>
     <li><strong>Photos you upload.</strong> Wardrobe item photos, avatar photos, and garment photos you submit for virtual try-on rendering.</li>
     <li><strong>Wardrobe details.</strong> Outfit notes, purchase prices, brand names, wear counts, tags, categories, and style preferences you enter.</li>
     <li><strong>Feedback.</strong> Bad-render reports, attached photos, and any log bundles you choose to send through the in-app "Send to Developer" option.</li>
@@ -93,6 +93,8 @@
     <li><strong>Device information.</strong> Device model, iOS version, app version, locale, and session length.</li>
     <li><strong>Crash reports.</strong> Stack traces and non-fatal errors via Firebase Crashlytics.</li>
     <li><strong>Usage events.</strong> Screen views and custom events (e.g., render start/finish, button taps) via Firebase Analytics.</li>
+    <li><strong>Performance data.</strong> Response times, render durations, and other performance metrics used to diagnose slowness and regressions.</li>
+    <li><strong>Purchase history.</strong> Records of your in-app subscription and top-up purchases, linked to your account, so we can unlock the features you paid for and reconcile credit balances. Apple handles the underlying payment data — we do not receive your credit card or Apple ID credentials.</li>
     <li><strong>Approximate location.</strong> Country-level, derived from IP by Firebase Analytics. No precise GPS is sent with analytics events.</li>
     <li><strong>DeviceCheck token.</strong> An opaque, per-device token provided by Apple's DeviceCheck. This is <em>not</em> your Apple ID, not the IDFA, and cannot be used to identify you across other apps. We use it only to store two bits of information per device to prevent abuse of our free-credits flow.</li>
   </ul>
