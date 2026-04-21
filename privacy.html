@@ -227,7 +227,7 @@
   <ul>
     <li><strong>Access:</strong> request a copy of the data we hold about you.</li>
     <li><strong>Correction:</strong> ask us to fix inaccurate data.</li>
-    <li><strong>Deletion:</strong> delete your account and associated cloud data from within the app (<strong>Settings → Account → Delete Account</strong>), or email us and we'll do it for you.</li>
+    <li><strong>Deletion:</strong> delete your account from within the app (<strong>Settings → Danger Zone → Delete Account</strong>), or email us and we'll do it for you. See "Account deletion and data retention" below for what happens next.</li>
   </ul>
 
   <h3>California residents (CCPA / CPRA)</h3>
@@ -256,10 +256,19 @@
   <ul>
     <li><strong>Try-on photos.</strong> Stored briefly during processing and removed from our Firebase Storage after the render completes or within 30 days, whichever is sooner. Retention on the third-party provider's side is governed by their policy.</li>
     <li><strong>Account data.</strong> Kept for as long as your account is active.</li>
-    <li><strong>Account deletion.</strong> When you delete your account (in-app or by email), we delete your Firestore documents, associated storage, and your Firebase Auth record within 30 days. Routine backups may retain a copy for a short additional period before being overwritten.</li>
     <li><strong>On-device data.</strong> Your wardrobe, outfit history, and trip data stay on your iPhone and are removed when you uninstall the app.</li>
     <li><strong>Analytics and crash logs.</strong> Retained according to Firebase's defaults (typically up to 14 months for analytics; shorter for crash logs).</li>
   </ul>
+
+  <h3>Account deletion and data retention</h3>
+  <p>You may delete your account at any time from <strong>Settings → Danger Zone → Delete Account</strong>. When you do, your account enters a <strong>30-day grace period</strong>. During this period:</p>
+  <ul>
+    <li>You are signed out of the app on all devices.</li>
+    <li>Your data is hidden from the app and inaccessible to you.</li>
+    <li>We retain your data internally so we can respond to chargebacks, fraud claims, and support disputes.</li>
+  </ul>
+  <p>After 30 days, all user-identifying data (profile, photos, outfits, credit history, reports) is permanently and irrevocably deleted. We retain a minimal audit record (email, deletion date) for up to 12 months for fraud prevention and regulatory compliance.</p>
+  <p>To cancel a scheduled deletion, email <a href="mailto:batchcompressvideos@gmail.com">batchcompressvideos@gmail.com</a> within the 30-day window.</p>
 
   <h2>Children's privacy</h2>
   <p>AI-Outfits is not directed at children under 13, and we do not knowingly collect personal information from anyone under 13. If you believe a child under 13 has given us information, email <a href="mailto:batchcompressvideos@gmail.com">batchcompressvideos@gmail.com</a> and we will delete it.</p>
