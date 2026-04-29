@@ -94,22 +94,22 @@
       <summary>How do credits work?</summary>
       <p>Each virtual try-on render costs one credit.</p>
       <ul>
-        <li><strong>Free tier:</strong> 2 lifetime renders. Once you've used them, they do not reset — you'll need to subscribe to Pro or buy a top-up pack to keep rendering.</li>
-        <li><strong>Pro:</strong> 50 renders per month, which reset at the start of each billing period.</li>
-        <li><strong>20-render top-up pack:</strong> a one-time purchase. Top-up credits never expire.</li>
+        <li><strong>Free tier:</strong> 2 lifetime renders. They do not reset — once used, you'll need to subscribe to Pro or buy a top-up pack to keep rendering.</li>
+        <li><strong>Pro subscription:</strong> 30 renders per month. Renders reset at the start of each billing period.</li>
+        <li><strong>5-render top-up pack:</strong> a one-time $1.99 consumable available to Pro subscribers. Top-up credits stack on top of your monthly Pro allowance and never expire.</li>
       </ul>
-      <p>Your current credit balance is shown on the home screen.</p>
+      <p>Your current credit balance is shown on the Home screen and in Settings → Credits &amp; Subscription.</p>
     </details>
 
     <details>
       <summary>What does the Pro subscription include?</summary>
-      <p>Pro gives you 50 try-on renders per month, plus any Pro-only features shown on the paywall. Pricing and renewal terms are always displayed before you confirm the purchase.</p>
-      <p>Pro is billed through your Apple ID as an auto-renewing monthly subscription (<code>com.wardrobeapp.pro_monthly</code>) and renews until you cancel.</p>
+      <p>Pro gives you 30 try-on renders per month, plus AI stylist chat and personalized outfit suggestions tied to your wardrobe. Pricing and renewal terms are always displayed before you confirm the purchase.</p>
+      <p>Pro is billed through your Apple ID as an auto-renewing monthly subscription and renews until you cancel.</p>
     </details>
 
     <details>
       <summary>I need more renders this month — can I buy extras?</summary>
-      <p>Yes. You can buy a <strong>20-render top-up pack</strong> (<code>com.wardrobeapp.20_renders_pack</code>) from the paywall. Top-up credits stack on top of your Pro allowance and never expire.</p>
+      <p>Yes. You can buy a <strong>5-render top-up pack</strong> from the paywall. Top-up credits stack on top of your Pro allowance and never expire.</p>
     </details>
 
     <details>
@@ -127,7 +127,7 @@
 
     <details>
       <summary>How do I request a refund?</summary>
-      <p>All charges are processed by Apple, so refunds come from Apple too. Request one at <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>. If you think a charge is clearly wrong — for example, you were double-billed or the app failed to deliver what you paid for — email us and we'll help advocate with Apple.</p>
+      <p>All charges are processed by Apple, so refunds come from Apple too. Request one at <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>. If you think a charge is clearly wrong — for example, you were double-billed or the app failed to deliver what you paid for — email us and we'll help you with the request to Apple.</p>
     </details>
 
     <details>
@@ -138,7 +138,7 @@
         <li>Use a garment photo on a plain background if possible.</li>
         <li>Try re-running the render — results vary each time.</li>
       </ul>
-      <p>If a render is badly broken, tap the <strong>Report bad render</strong> button on the result screen. Your report (the photos, notes, and which provider rendered it) helps us improve. For cases where a render clearly fails, email us and we'll credit you back.</p>
+      <p>If a render is badly broken, tap the <strong>Report bad render</strong> button on the result screen. Your report (the photos and your notes) helps us improve. For cases where a render clearly fails, email us and we'll credit you back.</p>
     </details>
 
     <details>
@@ -167,28 +167,28 @@
 
     <details>
       <summary>Where does my photo actually go when I render?</summary>
-      <p>Your avatar and garment photo(s) are routed to one of several third-party AI providers: FASHN.ai, fal.ai (hosting the Kling/Kuaishou model), LightX, or Google's Gemini / Vertex AI try-on endpoints. Only the photos are sent — no email, display name, or account identifier is attached to the render call. Each provider's own privacy policy is linked in our <a href="privacy.html#third-party-services">Privacy Policy</a>.</p>
+      <p>Your avatar and garment photo(s) are sent to Google's Gemini and Vertex AI try-on endpoints. Only the photos are sent — no email, display name, or account identifier is attached to the render call. Details are in our <a href="privacy.html#third-party-services">Privacy Policy</a>.</p>
     </details>
 
     <details>
       <summary>Are my photos used to train AI models?</summary>
-      <p>We don't train AI models on your photos. Your avatar and garment photos are sent to third-party try-on providers only to generate the render you requested. Each provider has its own retention policy — links are in our <a href="privacy.html#third-party-services">Privacy Policy</a>.</p>
+      <p>We don't train AI models on your photos. Your avatar and garment photos are sent to Google's Gemini API only to generate the render you requested. Per Google's Gemini API terms, data sent through the API is not used to train Google's models and is retained only for the time required to process the request — full details are in our <a href="privacy.html#third-party-services">Privacy Policy</a>.</p>
     </details>
 
     <details>
       <summary>Why does the app want my calendar / location?</summary>
-      <p>Both are optional. Calendar access is used to tailor outfit suggestions to your day (calendar contents are read on-device and not uploaded). Location is used to fetch the weather forecast — only your latitude and longitude are sent to Open-Meteo, with no account identifier attached.</p>
+      <p>Both are optional. Calendar access is used to tailor outfit suggestions to your day; calendar contents are read on-device, and only the event titles for events you ask the assistant about are sent to Google's Gemini API for those suggestions. Location is used to fetch the weather forecast — your latitude and longitude are sent to Open-Meteo with no account identifier attached, and the resulting weather plus approximate location may be included in Gemini prompts when you ask for weather-aware suggestions.</p>
       <p>You can revoke either permission at any time in iOS <strong>Settings → AI-Outfits</strong>.</p>
     </details>
 
     <details>
       <summary>The app crashed / a feature isn't working.</summary>
-      <p>First, make sure you're on the latest version from the App Store and your iPhone is running iOS 17 or later. If the issue persists, email us with your iPhone model, iOS version, and a description (screenshots help). Crash reports are automatically collected via Firebase Crashlytics.</p>
+      <p>First, make sure you're on the latest version from the App Store and your iPhone is running iOS 18 or later. If the issue persists, email us with your iPhone model, iOS version, and a description (screenshots help). Crash reports are automatically collected via Firebase Crashlytics.</p>
     </details>
 
     <details>
       <summary>Is AI-Outfits available on Android or web?</summary>
-      <p>Not right now. AI-Outfits is an iOS-only app for iPhone running iOS 17 or later.</p>
+      <p>Not right now. AI-Outfits is an iOS-only app for iPhone running iOS 18 or later.</p>
     </details>
 
     <details>
