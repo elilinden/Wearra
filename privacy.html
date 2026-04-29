@@ -83,7 +83,7 @@
     <li><strong>Camera.</strong> To photograph clothing items and create your avatar.</li>
     <li><strong>Photo Library.</strong> To import clothing photos and save try-on renders.</li>
     <li><strong>Location (while using the app).</strong> For weather-appropriate outfit suggestions. We pass your latitude and longitude to Open-Meteo — no account identifier is sent.</li>
-    <li><strong>Calendar (read-only).</strong> To suggest outfits appropriate for your day's events. Calendar contents are read on-device and are not uploaded to our servers.</li>
+    <li><strong>Calendar (read-only).</strong> To suggest outfits appropriate for your day's events. Calendar contents are read on-device; only the event titles for events you ask the assistant about are sent to Google's Gemini API for outfit suggestions. They are not stored on our servers.</li>
     <li><strong>Notifications.</strong> For optional reminders and alerts (for example, when a render finishes).</li>
   </ul>
   <p>You can revoke any of these at any time in iOS <strong>Settings → AI-Outfits</strong>.</p>
@@ -134,6 +134,17 @@
 
   <p>We do not sell or share your personal information. We do not show ads. We do not use your photos to train AI models on our end, and our try-on providers receive photos only to return a render to you. Each provider has its own policy — please review the links below to understand their practices.</p>
 
+  <h2>Third-party AI processing</h2>
+
+  <p>AI-Outfits uses Google's Gemini API to power its AI features. The following data is transmitted to Google for processing:</p>
+  <ul>
+    <li>Photos of you (avatar) and your clothing items, used for virtual try-on rendering and item tagging.</li>
+    <li>Calendar event titles, used only when you request outfit suggestions for upcoming events.</li>
+    <li>Approximate location and current weather conditions, used to suggest weather-appropriate outfits.</li>
+  </ul>
+  <p>We do not transmit names, contacts, payment data, or other calendar metadata to Google. Per <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Google's Gemini API terms of service</a>, data sent through the API is not used to train Google's AI models and is retained only for the time required to process the request and return a response.</p>
+  <p>Google's privacy practices are governed by their <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">privacy policy</a>. By using AI-Outfits's AI features, you consent to your data being processed by Google under those terms in addition to ours.</p>
+
   <h2 id="third-party-services">Third-party services</h2>
   <p>The following third parties receive data from AI-Outfits in order for the app to function. Click a provider to open their privacy policy.</p>
 
@@ -150,7 +161,7 @@
       <tr><td>Firebase Analytics</td><td>Usage events and device telemetry</td><td>Device model, iOS version, app version, locale, events, IP-derived country</td></tr>
       <tr><td>Firebase Crashlytics</td><td>Crash and non-fatal error reporting</td><td>Stack traces, device state at crash</td></tr>
       <tr><td>Google Cloud Functions</td><td>Server-side logic: <code>claimFreeCredits</code>, <code>redeemCode</code>, <code>submitBadRenderReport</code>, <code>alertWebhook</code></td><td>Request payloads relevant to each function (e.g., DeviceCheck token, promo code, report content)</td></tr>
-      <tr><td>Google Gemini 2.5 Flash</td><td>Chat, outfit suggestions, and item categorization</td><td>Your prompts, wardrobe context, and item photos for tagging</td></tr>
+      <tr><td>Google Gemini 2.5 Flash</td><td>Chat, outfit suggestions, and item categorization</td><td>Your prompts, wardrobe context, item photos for tagging, and — when you ask for event- or weather-aware suggestions — calendar event titles plus approximate location and weather</td></tr>
       <tr><td>Google Gemini 2.5 Flash Image</td><td>Virtual try-on rendering</td><td>Avatar photo, garment photo(s)</td></tr>
       <tr><td>Google Vertex AI (<code>virtual-try-on-001</code>)</td><td>Virtual try-on rendering</td><td>Avatar photo, garment photo(s)</td></tr>
     </tbody>
