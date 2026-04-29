@@ -66,7 +66,7 @@
 
   <p>This Privacy Policy explains what information AI-Outfits collects when you use the app, why we collect it, and the choices you have. We try to say this in plain English — if anything is unclear, email us at <a href="mailto:batchcompressvideos@gmail.com">batchcompressvideos@gmail.com</a>.</p>
 
-  <p>AI-Outfits is operated by Eli Linden, a sole developer based in California, USA ("we," "us," or "AI-Outfits").</p>
+  <p>AI-Outfits is operated by Eli Linden, a sole developer based in New York, USA ("we," "us," or "AI-Outfits").</p>
 
   <h2>What we collect</h2>
 
@@ -122,7 +122,7 @@
 
   <h2>How we use it</h2>
   <ul>
-    <li><strong>Virtual try-on rendering.</strong> We send your avatar and garment photos to one of the third-party AI providers listed below so they can generate the rendered image you requested.</li>
+    <li><strong>Virtual try-on rendering.</strong> We send your avatar and garment photos to Google's Gemini and Vertex AI try-on models so they can generate the rendered image you requested.</li>
     <li><strong>AI chat and outfit suggestions.</strong> Your prompts and the wardrobe context you share with the assistant are sent to Google Gemini 2.5 Flash.</li>
     <li><strong>Automatic item tagging.</strong> When you add a clothing photo, it may be sent to Google Gemini for vision-based categorization (type, color, style).</li>
     <li><strong>Weather-aware suggestions.</strong> Your coordinates are sent to Open-Meteo to fetch the local forecast.</li>
@@ -132,7 +132,7 @@
     <li><strong>Support.</strong> To respond when you email us.</li>
   </ul>
 
-  <p>We do not sell or share your personal information. We do not show ads. We do not use your photos to train AI models on our end, and our try-on providers receive photos only to return a render to you. Each provider has its own policy — please review the links below to understand their practices.</p>
+  <p>We do not sell or share your personal information. We do not show ads. We do not use your photos to train AI models on our end, and Google receives photos only to return a render to you. Google's Gemini API terms (linked below) cover how that data is handled on their side.</p>
 
   <h2>Third-party AI processing</h2>
 
@@ -181,40 +181,6 @@
   </table>
   <p>Apple's privacy policy: <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a>.</p>
 
-  <h3>Third-party AI rendering providers</h3>
-  <p>When you run a try-on, your request is routed to one of the following providers. Only the <strong>avatar photo and garment photo(s)</strong> are sent — no email address, display name, or Firebase user ID is attached to the call.</p>
-  <table>
-    <thead>
-      <tr><th>Provider</th><th>Role</th><th>Endpoint</th><th>Policy</th></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>FASHN.ai</td>
-        <td>Try-on model + hosting</td>
-        <td><code>api.fashn.ai/v1/run</code></td>
-        <td><a href="https://fashn.ai/privacy" target="_blank" rel="noopener">fashn.ai/privacy</a></td>
-      </tr>
-      <tr>
-        <td>fal.ai</td>
-        <td>Hosting platform (data controller for the endpoint)</td>
-        <td><code>fal.run/fal-ai/kling/v1-5/kolors-virtual-try-on</code></td>
-        <td><a href="https://fal.ai/privacy" target="_blank" rel="noopener">fal.ai/privacy</a></td>
-      </tr>
-      <tr>
-        <td>Kling / Kuaishou</td>
-        <td>Underlying try-on model served through fal.ai</td>
-        <td>(via fal.ai above)</td>
-        <td><a href="https://klingai.com/release/privacy_policy" target="_blank" rel="noopener">klingai.com/release/privacy_policy</a></td>
-      </tr>
-      <tr>
-        <td>LightX</td>
-        <td>Try-on model + hosting</td>
-        <td><code>api.lightxeditor.com/external/api/v2/*</code></td>
-        <td><a href="https://www.lightxeditor.com/privacy-policy" target="_blank" rel="noopener">lightxeditor.com/privacy-policy</a></td>
-      </tr>
-    </tbody>
-  </table>
-
   <h3>Weather</h3>
   <table>
     <thead>
@@ -231,7 +197,7 @@
   </table>
 
   <div class="callout">
-    <strong>About retention on the provider side.</strong> We do not control how each third-party AI provider retains or processes data once it reaches them. Please check their policy if that matters to you.
+    <strong>About retention on Google's side.</strong> Once data reaches Google's Gemini API, retention and handling are governed by Google's terms (linked above). We do not separately control or store that data on Google's side.
   </div>
 
   <h2>Your rights</h2>
@@ -263,11 +229,11 @@
     <li>Withdraw consent at any time where processing is based on consent.</li>
     <li>Lodge a complaint with your local data protection authority.</li>
   </ul>
-  <p>Our legal bases for processing are: <strong>contract</strong> (to provide the try-on service you requested), <strong>legitimate interest</strong> (abuse prevention, debugging, improving the app), and <strong>consent</strong> (optional analytics and notifications where required). When your data is transferred outside the EEA/UK — for example, to our US-based backend or to US-based AI providers — we rely on standard contractual clauses or the providers' own transfer mechanisms.</p>
+  <p>Our legal bases for processing are: <strong>contract</strong> (to provide the try-on service you requested), <strong>legitimate interest</strong> (abuse prevention, debugging, improving the app), and <strong>consent</strong> (optional analytics and notifications where required). When your data is transferred outside the EEA/UK — for example, to our US-based backend or to Google's US-based Gemini API — we rely on standard contractual clauses or the provider's own transfer mechanisms.</p>
 
   <h2>Data retention</h2>
   <ul>
-    <li><strong>Try-on photos.</strong> Stored briefly during processing and removed from our Firebase Storage after the render completes or within 30 days, whichever is sooner. Retention on the third-party provider's side is governed by their policy.</li>
+    <li><strong>Try-on photos.</strong> Stored briefly during processing and removed from our Firebase Storage after the render completes or within 30 days, whichever is sooner. Retention on Google's side is governed by the Gemini API terms.</li>
     <li><strong>Account data.</strong> Kept for as long as your account is active.</li>
     <li><strong>On-device data.</strong> Your wardrobe, outfit history, and trip data stay on your iPhone and are removed when you uninstall the app.</li>
     <li><strong>Analytics and crash logs.</strong> Retained according to Firebase's defaults (typically up to 14 months for analytics; shorter for crash logs).</li>
