@@ -27,7 +27,7 @@
 <link rel="alternate" type="text/plain" href="llms.txt" title="llms.txt index">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="image" href="Appstore%20photos/New%20Project%20%2819%29.jpg">
+<link rel="preload" as="image" href="screenshots/home.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500;1,700;1,800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
@@ -66,12 +66,12 @@
       "description": "AI Outfits scans your closet, learns your taste, and styles you for any occasion. Daily outfit recommendations, an AI stylist chat, and virtual try-on, all from your iPhone.",
       "image": "https://ai-outfits.app/og-image.png",
       "screenshot": [
-        "https://ai-outfits.app/Appstore%20photos/New%20Project%20%2819%29.jpg",
-        "https://ai-outfits.app/Appstore%20photos/New%20Project%20%2819%29%20copy%202.jpg",
-        "https://ai-outfits.app/Appstore%20photos/New%20Project%20%2819%29%20copy%203.jpg",
-        "https://ai-outfits.app/Appstore%20photos/New%20Project%20%2819%29%20copy%204.jpg",
-        "https://ai-outfits.app/Appstore%20photos/New%20Project%20%2819%29%20copy%205.jpg",
-        "https://ai-outfits.app/Appstore%20photos/New%20Project%20%2819%29%20copy%206.jpg"
+        "https://ai-outfits.app/screenshots/home.jpg",
+        "https://ai-outfits.app/screenshots/closet.jpg",
+        "https://ai-outfits.app/screenshots/recommendations.jpg",
+        "https://ai-outfits.app/screenshots/builder.jpg",
+        "https://ai-outfits.app/screenshots/stylist.jpg",
+        "https://ai-outfits.app/screenshots/tryon.jpg"
       ],
       "featureList": [
         "Digital wardrobe with auto-categorization",
@@ -254,20 +254,23 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .hero__meta{display:flex;align-items:center;gap:16px;margin-top:28px;font-size:13px;color:var(--fg-muted)}
 .hero__stars{color:#F5A623;letter-spacing:2px;font-size:14px}
 
-/* Phone mockup */
+/* Phone mockup — clean simulator screenshots, native aspect, subtle bezel */
 .phone{
   position:relative;
   margin:0 auto;
-  width:100%;max-width:420px;
-  aspect-ratio:9/16;
-  border-radius:var(--radius-xl);
+  width:100%;max-width:360px;
+  aspect-ratio:1206/2622;
+  border-radius:46px;
   overflow:hidden;
-  box-shadow:var(--shadow-lg);
-  background:#FAF6EE;
+  background:#1A1715;
+  padding:8px;
+  box-shadow:var(--shadow-lg),0 0 0 1px rgba(0,0,0,0.06);
   will-change:transform;
 }
 .phone__img{
-  width:100%;height:100%;object-fit:cover;object-position:center bottom;
+  width:100%;height:100%;
+  border-radius:38px;
+  object-fit:cover;object-position:center;
   display:block;
 }
 .phone--hero{transform:translateZ(0)}
@@ -359,10 +362,6 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   content:"";position:absolute;inset:-30px;border-radius:48px;background:var(--bg-warm);
   z-index:-1;
 }
-
-/* Crop variants for screenshots with embedded headlines */
-.phone__img--crop-tight{object-position:center 88%}
-.phone__img--crop-mid{object-position:center 70%}
 
 /* ---------- How it works ---------- */
 .how{background:var(--bg-warm);position:relative}
@@ -491,7 +490,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 
     <div class="reveal" style="position:relative">
       <div class="phone phone--hero" data-parallax="0.15">
-        <img class="phone__img" src="Appstore%20photos/New%20Project%20%2819%29.jpg" alt="AI Outfits closet view showing organized outerwear" width="828" height="1472" fetchpriority="high">
+        <img class="phone__img" src="screenshots/home.jpg" alt="AI Outfits home screen showing daily outfit recommendations and saved looks" width="720" height="1565" fetchpriority="high">
       </div>
       <div class="phone__float phone__float--top" aria-hidden="true">
         <span class="ico ico--blue">
@@ -541,7 +540,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
       </div>
       <div class="feature__media" data-bg="cream">
         <div class="phone" data-parallax="0.08">
-          <img class="phone__img" src="Appstore%20photos/New%20Project%20%2819%29%20copy%204.jpg" alt="Closet grid view organized by category" loading="lazy" decoding="async" width="828" height="1472">
+          <img class="phone__img" src="screenshots/closet.jpg" alt="Closet grid view organized by category — outerwear, tops, bottoms" loading="lazy" decoding="async" width="720" height="1565">
         </div>
       </div>
     </article>
@@ -559,7 +558,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
       </div>
       <div class="feature__media" data-bg="cream">
         <div class="phone" data-parallax="0.1">
-          <img class="phone__img" src="Appstore%20photos/New%20Project%20%2819%29%20copy%203.jpg" alt="Daily recommended outfits with try-on and save buttons" loading="lazy" decoding="async" width="828" height="1472">
+          <img class="phone__img" src="screenshots/recommendations.jpg" alt="Daily recommended outfits with Try On and Save buttons" loading="lazy" decoding="async" width="720" height="1565">
         </div>
       </div>
     </article>
@@ -577,7 +576,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
       </div>
       <div class="feature__media" data-bg="cream">
         <div class="phone" data-parallax="0.08">
-          <img class="phone__img" src="Appstore%20photos/New%20Project%20%2819%29%20copy%202.jpg" alt="Outfit builder with top, bottom and shoes selectors" loading="lazy" decoding="async" width="828" height="1472">
+          <img class="phone__img" src="screenshots/builder.jpg" alt="Outfit builder showing top, bottom and shoes carousels with Save Outfit button" loading="lazy" decoding="async" width="720" height="1565">
         </div>
       </div>
     </article>
@@ -595,7 +594,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
       </div>
       <div class="feature__media" data-bg="lavender">
         <div class="phone" data-parallax="0.1">
-          <img class="phone__img" src="Appstore%20photos/New%20Project%20%2819%29%20copy%205.jpg" alt="AI Stylist chat with suggested questions like What should I wear today" loading="lazy" decoding="async" width="828" height="1472">
+          <img class="phone__img" src="screenshots/stylist.jpg" alt="AI Stylist chat empty state with suggested prompts like What should I wear today" loading="lazy" decoding="async" width="720" height="1565">
         </div>
       </div>
     </article>
@@ -613,7 +612,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
       </div>
       <div class="feature__media" data-bg="cream">
         <div class="phone" data-parallax="0.08">
-          <img class="phone__img" src="Appstore%20photos/New%20Project%20%2819%29%20copy%206.jpg" alt="Virtual try-on showing before and after" loading="lazy" decoding="async" width="828" height="1472">
+          <img class="phone__img" src="screenshots/tryon.jpg" alt="Virtual try-on result showing a person wearing the rendered outfit" loading="lazy" decoding="async" width="720" height="1565">
         </div>
       </div>
     </article>

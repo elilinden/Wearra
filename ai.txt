@@ -19,12 +19,6 @@
 User-Agent: *
 Allow: /
 
-# Don't ingest the raw App Store screenshot folder for training; the
-# same images are already surfaced with proper context via JSON-LD on
-# the homepage and via the markdown mirrors.
-User-Agent: *
-Disallow: /Appstore%20photos/
-
 # --- Per-bot rules (mirror robots.txt for consistency) ---
 
 User-Agent: ClaudeBot
