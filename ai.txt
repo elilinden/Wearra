@@ -1,0 +1,69 @@
+# ai.txt — AI usage permissions for AI Outfits
+# Site: https://ai-outfits.app/
+# Last updated: 2026-04-30
+# Spec: https://spawning.ai/ai-txt
+#
+# This file expresses AI training and inference permissions in
+# robots.txt-style syntax. Wildcard rules apply to any AI system that
+# respects ai.txt; the named rules below let you opt specific bots in
+# or out without affecting standard search engine crawlers (those are
+# configured in /robots.txt).
+#
+# Default stance: ALLOW all AI use of this site's public content.
+# AI Outfits is an indie iOS app marketing site — the goal is for
+# AI agents to discover and accurately describe it.
+#
+# To opt out a specific bot, flip its Allow: / to Disallow: /.
+
+# --- All AI agents ---
+User-Agent: *
+Allow: /
+
+# Don't ingest the raw App Store screenshot folder for training; the
+# same images are already surfaced with proper context via JSON-LD on
+# the homepage and via the markdown mirrors.
+User-Agent: *
+Disallow: /Appstore%20photos/
+
+# --- Per-bot rules (mirror robots.txt for consistency) ---
+
+User-Agent: ClaudeBot
+Allow: /
+
+User-Agent: anthropic-ai
+Allow: /
+
+User-Agent: GPTBot
+Allow: /
+
+User-Agent: OAI-SearchBot
+Allow: /
+
+User-Agent: ChatGPT-User
+Allow: /
+
+User-Agent: Google-Extended
+Allow: /
+
+User-Agent: PerplexityBot
+Allow: /
+
+User-Agent: Perplexity-User
+Allow: /
+
+User-Agent: CCBot
+Allow: /
+
+User-Agent: Bytespider
+Allow: /
+
+User-Agent: Applebot-Extended
+Allow: /
+
+User-Agent: Meta-ExternalAgent
+Allow: /
+
+User-Agent: cohere-ai
+Allow: /
+
+Sitemap: https://ai-outfits.app/sitemap.xml

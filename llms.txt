@@ -15,4 +15,8 @@ Each markdown file below is a direct mirror of the corresponding HTML page on th
 
 ## Optional
 
+- [llms-full.txt](llms-full.txt): Single-file concatenation of all four markdown mirrors above, for agents that prefer one fetch over four
 - [Privacy: third-party services](privacy.md#third-party-services): Tables of every third-party that receives data from the app (Google Firebase suite, Gemini, Vertex AI, Apple StoreKit/DeviceCheck/APNs, Open-Meteo)
+- [ai.txt](ai.txt): AI training and inference permissions (Spawning ai.txt spec)
+- [robots.txt](robots.txt): Crawler permissions for search engines and AI bots
+- [sitemap.xml](sitemap.xml): Full URL inventory with last-modified timestamps

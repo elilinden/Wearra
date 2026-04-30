@@ -1,0 +1,554 @@
+# AI Outfits — full content for LLMs
+
+> Your AI-powered personal stylist for iOS. AI Outfits scans your closet, learns your taste, and styles you for any occasion — daily outfit recommendations, an AI stylist chat, and virtual try-on, all from your iPhone.
+
+This is a single-fetch concatenation of every markdown mirror on https://ai-outfits.app/, intended for LLM ingestion when one request is preferred over four. Each section below is the full text of the corresponding `.md` file with no summarization or truncation. The original source files remain canonical and are listed in [llms.txt](https://ai-outfits.app/llms.txt).
+
+Operator: Eli Linden, sole developer, United States. Contact: batchcompressvideos@gmail.com.
+
+---
+
+# Section 1 of 4 — Landing page
+
+Source: https://ai-outfits.app/index.md
+
+# AI Outfits
+
+> Your AI-powered personal stylist for iOS. Style smarter, dress better — every day.
+
+AI Outfits is an iPhone app (iOS 18+) that scans your closet, learns your taste, and styles you for any occasion. It combines a digital wardrobe, daily outfit recommendations, an AI stylist chat, and a photorealistic virtual try-on into one experience.
+
+## At a glance
+
+- **Platform:** iOS only — iPhone, iOS 18 or later
+- **Sign-in:** Google account
+- **Privacy posture:** Wardrobe data stored on-device by default; only photos required for a render are sent to Google's Gemini / Vertex AI
+- **AI provider:** Google Gemini 2.5 Flash (chat, tagging) and Gemini 2.5 Flash Image / Vertex AI `virtual-try-on-001` (renders)
+- **Operator:** Eli Linden, sole developer, United States
+
+## Core features
+
+### 1. Your clothing, your way
+Snap and save every piece you own. AI Outfits builds a digital wardrobe so you stop forgetting what you have.
+
+- Auto-categorized tops, bottoms, outerwear, and shoes
+- Search by color, season, or vibe in one tap
+- Favorite, archive, and rediscover forgotten pieces
+
+### 2. Outfits, recommended daily
+Wake up to fresh outfit ideas tailored to your day, the weather, and what's already in your closet.
+
+- Three new outfits every morning
+- Thumbs up / down to teach your taste
+- Save favorites for one-tap dressing later
+
+### 3. Elevate your everyday look
+Mix, match, and refine outfits with the built-in stylist. Drag, tap, save — and shuffle until it clicks.
+
+- Layer top, bottom, and shoes with live previews
+- Add accessories and outerwear with one tap
+- Shuffle to discover combinations you wouldn't try yourself
+
+### 4. An AI Stylist for any occasion
+Date night, job interview, wedding, weekend brunch — ask away. The AI Stylist replies in seconds with looks pulled straight from your closet.
+
+- Natural-language chat trained on style fundamentals
+- Context-aware suggestions: weather, dress code, vibe
+- Build a capsule wardrobe with guided prompts
+
+### 5. Try it on, virtually
+See how a piece looks on you before you buy or commit. Upload a photo, pick the item, AI Outfits does the rest.
+
+- Photorealistic try-on in under a minute
+- Compare looks side-by-side
+- Share with friends to crowd-source the call
+
+## How it works
+
+1. **Build your closet.** Snap photos of what you own — or import from your camera roll. AI Outfits crops, tags, and categorizes everything for you.
+2. **Train your stylist.** Rate looks, save favorites, and chat with the AI Stylist. The more you interact, the sharper its picks become.
+3. **Get styled, daily.** Wake up to fresh outfit recommendations. Ask for help anytime. Try things on virtually before you commit.
+
+## Pricing
+
+| Tier | Cost | Includes |
+|---|---|---|
+| Free | $0 | 2 lifetime virtual try-on renders, full closet, basic outfit recommendations |
+| Pro | $6.99 / month, auto-renew via Apple ID | 30 renders / month, AI Stylist chat, personalised suggestions |
+| 5-render top-up | $1.99 one-time, Pro only | 5 extra renders that stack on Pro and never expire |
+
+Subscriptions are billed through Apple. See [Terms of Service](terms.md) for full billing and cancellation details.
+
+## Permissions used
+
+- **Camera** — to photograph clothing items and create your avatar
+- **Photo Library** — to import clothing photos and save try-on renders
+- **Location (while using the app)** — for weather-appropriate outfit suggestions (latitude/longitude only, no identifier sent)
+- **Calendar (read-only)** — only event titles for events you ask the assistant about are sent for outfit suggestions
+- **Notifications** — optional reminders and render-finished alerts
+
+You can revoke any permission at any time in iOS Settings → AI-Outfits.
+
+## Links
+
+- [Privacy Policy](privacy.md) — what we collect and why
+- [Terms of Service](terms.md) — billing, acceptable use, disclaimers
+- [Support & FAQ](support.md) — how-to guides and answers
+- Email: [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com) (response within 3 business days)
+
+---
+
+# Section 2 of 4 — Privacy Policy
+
+Source: https://ai-outfits.app/privacy.md
+
+# Privacy Policy
+
+*AI-Outfits · Effective April 20, 2026*
+
+This Privacy Policy explains what information AI-Outfits collects when you use the app, why we collect it, and the choices you have. We try to say this in plain English — if anything is unclear, email us at [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com).
+
+AI-Outfits is operated by Eli Linden, a sole developer operating in the United States ("we," "us," or "AI-Outfits").
+
+## What we collect
+
+### Information you give us directly
+
+- **Account info.** When you sign in with Google, we receive your email address and display name. We assign you an internal user ID (a Firebase UID) that links your account to your data across the app's backend.
+- **Photos you upload.** Wardrobe item photos, avatar photos, and garment photos you submit for virtual try-on rendering.
+- **Wardrobe details.** Outfit notes, purchase prices, brand names, wear counts, tags, categories, and style preferences you enter.
+- **Feedback.** Bad-render reports, attached photos, and any log bundles you choose to send through the in-app "Send to Developer" option.
+
+### Device permissions we request
+
+- **Camera.** To photograph clothing items and create your avatar.
+- **Photo Library.** To import clothing photos and save try-on renders.
+- **Location (while using the app).** For weather-appropriate outfit suggestions. We pass your latitude and longitude to Open-Meteo — no account identifier is sent.
+- **Calendar (read-only).** To suggest outfits appropriate for your day's events. Calendar contents are read on-device; only the event titles for events you ask the assistant about are sent to Google's Gemini API for outfit suggestions. They are not stored on our servers.
+- **Notifications.** For optional reminders and alerts (for example, when a render finishes).
+
+You can revoke any of these at any time in iOS **Settings → AI-Outfits**.
+
+### Information collected automatically
+
+- **Device information.** Device model, iOS version, app version, locale, and session length.
+- **Crash reports.** Stack traces and non-fatal errors via Firebase Crashlytics.
+- **Usage events.** Screen views and custom events (e.g., render start/finish, button taps) via Firebase Analytics.
+- **Performance data.** Response times, render durations, and other performance metrics used to diagnose slowness and regressions.
+- **Purchase history.** Records of your in-app subscription and top-up purchases, linked to your account, so we can unlock the features you paid for and reconcile credit balances. Apple handles the underlying payment data — we do not receive your credit card or Apple ID credentials.
+- **Approximate location.** Country-level, derived from IP by Firebase Analytics. No precise GPS is sent with analytics events.
+- **DeviceCheck token.** An opaque, per-device token provided by Apple's DeviceCheck. This is *not* your Apple ID, not the IDFA, and cannot be used to identify you across other apps. We use it only to store two bits of information per device to prevent abuse of our free-credits flow.
+
+### Information stored only on your device
+
+The following is stored locally on your iPhone using Apple's SwiftData framework and is not uploaded unless you explicitly use a feature that requires it:
+
+- Your full wardrobe (photos, names, prices, brands, purchase dates, wear counts, tags, categories)
+- Outfits and outfit history (compositions, hero images, notes)
+- Packing trips
+- Style preferences
+- A cached snapshot of your profile (credit counts)
+
+Uninstalling the app removes this data from your device.
+
+### Information stored in our cloud (Google Firestore)
+
+- `/users/{uid}` — email, display name, monthly render count, subscription snapshot
+- `/users/{uid}/creditGrants/{id}` — credit history (amount, reason, source, timestamps)
+- `/users/{uid}/badRenderReports/{id}` — photos, notes, item IDs, and the provider that produced the problematic render
+- `/users/{uid}/logDumps/{id}` — optional log bundles you send via "Send to Developer"
+- `/debug_logs/{id}` — render debug info (photos, provider, input params) generated when a try-on runs, so we can diagnose issues
+- `/redeemCodes/{code}` — promo code state (we manage this; it isn't user-editable)
+
+## How we use it
+
+- **Virtual try-on rendering.** We send your avatar and garment photos to Google's Gemini and Vertex AI try-on models so they can generate the rendered image you requested.
+- **AI chat and outfit suggestions.** Your prompts and the wardrobe context you share with the assistant are sent to Google Gemini 2.5 Flash.
+- **Automatic item tagging.** When you add a clothing photo, it may be sent to Google Gemini for vision-based categorization (type, color, style).
+- **Weather-aware suggestions.** Your coordinates are sent to Open-Meteo to fetch the local forecast.
+- **Subscription management.** Apple handles billing; we receive subscription status through StoreKit so we can unlock Pro features.
+- **Abuse prevention.** We use Apple's DeviceCheck to flag devices that have already claimed free starter credits, so the same iPhone cannot create unlimited free accounts.
+- **Debugging and improvement.** Crash reports, usage analytics, and opt-in debug log uploads.
+- **Support.** To respond when you email us.
+
+We do not sell or share your personal information. We do not show ads. We do not use your photos to train AI models on our end, and Google receives photos only to return a render to you. Google's Gemini API terms (linked below) cover how that data is handled on their side.
+
+## Third-party AI processing
+
+AI-Outfits uses Google's Gemini API to power its AI features. The following data is transmitted to Google for processing:
+
+- Photos of you (avatar) and your clothing items, used for virtual try-on rendering and item tagging.
+- Calendar event titles, used only when you request outfit suggestions for upcoming events.
+- Approximate location and current weather conditions, used to suggest weather-appropriate outfits.
+
+We do not transmit names, contacts, payment data, or other calendar metadata to Google. Per [Google's Gemini API terms of service](https://ai.google.dev/gemini-api/terms), data sent through the API is not used to train Google's AI models and is retained only for the time required to process the request and return a response.
+
+Google's privacy practices are governed by their [privacy policy](https://policies.google.com/privacy). By using AI-Outfits's AI features, you consent to your data being processed by Google under those terms in addition to ours.
+
+## Third-party services
+
+The following third parties receive data from AI-Outfits in order for the app to function. Click a provider to open their privacy policy.
+
+### Google
+
+| Service | Purpose | Data shared |
+|---|---|---|
+| Firebase Authentication | Sign-in via Google OAuth | Email, display name |
+| Firebase Firestore | User profile, credit records, reports, debug logs | Account data, uploaded photos, app events |
+| Firebase Storage | Debug photo uploads when a render fails | Photos from the failed render |
+| Firebase Remote Config | Feature flags and API keys delivered at runtime | App/device metadata only |
+| Firebase Analytics | Usage events and device telemetry | Device model, iOS version, app version, locale, events, IP-derived country |
+| Firebase Crashlytics | Crash and non-fatal error reporting | Stack traces, device state at crash |
+| Google Cloud Functions | Server-side logic: `claimFreeCredits`, `redeemCode`, `submitBadRenderReport`, `alertWebhook` | Request payloads relevant to each function (e.g., DeviceCheck token, promo code, report content) |
+| Google Gemini 2.5 Flash | Chat, outfit suggestions, and item categorization | Your prompts, wardrobe context, item photos for tagging, and — when you ask for event- or weather-aware suggestions — calendar event titles plus approximate location and weather |
+| Google Gemini 2.5 Flash Image | Virtual try-on rendering | Avatar photo, garment photo(s) |
+| Google Vertex AI (`virtual-try-on-001`) | Virtual try-on rendering | Avatar photo, garment photo(s) |
+
+Google's privacy policy: [policies.google.com/privacy](https://policies.google.com/privacy). Firebase-specific details: [firebase.google.com/support/privacy](https://firebase.google.com/support/privacy).
+
+### Apple
+
+| Service | Purpose | Data shared |
+|---|---|---|
+| StoreKit 2 | Subscription and in-app purchase billing, refunds, receipts | Purchase receipts; Apple handles payment data |
+| DeviceCheck | Abuse prevention (2 bits of state per physical device) | Opaque per-device token |
+| Apple Push Notification service (APNs) | Delivery of push notifications | APNs device token |
+
+Apple's privacy policy: [apple.com/legal/privacy](https://www.apple.com/legal/privacy/).
+
+### Weather
+
+| Provider | Purpose | Data shared | Policy |
+|---|---|---|---|
+| Open-Meteo | Local weather forecast for outfit suggestions | Latitude and longitude only — no identifier | [open-meteo.com/en/terms](https://open-meteo.com/en/terms) |
+
+> **About retention on Google's side.** Once data reaches Google's Gemini API, retention and handling are governed by Google's terms (linked above). We do not separately control or store that data on Google's side.
+
+## Your rights
+
+### Everyone
+
+- **Access:** request a copy of the data we hold about you.
+- **Correction:** ask us to fix inaccurate data.
+- **Deletion:** delete your account from within the app (**Settings → Danger Zone → Delete Account**), or email us and we'll do it for you. See "Account deletion and data retention" below for what happens next.
+
+### California residents (CCPA / CPRA)
+
+If you live in California, you have the right to:
+
+- Know what personal information we collect, use, and disclose.
+- Request deletion of your personal information.
+- Correct inaccurate personal information.
+- Opt out of the "sale" or "sharing" of your personal information. **We do not sell or share your personal information** as those terms are defined by the CCPA.
+- Not be discriminated against for exercising these rights.
+
+To exercise any of these rights, email [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com). We verify requests using the email address associated with your account.
+
+### EU / UK residents (GDPR / UK GDPR)
+
+If you are in the European Economic Area, the United Kingdom, or Switzerland, you have the right to:
+
+- Access your data and receive a copy in a portable format.
+- Have your data corrected or erased.
+- Restrict or object to processing.
+- Withdraw consent at any time where processing is based on consent.
+- Lodge a complaint with your local data protection authority.
+
+Our legal bases for processing are: **contract** (to provide the try-on service you requested), **legitimate interest** (abuse prevention, debugging, improving the app), and **consent** (optional analytics and notifications where required). When your data is transferred outside the EEA/UK — for example, to our US-based backend or to Google's US-based Gemini API — we rely on standard contractual clauses or the provider's own transfer mechanisms.
+
+## Data retention
+
+- **Try-on photos.** Stored briefly during processing and removed from our Firebase Storage after the render completes or within 30 days, whichever is sooner. Retention on Google's side is governed by the Gemini API terms.
+- **Account data.** Kept for as long as your account is active.
+- **On-device data.** Your wardrobe, outfit history, and trip data stay on your iPhone and are removed when you uninstall the app.
+- **Analytics and crash logs.** Retained according to Firebase's defaults (typically up to 14 months for analytics; shorter for crash logs).
+
+### Account deletion and data retention
+
+You may delete your account at any time from **Settings → Danger Zone → Delete Account**. When you do, your account enters a **30-day grace period**. During this period:
+
+- You are signed out of the app on all devices.
+- Your data is hidden from the app and inaccessible to you.
+- We retain your data internally so we can respond to chargebacks, fraud claims, and support disputes.
+
+After 30 days, all user-identifying data (profile, photos, outfits, credit history, reports) is permanently and irrevocably deleted. We retain a minimal audit record (email, deletion date) for up to 12 months for fraud prevention and regulatory compliance.
+
+To cancel a scheduled deletion, email [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com) within the 30-day window.
+
+## Children's privacy
+
+AI-Outfits is not directed at children under 13, and we do not knowingly collect personal information from anyone under 13. If you believe a child under 13 has given us information, email [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com) and we will delete it.
+
+## Security
+
+Data in transit is encrypted using TLS. Data at rest in Firebase is encrypted by Google. Access to our backend is restricted. No system is perfectly secure, but we take reasonable steps to protect your information.
+
+## Changes to this policy
+
+If we make material changes, we'll update the effective date at the top of this page and, for significant changes, show a notice inside the app the next time you open it. Continuing to use AI-Outfits after the change means you accept the updated policy.
+
+## Contact
+
+Questions, requests, or concerns? Email [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com). We respond within 3 business days.
+
+---
+
+# Section 3 of 4 — Terms of Service
+
+Source: https://ai-outfits.app/terms.md
+
+# Terms of Service
+
+*AI-Outfits · Effective April 20, 2026*
+
+These Terms are the agreement between you and Eli Linden ("we," "us") for your use of the AI-Outfits iOS app. Using the app means you agree to these Terms. If you don't agree, please don't use the app.
+
+## 1. Acceptance
+
+By downloading, installing, or using AI-Outfits, you accept these Terms and our [Privacy Policy](privacy.md). If you use the app on behalf of someone else, you confirm you have their permission.
+
+## 2. Account eligibility
+
+- You must be at least **13 years old** to use AI-Outfits.
+- You need a valid Google account to sign in.
+- You are responsible for activity that happens under your account. Keep your sign-in credentials private.
+- One person per account. Don't create accounts for other people or impersonate anyone.
+
+## 3. Credits, purchases, and the Pro subscription
+
+### How credits work
+
+- Each virtual try-on render costs one credit.
+- **Free tier:** 2 lifetime renders. These do not reset. Once used, you'll need to subscribe to Pro or buy a top-up pack.
+- **Pro:** 30 renders per month, reset at the start of each billing period.
+- **Top-up pack:** 5 renders per purchase. Top-up credits do not expire.
+
+### Products
+
+| Product | Type | Apple product ID |
+|---|---|---|
+| Pro (monthly) | Auto-renewing subscription | `com.wardrobeapp.pro_monthly` |
+| 5-render top-up | Consumable purchase | `com.wardrobeapp.20_renders_pack` |
+| Unlimited Renders (legacy) | Auto-renewing subscription — grandfathered; no longer sold to new users | `com.wardrobeapp.unlimited_renders` |
+
+### Billing and auto-renewal
+
+- Subscriptions are billed through your Apple ID.
+- Your Apple ID is charged at confirmation of purchase and again at the start of each renewal period.
+- Subscriptions renew automatically unless you cancel at least 24 hours before the end of the current period.
+- Price, duration, and renewal terms are shown on the purchase screen inside the app before you confirm.
+- Consumable top-up packs are one-time purchases and do not renew.
+
+### Managing and cancelling
+
+Cancel or manage your subscription at any time through your Apple ID:
+
+**iPhone Settings → tap your name → Subscriptions → AI-Outfits → Cancel Subscription.**
+
+Cancellation takes effect at the end of the current billing period. You'll keep Pro features until then.
+
+### Refunds
+
+All purchases are processed by Apple. Refund requests are handled by Apple, not by us. To request a refund, use [reportaproblem.apple.com](https://reportaproblem.apple.com). If a charge was clearly made in error, we're happy to help advocate with Apple — email [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com).
+
+## 4. Acceptable use
+
+Don't use AI-Outfits to:
+
+- Generate images of people without their consent, especially images that are sexual, harassing, defamatory, or deceptive.
+- Generate content of minors in a sexualized or inappropriate context.
+- Try to identify, harass, or stalk a real person using someone else's photos.
+- Upload photos you don't have the right to use.
+- Reverse-engineer, scrape, or systematically extract the app or our backend.
+- Resell, redistribute, or commercialize rendered images or outputs without adding meaningful creative work of your own.
+- Share, trade, or transfer credits between accounts, or exploit bugs to grant yourself additional credits.
+- Interfere with other users, our servers, or third-party providers we rely on.
+- Use the app to violate any law.
+
+We can suspend or terminate accounts that break these rules.
+
+## 5. Your content
+
+**You own your photos.** We don't claim ownership of the wardrobe, avatar, or garment images you upload, or of the renders produced from them.
+
+To operate the app, you give us a limited, worldwide, royalty-free license to store, display, transmit, and process your content — including sending it to Google's Gemini API as described in our [Privacy Policy](privacy.md#third-party-services) — solely for the purpose of providing the app's features to you. This license ends when you delete the content or your account (except for copies in routine backups that expire shortly after).
+
+You are responsible for making sure you have the right to upload any photo you submit.
+
+## 6. AI outputs — no guarantees
+
+> **Renders are generated by AI and are not a guarantee of real-world fit, appearance, or quality.** Try-on previews may contain visual artifacts, may not match the real garment exactly, and may get details wrong (color, fabric, fit, proportions). Use them as creative previews, not as a substitute for trying clothes on in real life.
+
+Outfit suggestions, chat responses, item tagging, and other AI-generated content are provided "as is." They may be inaccurate, incomplete, or reflect the biases of the underlying models. Use your own judgment before acting on them.
+
+## 7. Account deletion and data retention
+
+You may delete your account at any time from **Settings → Danger Zone → Delete Account**. When you do, your account enters a **30-day grace period**. During this period:
+
+- You are signed out of the app on all devices.
+- Your data is hidden from the app and inaccessible to you.
+- We retain your data internally so we can respond to chargebacks, fraud claims, and support disputes.
+
+After 30 days, all user-identifying data (profile, photos, outfits, credit history, reports) is permanently and irrevocably deleted. We retain a minimal audit record (email, deletion date) for up to 12 months for fraud prevention and regulatory compliance.
+
+To cancel a scheduled deletion, email [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com) within the 30-day window.
+
+## 8. Third-party services
+
+AI-Outfits depends on third-party services, including Firebase, Google Gemini, Google Vertex AI, Apple (StoreKit, DeviceCheck, APNs), and Open-Meteo, as listed in our Privacy Policy. If any of those services change, degrade, or become unavailable, the app's features may be affected. We're not responsible for problems caused by third-party services, but we'll do our best to work around them.
+
+## 9. Changes to the app and these Terms
+
+We may add, change, or remove features at any time. We may also update these Terms. If we make material changes, we'll update the effective date at the top of this page and show a notice inside the app. Continuing to use AI-Outfits after a change means you accept the new Terms.
+
+## 10. Termination
+
+You can stop using AI-Outfits at any time by deleting your account. We may suspend or terminate your account if you violate these Terms, if your use creates legal or security risk, or if we discontinue the app.
+
+## 11. Disclaimers
+
+AI-Outfits is provided **"as is" and "as available," without warranties of any kind**, express or implied, including implied warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not warrant that the app will be uninterrupted, error-free, or secure, or that AI outputs will be accurate.
+
+## 12. Limitation of liability
+
+To the fullest extent allowed by law, Eli Linden and AI-Outfits will not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits, revenue, data, or goodwill, arising out of or in connection with your use of the app.
+
+Our total liability for any claim related to the app is limited to the greater of (a) the amount you paid us in the 12 months before the claim arose, or (b) USD $50.
+
+Some jurisdictions don't allow some of these limitations, in which case they apply to the maximum extent permitted.
+
+## 13. Indemnification
+
+You agree to indemnify and hold us harmless from claims arising out of (a) your violation of these Terms, (b) your misuse of the app, or (c) content you upload that infringes someone else's rights.
+
+## 14. Governing law and disputes
+
+These Terms are governed by the laws of the State of New York, USA, without regard to its conflict-of-laws rules. Any dispute will be brought exclusively in the state or federal courts located in **New York County, New York**, and you consent to personal jurisdiction there. If you are a consumer in the EU/UK, this does not deprive you of the protections of mandatory consumer law in your country of residence.
+
+## 15. Apple-specific terms
+
+AI-Outfits is distributed through Apple's App Store. These Terms are between you and us — not Apple. Apple is not responsible for the app or any claims relating to it. Apple is, however, a third-party beneficiary of these Terms and may enforce them against you.
+
+## 16. Contact
+
+Questions about these Terms? Email [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com).
+
+---
+
+# Section 4 of 4 — Support & FAQ
+
+Source: https://ai-outfits.app/support.md
+
+# AI-Outfits Support
+
+We're a small, solo-developer operation. Here's how to get in touch and quick answers to common questions.
+
+## Contact
+
+- **Email:** [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com)
+- **Typical response time:** within 3 business days
+
+When you email, it helps if you include: your account email, iPhone model + iOS version, what you were trying to do, and (if relevant) a screenshot.
+
+## Frequently asked questions
+
+### How do credits work?
+
+Each virtual try-on render costs one credit.
+
+- **Free tier:** 2 lifetime renders. They do not reset — once used, you'll need to subscribe to Pro or buy a top-up pack to keep rendering.
+- **Pro subscription:** 30 renders per month. Renders reset at the start of each billing period.
+- **5-render top-up pack:** a one-time $1.99 consumable available to Pro subscribers. Top-up credits stack on top of your monthly Pro allowance and never expire.
+
+Your current credit balance is shown on the Home screen and in **Settings → Credits & Subscription**.
+
+### What does the Pro subscription include?
+
+Pro gives you 30 try-on renders per month, plus AI stylist chat and personalized outfit suggestions tied to your wardrobe. Pricing and renewal terms are always displayed before you confirm the purchase.
+
+Pro is billed through your Apple ID as an auto-renewing monthly subscription, billed at $6.99/month, and renews until you cancel.
+
+### I need more renders this month — can I buy extras?
+
+Yes. You can buy a **5-render top-up pack** ($1.99) from the paywall. Top-up credits stack on top of your Pro allowance and never expire.
+
+### How do I cancel my subscription?
+
+Subscriptions are managed by Apple, not by us. To cancel:
+
+1. Open the **Settings** app on your iPhone.
+2. Tap your name at the top.
+3. Tap **Subscriptions**.
+4. Tap **AI-Outfits**.
+5. Tap **Cancel Subscription**.
+
+You'll keep Pro access until the end of the current billing period. You can also manage subscriptions at [apps.apple.com/account/subscriptions](https://apps.apple.com/account/subscriptions).
+
+### How do I request a refund?
+
+All charges are processed by Apple, so refunds come from Apple too. Request one at [reportaproblem.apple.com](https://reportaproblem.apple.com). If you think a charge is clearly wrong — for example, you were double-billed or the app failed to deliver what you paid for — email us and we'll help you with the request to Apple.
+
+### A try-on render came out bad. What can I do?
+
+AI-generated renders are not perfect. Unusual poses, busy backgrounds, tight crops, or uncommon garment types can trip up the model. A few things that help:
+
+- Use a clear, front-facing avatar photo with good lighting.
+- Use a garment photo on a plain background if possible.
+- Try re-running the render — results vary each time.
+
+If a render is badly broken, tap the **Report bad render** button on the result screen. Your report (the photos and your notes) helps us improve. For cases where a render clearly fails, email us and we'll credit you back.
+
+### How do I delete my account and data?
+
+Inside the app, go to **Settings → Danger Zone → Delete Account**. This starts a 30-day grace period:
+
+- You're signed out on all devices.
+- Your data is hidden from the app and inaccessible to you.
+- We keep your data internally during that window to handle any chargebacks, fraud claims, or support disputes.
+
+After 30 days, all user-identifying data (profile, photos, outfits, credit history, reports) is permanently deleted. We keep a minimal audit record (email + deletion date) for up to 12 months for fraud prevention and compliance.
+
+If you change your mind during the 30-day window, email [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com) and we'll cancel the deletion. If you can't access the in-app option at all, email us from the address linked to your account and we'll handle it manually.
+
+Wardrobe items, outfits, and trip data stored locally on your iPhone are removed when you uninstall the app.
+
+### Why didn't I get free credits on a new account?
+
+We use an Apple technology called DeviceCheck to prevent the same iPhone from creating unlimited free accounts. It stores two bits of information on Apple's servers per device — it does not identify you and cannot be used to track you across other apps. It only tells us "this device has already claimed free starter credits."
+
+If you believe this is a mistake (for example, you bought a used iPhone that had the app before), email us and we can look into it.
+
+### What data does the app collect?
+
+Short version: your email and display name (via Google Sign-In), photos you upload for try-on, the wardrobe items you enter, device/usage telemetry via Firebase Analytics, and crash logs via Firebase Crashlytics. Full details are in our [Privacy Policy](privacy.md).
+
+### Where does my photo actually go when I render?
+
+Your avatar and garment photo(s) are sent to Google's Gemini and Vertex AI try-on endpoints. Only the photos are sent — no email, display name, or account identifier is attached to the render call. Details are in our [Privacy Policy](privacy.md#third-party-services).
+
+### Are my photos used to train AI models?
+
+We don't train AI models on your photos. Your avatar and garment photos are sent to Google's Gemini API only to generate the render you requested. Per Google's Gemini API terms, data sent through the API is not used to train Google's models and is retained only for the time required to process the request — full details are in our [Privacy Policy](privacy.md#third-party-services).
+
+### Why does the app want my calendar / location?
+
+Both are optional. Calendar access is used to tailor outfit suggestions to your day; calendar contents are read on-device, and only the event titles for events you ask the assistant about are sent to Google's Gemini API for those suggestions. Location is used to fetch the weather forecast — your latitude and longitude are sent to Open-Meteo with no account identifier attached, and the resulting weather plus approximate location may be included in Gemini prompts when you ask for weather-aware suggestions.
+
+You can revoke either permission at any time in iOS **Settings → AI-Outfits**.
+
+### The app crashed / a feature isn't working.
+
+First, make sure you're on the latest version from the App Store and your iPhone is running iOS 18 or later. If the issue persists, email us with your iPhone model, iOS version, and a description (screenshots help). Crash reports are automatically collected via Firebase Crashlytics.
+
+### Is AI-Outfits available on Android or web?
+
+Not right now. AI-Outfits is an iOS-only app for iPhone running iOS 18 or later.
+
+### Is there a minimum age?
+
+Yes — you must be at least 13 years old to use AI-Outfits.
+
+## Legal
+
+- [Privacy Policy](privacy.md)
+- [Terms of Service](terms.md)
