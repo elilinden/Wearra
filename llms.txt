@@ -1,0 +1,18 @@
+# AI Outfits
+
+> Your AI-powered personal stylist for iOS. AI Outfits scans your closet, learns your taste, and styles you for any occasion — daily outfit recommendations, an AI stylist chat, and virtual try-on, all from your iPhone.
+
+AI Outfits is a solo-developer iOS app (iPhone only, iOS 18+) that lets users digitize their wardrobe, get daily AI-generated outfit recommendations, chat with an AI stylist, and preview clothes virtually before buying. The app uses Google Gemini and Vertex AI for AI features and Firebase for backend services. It is operated by Eli Linden in the United States.
+
+Each markdown file below is a direct mirror of the corresponding HTML page on the live site, optimised for LLM consumption (no styling or scripts).
+
+## Docs
+
+- [About AI Outfits](index.md): App overview, the five core features (closet, daily recommendations, outfit builder, AI stylist, virtual try-on), how it works in three steps, and pricing
+- [Privacy Policy](privacy.md): What data is collected, how it's used, third-party services (Google, Apple, Open-Meteo), user rights (CCPA, GDPR/UK GDPR), retention, account deletion, and contact
+- [Terms of Service](terms.md): Acceptance, account eligibility, credits and subscription billing, acceptable use, content ownership, AI output disclaimers, limitation of liability, governing law
+- [Support & FAQ](support.md): How credits work, Pro subscription details, cancellation and refunds, render quality tips, account deletion, supported platforms, contact
+
+## Optional
+
+- [Privacy: third-party services](privacy.md#third-party-services): Tables of every third-party that receives data from the app (Google Firebase suite, Gemini, Vertex AI, Apple StoreKit/DeviceCheck/APNs, Open-Meteo)
