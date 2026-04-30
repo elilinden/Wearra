@@ -23,6 +23,9 @@
 <!-- iOS Safari smart-app banner. Replace YOUR_APP_ID with the numeric App Store ID once the app is published. -->
 <meta name="apple-itunes-app" content="app-id=YOUR_APP_ID">
 <link rel="canonical" href="https://ai-outfits.app/">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="alternate" type="text/markdown" href="index.md" title="AI Outfits — Markdown mirror for LLMs">
 <link rel="alternate" type="text/plain" href="llms.txt" title="llms.txt index">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -156,6 +159,17 @@ img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
 button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 :focus-visible{outline:3px solid var(--primary);outline-offset:3px;border-radius:6px}
+
+/* Skip link — visible only on focus */
+.skip-link{
+  position:absolute;left:12px;top:-100px;
+  background:var(--fg);color:#fff;
+  padding:12px 18px;border-radius:10px;
+  font-weight:600;font-size:14px;
+  z-index:100;
+  transition:top .2s var(--ease);
+}
+.skip-link:focus{top:12px;outline:3px solid var(--primary);outline-offset:3px}
 
 .container{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 var(--pad)}
 
@@ -436,7 +450,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 @media (min-width:760px){.footer__top{grid-template-columns:1.4fr 1fr 1fr 1fr}}
 .footer__brand{max-width:300px}
 .footer__brand p{margin:14px 0 0;line-height:1.55}
-.footer h4{font-size:13px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:var(--fg);margin:0 0 16px}
+.footer h3{font-size:13px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:var(--fg);margin:0 0 16px}
 .footer ul{list-style:none;padding:0;margin:0;display:grid;gap:10px}
 .footer ul a{transition:color .2s var(--ease)}
 .footer ul a:hover{color:var(--fg)}
@@ -448,9 +462,11 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 </head>
 <body>
 
+<a class="skip-link" href="#main">Skip to content</a>
+
 <header class="nav" id="nav">
   <div class="container nav__inner">
-    <a class="brand" href="#top" aria-label="AI Outfits home">
+    <a class="brand" href="#main" aria-label="AI Outfits home">
       <span class="brand__mark" aria-hidden="true">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.6L18 9.4l-4.2 1.8L12 16l-1.8-4.8L6 9.4l4.2-1.8z"/><path d="M19 14l.9 2.3L22 17.2l-2.1.9L19 20.4l-.9-2.3L16 17.2l2.1-.9z"/></svg>
       </span>
@@ -466,7 +482,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   </div>
 </header>
 
-<main id="top">
+<main id="main">
 
 <!-- ===== Hero ===== -->
 <section class="hero">
@@ -705,7 +721,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   <div class="container">
     <div class="footer__top">
       <div class="footer__brand">
-        <a class="brand" href="#top">
+        <a class="brand" href="#main">
           <span class="brand__mark" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.6L18 9.4l-4.2 1.8L12 16l-1.8-4.8L6 9.4l4.2-1.8z"/><path d="M19 14l.9 2.3L22 17.2l-2.1.9L19 20.4l-.9-2.3L16 17.2l2.1-.9z"/></svg>
           </span>
@@ -714,7 +730,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
         <p>Your AI-powered personal stylist for iOS. Style smarter, dress better — every day.</p>
       </div>
       <div>
-        <h4>Product</h4>
+        <h3>Product</h3>
         <ul>
           <li><a href="#features">Features</a></li>
           <li><a href="#how">How it works</a></li>
@@ -723,14 +739,14 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
         </ul>
       </div>
       <div>
-        <h4>Legal</h4>
+        <h3>Legal</h3>
         <ul>
           <li><a href="privacy.html">Privacy Policy</a></li>
           <li><a href="terms.html">Terms of Service</a></li>
         </ul>
       </div>
       <div>
-        <h4>Help</h4>
+        <h3>Help</h3>
         <ul>
           <li><a href="support.html">Support &amp; FAQ</a></li>
           <li><a href="mailto:batchcompressvideos@gmail.com">Contact us</a></li>
