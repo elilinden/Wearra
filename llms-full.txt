@@ -2,7 +2,7 @@
 
 > Your AI-powered personal stylist for iOS. AI Outfits scans your closet, learns your taste, and styles you for any occasion — daily outfit recommendations, an AI stylist chat, and virtual try-on, all from your iPhone.
 
-This is a single-fetch concatenation of every markdown mirror on https://ai-outfits.app/, intended for LLM ingestion when one request is preferred over four. Each section below is the full text of the corresponding `.md` file with no summarization or truncation. The original source files remain canonical and are listed in [llms.txt](https://ai-outfits.app/llms.txt).
+This is a single-fetch concatenation of every markdown mirror on https://elilinden.github.io/AI-Outfits/, intended for LLM ingestion when one request is preferred over four. Each section below is the full text of the corresponding `.md` file with no summarization or truncation. The original source files remain canonical and are listed in [llms.txt](https://elilinden.github.io/AI-Outfits/llms.txt).
 
 Operator: Eli Linden, sole developer, United States. Contact: batchcompressvideos@gmail.com.
 
@@ -10,7 +10,7 @@ Operator: Eli Linden, sole developer, United States. Contact: batchcompressvideo
 
 # Section 1 of 4 — Landing page
 
-Source: https://ai-outfits.app/index.md
+Source: https://elilinden.github.io/AI-Outfits/index.md
 
 # AI Outfits
 
@@ -100,7 +100,7 @@ You can revoke any permission at any time in iOS Settings → AI-Outfits.
 
 # Section 2 of 4 — Privacy Policy
 
-Source: https://ai-outfits.app/privacy.md
+Source: https://elilinden.github.io/AI-Outfits/privacy.md
 
 # Privacy Policy
 
@@ -295,7 +295,7 @@ Questions, requests, or concerns? Email [batchcompressvideos@gmail.com](mailto:b
 
 # Section 3 of 4 — Terms of Service
 
-Source: https://ai-outfits.app/terms.md
+Source: https://elilinden.github.io/AI-Outfits/terms.md
 
 # Terms of Service
 
@@ -437,7 +437,7 @@ Questions about these Terms? Email [batchcompressvideos@gmail.com](mailto:batchc
 
 # Section 4 of 4 — Support & FAQ
 
-Source: https://ai-outfits.app/support.md
+Source: https://elilinden.github.io/AI-Outfits/support.md
 
 # AI-Outfits Support
 
