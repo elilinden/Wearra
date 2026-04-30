@@ -3,7 +3,6 @@
 
 User-agent: *
 Allow: /
-Disallow: /Appstore%20photos/
 
 # --- AI / LLM crawlers (explicit allow) ---
 # Change Allow: / to Disallow: / under any of these to opt that bot out.
