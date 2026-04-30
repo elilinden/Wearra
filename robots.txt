@@ -1,4 +1,4 @@
-# robots.txt for AI Outfits — https://ai-outfits.app/
+# robots.txt for AI Outfits — https://elilinden.github.io/AI-Outfits/
 # All HTML pages and markdown mirrors are intended for indexing.
 
 User-agent: *
@@ -46,4 +46,4 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
-Sitemap: https://ai-outfits.app/sitemap.xml
+Sitemap: https://elilinden.github.io/AI-Outfits/sitemap.xml
