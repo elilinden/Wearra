@@ -1,16 +1,16 @@
 # Terms of Service
 
-*AI-Outfits · Effective April 20, 2026*
+*Wearra · Effective April 20, 2026*
 
-These Terms are the agreement between you and Eli Linden ("we," "us") for your use of the AI-Outfits iOS app. Using the app means you agree to these Terms. If you don't agree, please don't use the app.
+These Terms are the agreement between you and Eli Linden ("we," "us") for your use of the Wearra iOS app. Using the app means you agree to these Terms. If you don't agree, please don't use the app.
 
 ## 1. Acceptance
 
-By downloading, installing, or using AI-Outfits, you accept these Terms and our [Privacy Policy](privacy.md). If you use the app on behalf of someone else, you confirm you have their permission.
+By downloading, installing, or using Wearra, you accept these Terms and our [Privacy Policy](privacy.md). If you use the app on behalf of someone else, you confirm you have their permission.
 
 ## 2. Account eligibility
 
-- You must be at least **13 years old** to use AI-Outfits.
+- You must be at least **13 years old** to use Wearra.
 - You need a valid Google account to sign in.
 - You are responsible for activity that happens under your account. Keep your sign-in credentials private.
 - One person per account. Don't create accounts for other people or impersonate anyone.
@@ -44,7 +44,7 @@ By downloading, installing, or using AI-Outfits, you accept these Terms and our 
 
 Cancel or manage your subscription at any time through your Apple ID:
 
-**iPhone Settings → tap your name → Subscriptions → AI-Outfits → Cancel Subscription.**
+**iPhone Settings → tap your name → Subscriptions → Wearra → Cancel Subscription.**
 
 Cancellation takes effect at the end of the current billing period. You'll keep Pro features until then.
 
@@ -54,7 +54,7 @@ All purchases are processed by Apple. Refund requests are handled by Apple, not 
 
 ## 4. Acceptable use
 
-Don't use AI-Outfits to:
+Don't use Wearra to:
 
 - Generate images of people without their consent, especially images that are sexual, harassing, defamatory, or deceptive.
 - Generate content of minors in a sexualized or inappropriate context.
@@ -96,23 +96,23 @@ To cancel a scheduled deletion, email [batchcompressvideos@gmail.com](mailto:bat
 
 ## 8. Third-party services
 
-AI-Outfits depends on third-party services, including Firebase, Google Gemini, Google Vertex AI, Apple (StoreKit, DeviceCheck, APNs), and Open-Meteo, as listed in our Privacy Policy. If any of those services change, degrade, or become unavailable, the app's features may be affected. We're not responsible for problems caused by third-party services, but we'll do our best to work around them.
+Wearra depends on third-party services, including Firebase, Google Gemini, Google Vertex AI, Apple (StoreKit, DeviceCheck, APNs), and Open-Meteo, as listed in our Privacy Policy. If any of those services change, degrade, or become unavailable, the app's features may be affected. We're not responsible for problems caused by third-party services, but we'll do our best to work around them.
 
 ## 9. Changes to the app and these Terms
 
-We may add, change, or remove features at any time. We may also update these Terms. If we make material changes, we'll update the effective date at the top of this page and show a notice inside the app. Continuing to use AI-Outfits after a change means you accept the new Terms.
+We may add, change, or remove features at any time. We may also update these Terms. If we make material changes, we'll update the effective date at the top of this page and show a notice inside the app. Continuing to use Wearra after a change means you accept the new Terms.
 
 ## 10. Termination
 
-You can stop using AI-Outfits at any time by deleting your account. We may suspend or terminate your account if you violate these Terms, if your use creates legal or security risk, or if we discontinue the app.
+You can stop using Wearra at any time by deleting your account. We may suspend or terminate your account if you violate these Terms, if your use creates legal or security risk, or if we discontinue the app.
 
 ## 11. Disclaimers
 
-AI-Outfits is provided **"as is" and "as available," without warranties of any kind**, express or implied, including implied warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not warrant that the app will be uninterrupted, error-free, or secure, or that AI outputs will be accurate.
+Wearra is provided **"as is" and "as available," without warranties of any kind**, express or implied, including implied warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not warrant that the app will be uninterrupted, error-free, or secure, or that AI outputs will be accurate.
 
 ## 12. Limitation of liability
 
-To the fullest extent allowed by law, Eli Linden and AI-Outfits will not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits, revenue, data, or goodwill, arising out of or in connection with your use of the app.
+To the fullest extent allowed by law, Eli Linden and Wearra will not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits, revenue, data, or goodwill, arising out of or in connection with your use of the app.
 
 Our total liability for any claim related to the app is limited to the greater of (a) the amount you paid us in the 12 months before the claim arose, or (b) USD $50.
 
@@ -128,7 +128,7 @@ These Terms are governed by the laws of the State of New York, USA, without rega
 
 ## 15. Apple-specific terms
 
-AI-Outfits is distributed through Apple's App Store. These Terms are between you and us — not Apple. Apple is not responsible for the app or any claims relating to it. Apple is, however, a third-party beneficiary of these Terms and may enforce them against you.
+Wearra is distributed through Apple's App Store. These Terms are between you and us — not Apple. Apple is not responsible for the app or any claims relating to it. Apple is, however, a third-party beneficiary of these Terms and may enforce them against you.
 
 ## 16. Contact
 

@@ -1,5 +1,5 @@
-# ai.txt — AI usage permissions for AI Outfits
-# Site: https://elilinden.github.io/AI-Outfits/
+# ai.txt — AI usage permissions for Wearra
+# Site: https://elilinden.github.io/Wearra/
 # Last updated: 2026-04-30
 # Spec: https://spawning.ai/ai-txt
 #
@@ -10,7 +10,7 @@
 # configured in /robots.txt).
 #
 # Default stance: ALLOW all AI use of this site's public content.
-# AI Outfits is an indie iOS app marketing site — the goal is for
+# Wearra is an indie iOS app marketing site — the goal is for
 # AI agents to discover and accurately describe it.
 #
 # To opt out a specific bot, flip its Allow: / to Disallow: /.
@@ -60,4 +60,4 @@ Allow: /
 User-Agent: cohere-ai
 Allow: /
 
-Sitemap: https://elilinden.github.io/AI-Outfits/sitemap.xml
+Sitemap: https://elilinden.github.io/Wearra/sitemap.xml

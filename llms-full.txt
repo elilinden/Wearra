@@ -1,8 +1,8 @@
-# AI Outfits — full content for LLMs
+# Wearra — full content for LLMs
 
-> Your AI-powered personal stylist for iOS. AI Outfits scans your closet, learns your taste, and styles you for any occasion — daily outfit recommendations, an AI stylist chat, and virtual try-on, all from your iPhone.
+> Your AI-powered personal stylist for iOS. Wearra scans your closet, learns your taste, and styles you for any occasion — daily outfit recommendations, an AI stylist chat, and virtual try-on, all from your iPhone.
 
-This is a single-fetch concatenation of every markdown mirror on https://elilinden.github.io/AI-Outfits/, intended for LLM ingestion when one request is preferred over four. Each section below is the full text of the corresponding `.md` file with no summarization or truncation. The original source files remain canonical and are listed in [llms.txt](https://elilinden.github.io/AI-Outfits/llms.txt).
+This is a single-fetch concatenation of every markdown mirror on https://elilinden.github.io/Wearra/, intended for LLM ingestion when one request is preferred over four. Each section below is the full text of the corresponding `.md` file with no summarization or truncation. The original source files remain canonical and are listed in [llms.txt](https://elilinden.github.io/Wearra/llms.txt).
 
 Operator: Eli Linden, sole developer, United States. Contact: batchcompressvideos@gmail.com.
 
@@ -10,13 +10,13 @@ Operator: Eli Linden, sole developer, United States. Contact: batchcompressvideo
 
 # Section 1 of 4 — Landing page
 
-Source: https://elilinden.github.io/AI-Outfits/index.md
+Source: https://elilinden.github.io/Wearra/index.md
 
-# AI Outfits
+# Wearra
 
 > Your AI-powered personal stylist for iOS. Style smarter, dress better — every day.
 
-AI Outfits is an iPhone app (iOS 18+) that scans your closet, learns your taste, and styles you for any occasion. It combines a digital wardrobe, daily outfit recommendations, an AI stylist chat, and a photorealistic virtual try-on into one experience.
+Wearra is an iPhone app (iOS 18+) that scans your closet, learns your taste, and styles you for any occasion. It combines a digital wardrobe, daily outfit recommendations, an AI stylist chat, and a photorealistic virtual try-on into one experience.
 
 ## At a glance
 
@@ -29,7 +29,7 @@ AI Outfits is an iPhone app (iOS 18+) that scans your closet, learns your taste,
 ## Core features
 
 ### 1. Your clothing, your way
-Snap and save every piece you own. AI Outfits builds a digital wardrobe so you stop forgetting what you have.
+Snap and save every piece you own. Wearra builds a digital wardrobe so you stop forgetting what you have.
 
 - Auto-categorized tops, bottoms, outerwear, and shoes
 - Search by color, season, or vibe in one tap
@@ -57,7 +57,7 @@ Date night, job interview, wedding, weekend brunch — ask away. The AI Stylist 
 - Build a capsule wardrobe with guided prompts
 
 ### 5. Try it on, virtually
-See how a piece looks on you before you buy or commit. Upload a photo, pick the item, AI Outfits does the rest.
+See how a piece looks on you before you buy or commit. Upload a photo, pick the item, Wearra does the rest.
 
 - Photorealistic try-on in under a minute
 - Compare looks side-by-side
@@ -65,7 +65,7 @@ See how a piece looks on you before you buy or commit. Upload a photo, pick the 
 
 ## How it works
 
-1. **Build your closet.** Snap photos of what you own — or import from your camera roll. AI Outfits crops, tags, and categorizes everything for you.
+1. **Build your closet.** Snap photos of what you own — or import from your camera roll. Wearra crops, tags, and categorizes everything for you.
 2. **Train your stylist.** Rate looks, save favorites, and chat with the AI Stylist. The more you interact, the sharper its picks become.
 3. **Get styled, daily.** Wake up to fresh outfit recommendations. Ask for help anytime. Try things on virtually before you commit.
 
@@ -87,7 +87,7 @@ Subscriptions are billed through Apple. See [Terms of Service](terms.md) for ful
 - **Calendar (read-only)** — only event titles for events you ask the assistant about are sent for outfit suggestions
 - **Notifications** — optional reminders and render-finished alerts
 
-You can revoke any permission at any time in iOS Settings → AI-Outfits.
+You can revoke any permission at any time in iOS Settings → Wearra.
 
 ## Links
 
@@ -100,15 +100,15 @@ You can revoke any permission at any time in iOS Settings → AI-Outfits.
 
 # Section 2 of 4 — Privacy Policy
 
-Source: https://elilinden.github.io/AI-Outfits/privacy.md
+Source: https://elilinden.github.io/Wearra/privacy.md
 
 # Privacy Policy
 
-*AI-Outfits · Effective April 20, 2026*
+*Wearra · Effective April 20, 2026*
 
-This Privacy Policy explains what information AI-Outfits collects when you use the app, why we collect it, and the choices you have. We try to say this in plain English — if anything is unclear, email us at [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com).
+This Privacy Policy explains what information Wearra collects when you use the app, why we collect it, and the choices you have. We try to say this in plain English — if anything is unclear, email us at [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com).
 
-AI-Outfits is operated by Eli Linden, a sole developer operating in the United States ("we," "us," or "AI-Outfits").
+Wearra is operated by Eli Linden, a sole developer operating in the United States ("we," "us," or "Wearra").
 
 ## What we collect
 
@@ -127,7 +127,7 @@ AI-Outfits is operated by Eli Linden, a sole developer operating in the United S
 - **Calendar (read-only).** To suggest outfits appropriate for your day's events. Calendar contents are read on-device; only the event titles for events you ask the assistant about are sent to Google's Gemini API for outfit suggestions. They are not stored on our servers.
 - **Notifications.** For optional reminders and alerts (for example, when a render finishes).
 
-You can revoke any of these at any time in iOS **Settings → AI-Outfits**.
+You can revoke any of these at any time in iOS **Settings → Wearra**.
 
 ### Information collected automatically
 
@@ -175,7 +175,7 @@ We do not sell or share your personal information. We do not show ads. We do not
 
 ## Third-party AI processing
 
-AI-Outfits uses Google's Gemini API to power its AI features. The following data is transmitted to Google for processing:
+Wearra uses Google's Gemini API to power its AI features. The following data is transmitted to Google for processing:
 
 - Photos of you (avatar) and your clothing items, used for virtual try-on rendering and item tagging.
 - Calendar event titles, used only when you request outfit suggestions for upcoming events.
@@ -183,11 +183,11 @@ AI-Outfits uses Google's Gemini API to power its AI features. The following data
 
 We do not transmit names, contacts, payment data, or other calendar metadata to Google. Per [Google's Gemini API terms of service](https://ai.google.dev/gemini-api/terms), data sent through the API is not used to train Google's AI models and is retained only for the time required to process the request and return a response.
 
-Google's privacy practices are governed by their [privacy policy](https://policies.google.com/privacy). By using AI-Outfits's AI features, you consent to your data being processed by Google under those terms in addition to ours.
+Google's privacy practices are governed by their [privacy policy](https://policies.google.com/privacy). By using Wearra's AI features, you consent to your data being processed by Google under those terms in addition to ours.
 
 ## Third-party services
 
-The following third parties receive data from AI-Outfits in order for the app to function. Click a provider to open their privacy policy.
+The following third parties receive data from Wearra in order for the app to function. Click a provider to open their privacy policy.
 
 ### Google
 
@@ -277,7 +277,7 @@ To cancel a scheduled deletion, email [batchcompressvideos@gmail.com](mailto:bat
 
 ## Children's privacy
 
-AI-Outfits is not directed at children under 13, and we do not knowingly collect personal information from anyone under 13. If you believe a child under 13 has given us information, email [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com) and we will delete it.
+Wearra is not directed at children under 13, and we do not knowingly collect personal information from anyone under 13. If you believe a child under 13 has given us information, email [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com) and we will delete it.
 
 ## Security
 
@@ -285,7 +285,7 @@ Data in transit is encrypted using TLS. Data at rest in Firebase is encrypted by
 
 ## Changes to this policy
 
-If we make material changes, we'll update the effective date at the top of this page and, for significant changes, show a notice inside the app the next time you open it. Continuing to use AI-Outfits after the change means you accept the updated policy.
+If we make material changes, we'll update the effective date at the top of this page and, for significant changes, show a notice inside the app the next time you open it. Continuing to use Wearra after the change means you accept the updated policy.
 
 ## Contact
 
@@ -295,21 +295,21 @@ Questions, requests, or concerns? Email [batchcompressvideos@gmail.com](mailto:b
 
 # Section 3 of 4 — Terms of Service
 
-Source: https://elilinden.github.io/AI-Outfits/terms.md
+Source: https://elilinden.github.io/Wearra/terms.md
 
 # Terms of Service
 
-*AI-Outfits · Effective April 20, 2026*
+*Wearra · Effective April 20, 2026*
 
-These Terms are the agreement between you and Eli Linden ("we," "us") for your use of the AI-Outfits iOS app. Using the app means you agree to these Terms. If you don't agree, please don't use the app.
+These Terms are the agreement between you and Eli Linden ("we," "us") for your use of the Wearra iOS app. Using the app means you agree to these Terms. If you don't agree, please don't use the app.
 
 ## 1. Acceptance
 
-By downloading, installing, or using AI-Outfits, you accept these Terms and our [Privacy Policy](privacy.md). If you use the app on behalf of someone else, you confirm you have their permission.
+By downloading, installing, or using Wearra, you accept these Terms and our [Privacy Policy](privacy.md). If you use the app on behalf of someone else, you confirm you have their permission.
 
 ## 2. Account eligibility
 
-- You must be at least **13 years old** to use AI-Outfits.
+- You must be at least **13 years old** to use Wearra.
 - You need a valid Google account to sign in.
 - You are responsible for activity that happens under your account. Keep your sign-in credentials private.
 - One person per account. Don't create accounts for other people or impersonate anyone.
@@ -343,7 +343,7 @@ By downloading, installing, or using AI-Outfits, you accept these Terms and our 
 
 Cancel or manage your subscription at any time through your Apple ID:
 
-**iPhone Settings → tap your name → Subscriptions → AI-Outfits → Cancel Subscription.**
+**iPhone Settings → tap your name → Subscriptions → Wearra → Cancel Subscription.**
 
 Cancellation takes effect at the end of the current billing period. You'll keep Pro features until then.
 
@@ -353,7 +353,7 @@ All purchases are processed by Apple. Refund requests are handled by Apple, not 
 
 ## 4. Acceptable use
 
-Don't use AI-Outfits to:
+Don't use Wearra to:
 
 - Generate images of people without their consent, especially images that are sexual, harassing, defamatory, or deceptive.
 - Generate content of minors in a sexualized or inappropriate context.
@@ -395,23 +395,23 @@ To cancel a scheduled deletion, email [batchcompressvideos@gmail.com](mailto:bat
 
 ## 8. Third-party services
 
-AI-Outfits depends on third-party services, including Firebase, Google Gemini, Google Vertex AI, Apple (StoreKit, DeviceCheck, APNs), and Open-Meteo, as listed in our Privacy Policy. If any of those services change, degrade, or become unavailable, the app's features may be affected. We're not responsible for problems caused by third-party services, but we'll do our best to work around them.
+Wearra depends on third-party services, including Firebase, Google Gemini, Google Vertex AI, Apple (StoreKit, DeviceCheck, APNs), and Open-Meteo, as listed in our Privacy Policy. If any of those services change, degrade, or become unavailable, the app's features may be affected. We're not responsible for problems caused by third-party services, but we'll do our best to work around them.
 
 ## 9. Changes to the app and these Terms
 
-We may add, change, or remove features at any time. We may also update these Terms. If we make material changes, we'll update the effective date at the top of this page and show a notice inside the app. Continuing to use AI-Outfits after a change means you accept the new Terms.
+We may add, change, or remove features at any time. We may also update these Terms. If we make material changes, we'll update the effective date at the top of this page and show a notice inside the app. Continuing to use Wearra after a change means you accept the new Terms.
 
 ## 10. Termination
 
-You can stop using AI-Outfits at any time by deleting your account. We may suspend or terminate your account if you violate these Terms, if your use creates legal or security risk, or if we discontinue the app.
+You can stop using Wearra at any time by deleting your account. We may suspend or terminate your account if you violate these Terms, if your use creates legal or security risk, or if we discontinue the app.
 
 ## 11. Disclaimers
 
-AI-Outfits is provided **"as is" and "as available," without warranties of any kind**, express or implied, including implied warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not warrant that the app will be uninterrupted, error-free, or secure, or that AI outputs will be accurate.
+Wearra is provided **"as is" and "as available," without warranties of any kind**, express or implied, including implied warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not warrant that the app will be uninterrupted, error-free, or secure, or that AI outputs will be accurate.
 
 ## 12. Limitation of liability
 
-To the fullest extent allowed by law, Eli Linden and AI-Outfits will not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits, revenue, data, or goodwill, arising out of or in connection with your use of the app.
+To the fullest extent allowed by law, Eli Linden and Wearra will not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits, revenue, data, or goodwill, arising out of or in connection with your use of the app.
 
 Our total liability for any claim related to the app is limited to the greater of (a) the amount you paid us in the 12 months before the claim arose, or (b) USD $50.
 
@@ -427,7 +427,7 @@ These Terms are governed by the laws of the State of New York, USA, without rega
 
 ## 15. Apple-specific terms
 
-AI-Outfits is distributed through Apple's App Store. These Terms are between you and us — not Apple. Apple is not responsible for the app or any claims relating to it. Apple is, however, a third-party beneficiary of these Terms and may enforce them against you.
+Wearra is distributed through Apple's App Store. These Terms are between you and us — not Apple. Apple is not responsible for the app or any claims relating to it. Apple is, however, a third-party beneficiary of these Terms and may enforce them against you.
 
 ## 16. Contact
 
@@ -437,9 +437,9 @@ Questions about these Terms? Email [batchcompressvideos@gmail.com](mailto:batchc
 
 # Section 4 of 4 — Support & FAQ
 
-Source: https://elilinden.github.io/AI-Outfits/support.md
+Source: https://elilinden.github.io/Wearra/support.md
 
-# AI-Outfits Support
+# Wearra Support
 
 We're a small, solo-developer operation. Here's how to get in touch and quick answers to common questions.
 
@@ -479,7 +479,7 @@ Subscriptions are managed by Apple, not by us. To cancel:
 1. Open the **Settings** app on your iPhone.
 2. Tap your name at the top.
 3. Tap **Subscriptions**.
-4. Tap **AI-Outfits**.
+4. Tap **Wearra**.
 5. Tap **Cancel Subscription**.
 
 You'll keep Pro access until the end of the current billing period. You can also manage subscriptions at [apps.apple.com/account/subscriptions](https://apps.apple.com/account/subscriptions).
@@ -534,19 +534,19 @@ We don't train AI models on your photos. Your avatar and garment photos are sent
 
 Both are optional. Calendar access is used to tailor outfit suggestions to your day; calendar contents are read on-device, and only the event titles for events you ask the assistant about are sent to Google's Gemini API for those suggestions. Location is used to fetch the weather forecast — your latitude and longitude are sent to Open-Meteo with no account identifier attached, and the resulting weather plus approximate location may be included in Gemini prompts when you ask for weather-aware suggestions.
 
-You can revoke either permission at any time in iOS **Settings → AI-Outfits**.
+You can revoke either permission at any time in iOS **Settings → Wearra**.
 
 ### The app crashed / a feature isn't working.
 
 First, make sure you're on the latest version from the App Store and your iPhone is running iOS 18 or later. If the issue persists, email us with your iPhone model, iOS version, and a description (screenshots help). Crash reports are automatically collected via Firebase Crashlytics.
 
-### Is AI-Outfits available on Android or web?
+### Is Wearra available on Android or web?
 
-Not right now. AI-Outfits is an iOS-only app for iPhone running iOS 18 or later.
+Not right now. Wearra is an iOS-only app for iPhone running iOS 18 or later.
 
 ### Is there a minimum age?
 
-Yes — you must be at least 13 years old to use AI-Outfits.
+Yes — you must be at least 13 years old to use Wearra.
 
 ## Legal
 
