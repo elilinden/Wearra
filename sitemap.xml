@@ -2,71 +2,71 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://elilinden.github.io/AI-Outfits/</loc>
+    <loc>https://elilinden.github.io/Wearra/</loc>
     <lastmod>2026-04-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" type="text/markdown" href="https://elilinden.github.io/AI-Outfits/index.md"/>
+    <xhtml:link rel="alternate" type="text/markdown" href="https://elilinden.github.io/Wearra/index.md"/>
   </url>
   <url>
-    <loc>https://elilinden.github.io/AI-Outfits/index.md</loc>
+    <loc>https://elilinden.github.io/Wearra/index.md</loc>
     <lastmod>2026-04-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://elilinden.github.io/AI-Outfits/llms.txt</loc>
+    <loc>https://elilinden.github.io/Wearra/llms.txt</loc>
     <lastmod>2026-04-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://elilinden.github.io/AI-Outfits/llms-full.txt</loc>
+    <loc>https://elilinden.github.io/Wearra/llms-full.txt</loc>
     <lastmod>2026-04-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://elilinden.github.io/AI-Outfits/ai.txt</loc>
+    <loc>https://elilinden.github.io/Wearra/ai.txt</loc>
     <lastmod>2026-04-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://elilinden.github.io/AI-Outfits/privacy.html</loc>
+    <loc>https://elilinden.github.io/Wearra/privacy.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" type="text/markdown" href="https://elilinden.github.io/AI-Outfits/privacy.md"/>
+    <xhtml:link rel="alternate" type="text/markdown" href="https://elilinden.github.io/Wearra/privacy.md"/>
   </url>
   <url>
-    <loc>https://elilinden.github.io/AI-Outfits/privacy.md</loc>
+    <loc>https://elilinden.github.io/Wearra/privacy.md</loc>
     <lastmod>2026-04-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://elilinden.github.io/AI-Outfits/terms.html</loc>
+    <loc>https://elilinden.github.io/Wearra/terms.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" type="text/markdown" href="https://elilinden.github.io/AI-Outfits/terms.md"/>
+    <xhtml:link rel="alternate" type="text/markdown" href="https://elilinden.github.io/Wearra/terms.md"/>
   </url>
   <url>
-    <loc>https://elilinden.github.io/AI-Outfits/terms.md</loc>
+    <loc>https://elilinden.github.io/Wearra/terms.md</loc>
     <lastmod>2026-04-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://elilinden.github.io/AI-Outfits/support.html</loc>
+    <loc>https://elilinden.github.io/Wearra/support.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" type="text/markdown" href="https://elilinden.github.io/AI-Outfits/support.md"/>
+    <xhtml:link rel="alternate" type="text/markdown" href="https://elilinden.github.io/Wearra/support.md"/>
   </url>
   <url>
-    <loc>https://elilinden.github.io/AI-Outfits/support.md</loc>
+    <loc>https://elilinden.github.io/Wearra/support.md</loc>
     <lastmod>2026-04-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

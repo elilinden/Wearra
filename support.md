@@ -1,4 +1,4 @@
-# AI-Outfits Support
+# Wearra Support
 
 We're a small, solo-developer operation. Here's how to get in touch and quick answers to common questions.
 
@@ -38,7 +38,7 @@ Subscriptions are managed by Apple, not by us. To cancel:
 1. Open the **Settings** app on your iPhone.
 2. Tap your name at the top.
 3. Tap **Subscriptions**.
-4. Tap **AI-Outfits**.
+4. Tap **Wearra**.
 5. Tap **Cancel Subscription**.
 
 You'll keep Pro access until the end of the current billing period. You can also manage subscriptions at [apps.apple.com/account/subscriptions](https://apps.apple.com/account/subscriptions).
@@ -93,19 +93,19 @@ We don't train AI models on your photos. Your avatar and garment photos are sent
 
 Both are optional. Calendar access is used to tailor outfit suggestions to your day; calendar contents are read on-device, and only the event titles for events you ask the assistant about are sent to Google's Gemini API for those suggestions. Location is used to fetch the weather forecast — your latitude and longitude are sent to Open-Meteo with no account identifier attached, and the resulting weather plus approximate location may be included in Gemini prompts when you ask for weather-aware suggestions.
 
-You can revoke either permission at any time in iOS **Settings → AI-Outfits**.
+You can revoke either permission at any time in iOS **Settings → Wearra**.
 
 ### The app crashed / a feature isn't working.
 
 First, make sure you're on the latest version from the App Store and your iPhone is running iOS 18 or later. If the issue persists, email us with your iPhone model, iOS version, and a description (screenshots help). Crash reports are automatically collected via Firebase Crashlytics.
 
-### Is AI-Outfits available on Android or web?
+### Is Wearra available on Android or web?
 
-Not right now. AI-Outfits is an iOS-only app for iPhone running iOS 18 or later.
+Not right now. Wearra is an iOS-only app for iPhone running iOS 18 or later.
 
 ### Is there a minimum age?
 
-Yes — you must be at least 13 years old to use AI-Outfits.
+Yes — you must be at least 13 years old to use Wearra.
 
 ## Legal
 

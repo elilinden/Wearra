@@ -1,8 +1,8 @@
-# AI Outfits
+# Wearra
 
 > Your AI-powered personal stylist for iOS. Style smarter, dress better — every day.
 
-AI Outfits is an iPhone app (iOS 18+) that scans your closet, learns your taste, and styles you for any occasion. It combines a digital wardrobe, daily outfit recommendations, an AI stylist chat, and a photorealistic virtual try-on into one experience.
+Wearra is an iPhone app (iOS 18+) that scans your closet, learns your taste, and styles you for any occasion. It combines a digital wardrobe, daily outfit recommendations, an AI stylist chat, and a photorealistic virtual try-on into one experience.
 
 ## At a glance
 
@@ -15,7 +15,7 @@ AI Outfits is an iPhone app (iOS 18+) that scans your closet, learns your taste,
 ## Core features
 
 ### 1. Your clothing, your way
-Snap and save every piece you own. AI Outfits builds a digital wardrobe so you stop forgetting what you have.
+Snap and save every piece you own. Wearra builds a digital wardrobe so you stop forgetting what you have.
 
 - Auto-categorized tops, bottoms, outerwear, and shoes
 - Search by color, season, or vibe in one tap
@@ -43,7 +43,7 @@ Date night, job interview, wedding, weekend brunch — ask away. The AI Stylist 
 - Build a capsule wardrobe with guided prompts
 
 ### 5. Try it on, virtually
-See how a piece looks on you before you buy or commit. Upload a photo, pick the item, AI Outfits does the rest.
+See how a piece looks on you before you buy or commit. Upload a photo, pick the item, Wearra does the rest.
 
 - Photorealistic try-on in under a minute
 - Compare looks side-by-side
@@ -51,7 +51,7 @@ See how a piece looks on you before you buy or commit. Upload a photo, pick the 
 
 ## How it works
 
-1. **Build your closet.** Snap photos of what you own — or import from your camera roll. AI Outfits crops, tags, and categorizes everything for you.
+1. **Build your closet.** Snap photos of what you own — or import from your camera roll. Wearra crops, tags, and categorizes everything for you.
 2. **Train your stylist.** Rate looks, save favorites, and chat with the AI Stylist. The more you interact, the sharper its picks become.
 3. **Get styled, daily.** Wake up to fresh outfit recommendations. Ask for help anytime. Try things on virtually before you commit.
 
@@ -73,7 +73,7 @@ Subscriptions are billed through Apple. See [Terms of Service](terms.md) for ful
 - **Calendar (read-only)** — only event titles for events you ask the assistant about are sent for outfit suggestions
 - **Notifications** — optional reminders and render-finished alerts
 
-You can revoke any permission at any time in iOS Settings → AI-Outfits.
+You can revoke any permission at any time in iOS Settings → Wearra.
 
 ## Links
 

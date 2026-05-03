@@ -1,10 +1,10 @@
 # Privacy Policy
 
-*AI-Outfits · Effective April 20, 2026*
+*Wearra · Effective April 20, 2026*
 
-This Privacy Policy explains what information AI-Outfits collects when you use the app, why we collect it, and the choices you have. We try to say this in plain English — if anything is unclear, email us at [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com).
+This Privacy Policy explains what information Wearra collects when you use the app, why we collect it, and the choices you have. We try to say this in plain English — if anything is unclear, email us at [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com).
 
-AI-Outfits is operated by Eli Linden, a sole developer operating in the United States ("we," "us," or "AI-Outfits").
+Wearra is operated by Eli Linden, a sole developer operating in the United States ("we," "us," or "Wearra").
 
 ## What we collect
 
@@ -23,7 +23,7 @@ AI-Outfits is operated by Eli Linden, a sole developer operating in the United S
 - **Calendar (read-only).** To suggest outfits appropriate for your day's events. Calendar contents are read on-device; only the event titles for events you ask the assistant about are sent to Google's Gemini API for outfit suggestions. They are not stored on our servers.
 - **Notifications.** For optional reminders and alerts (for example, when a render finishes).
 
-You can revoke any of these at any time in iOS **Settings → AI-Outfits**.
+You can revoke any of these at any time in iOS **Settings → Wearra**.
 
 ### Information collected automatically
 
@@ -71,7 +71,7 @@ We do not sell or share your personal information. We do not show ads. We do not
 
 ## Third-party AI processing
 
-AI-Outfits uses Google's Gemini API to power its AI features. The following data is transmitted to Google for processing:
+Wearra uses Google's Gemini API to power its AI features. The following data is transmitted to Google for processing:
 
 - Photos of you (avatar) and your clothing items, used for virtual try-on rendering and item tagging.
 - Calendar event titles, used only when you request outfit suggestions for upcoming events.
@@ -79,11 +79,11 @@ AI-Outfits uses Google's Gemini API to power its AI features. The following data
 
 We do not transmit names, contacts, payment data, or other calendar metadata to Google. Per [Google's Gemini API terms of service](https://ai.google.dev/gemini-api/terms), data sent through the API is not used to train Google's AI models and is retained only for the time required to process the request and return a response.
 
-Google's privacy practices are governed by their [privacy policy](https://policies.google.com/privacy). By using AI-Outfits's AI features, you consent to your data being processed by Google under those terms in addition to ours.
+Google's privacy practices are governed by their [privacy policy](https://policies.google.com/privacy). By using Wearra's AI features, you consent to your data being processed by Google under those terms in addition to ours.
 
 ## Third-party services
 
-The following third parties receive data from AI-Outfits in order for the app to function. Click a provider to open their privacy policy.
+The following third parties receive data from Wearra in order for the app to function. Click a provider to open their privacy policy.
 
 ### Google
 
@@ -173,7 +173,7 @@ To cancel a scheduled deletion, email [batchcompressvideos@gmail.com](mailto:bat
 
 ## Children's privacy
 
-AI-Outfits is not directed at children under 13, and we do not knowingly collect personal information from anyone under 13. If you believe a child under 13 has given us information, email [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com) and we will delete it.
+Wearra is not directed at children under 13, and we do not knowingly collect personal information from anyone under 13. If you believe a child under 13 has given us information, email [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com) and we will delete it.
 
 ## Security
 
@@ -181,7 +181,7 @@ Data in transit is encrypted using TLS. Data at rest in Firebase is encrypted by
 
 ## Changes to this policy
 
-If we make material changes, we'll update the effective date at the top of this page and, for significant changes, show a notice inside the app the next time you open it. Continuing to use AI-Outfits after the change means you accept the updated policy.
+If we make material changes, we'll update the effective date at the top of this page and, for significant changes, show a notice inside the app the next time you open it. Continuing to use Wearra after the change means you accept the updated policy.
 
 ## Contact
 
