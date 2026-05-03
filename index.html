@@ -22,9 +22,8 @@
 <meta name="twitter:image" content="https://elilinden.github.io/Wearra/og-image.png">
 <meta name="apple-itunes-app" content="app-id=6761031400">
 <link rel="canonical" href="https://elilinden.github.io/Wearra/">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/jpeg" href="AppleIcon.jpg">
+<link rel="apple-touch-icon" href="AppleIcon.jpg">
 <link rel="alternate" type="text/markdown" href="index.md" title="Wearra — Markdown mirror for LLMs">
 <link rel="alternate" type="text/plain" href="llms.txt" title="llms.txt index">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -185,11 +184,9 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .brand{display:inline-flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-0.02em;font-size:18px}
 .brand__mark{
   width:32px;height:32px;border-radius:9px;
-  background:linear-gradient(135deg,#1F7BFF 0%,#7B5BFF 60%,#C58BE7 100%);
-  display:grid;place-items:center;color:#fff;
-  box-shadow:0 6px 16px -6px rgba(31,123,255,0.55);
+  object-fit:cover;
+  box-shadow:0 6px 16px -6px rgba(20,16,12,0.18);
 }
-.brand__mark svg{width:16px;height:16px}
 .brand em{font-style:italic;font-weight:800}
 .nav__links{display:none;gap:28px;font-size:15px;color:var(--fg-soft)}
 .nav__links a{position:relative;padding:6px 0;transition:color .2s var(--ease)}
@@ -465,9 +462,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 <header class="nav" id="nav">
   <div class="container nav__inner">
     <a class="brand" href="#main" aria-label="Wearra home">
-      <span class="brand__mark" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.6L18 9.4l-4.2 1.8L12 16l-1.8-4.8L6 9.4l4.2-1.8z"/><path d="M19 14l.9 2.3L22 17.2l-2.1.9L19 20.4l-.9-2.3L16 17.2l2.1-.9z"/></svg>
-      </span>
+      <img class="brand__mark" src="AppleIcon.jpg" alt="" aria-hidden="true" width="32" height="32">
       <em>Wearra</em>
     </a>
     <nav class="nav__links" aria-label="Primary">
@@ -720,9 +715,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
     <div class="footer__top">
       <div class="footer__brand">
         <a class="brand" href="#main">
-          <span class="brand__mark" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.6L18 9.4l-4.2 1.8L12 16l-1.8-4.8L6 9.4l4.2-1.8z"/><path d="M19 14l.9 2.3L22 17.2l-2.1.9L19 20.4l-.9-2.3L16 17.2l2.1-.9z"/></svg>
-          </span>
+          <img class="brand__mark" src="AppleIcon.jpg" alt="" aria-hidden="true" width="32" height="32">
           <em>Wearra</em>
         </a>
         <p>Your AI-powered personal stylist for iOS. Style smarter, dress better — every day.</p>
