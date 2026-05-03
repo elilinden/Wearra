@@ -73,11 +73,9 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .brand:hover{text-decoration:none;color:var(--fg)}
 .brand__mark{
   width:32px;height:32px;border-radius:9px;
-  background:linear-gradient(135deg,#1F7BFF 0%,#7B5BFF 60%,#C58BE7 100%);
-  display:grid;place-items:center;color:#fff;
-  box-shadow:0 6px 16px -6px rgba(31,123,255,0.55);
+  object-fit:cover;
+  box-shadow:0 6px 16px -6px rgba(20,16,12,0.18);
 }
-.brand__mark svg{width:16px;height:16px}
 .brand em{font-style:italic;font-weight:800}
 .nav__links{display:none;gap:28px;font-size:15px;color:var(--fg-soft)}
 .nav__links a{position:relative;padding:6px 0;color:var(--fg-soft);transition:color .2s var(--ease)}
