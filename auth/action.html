@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wearra Account</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f7f4ef;
+        --card: #ffffff;
+        --ink: #171717;
+        --muted: #67656d;
+        --muted-2: #8f8b84;
+        --line: rgba(20, 20, 20, 0.08);
+        --blue: #3b82f6;
+        --blue-pressed: #2f6fd8;
+        --danger: #c2410c;
+        --success: #16803d;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        background:
+          radial-gradient(circle at 18% 8%, rgba(59, 130, 246, 0.13), transparent 28rem),
+          radial-gradient(circle at 88% 92%, rgba(255, 214, 186, 0.42), transparent 24rem),
+          var(--bg);
+        color: var(--ink);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      main {
+        width: min(100%, 540px);
+        padding: 34px 28px 30px;
+        border: 1px solid rgba(255, 255, 255, 0.72);
+        border-radius: 28px;
+        background: rgba(255, 255, 255, 0.94);
+        box-shadow: 0 24px 70px rgba(24, 24, 24, 0.1);
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 30px;
+      }
+
+      .brand img {
+        width: 44px;
+        height: 44px;
+        border-radius: 14px;
+        display: block;
+      }
+
+      .brand span {
+        font-size: 29px;
+        font-weight: 800;
+        letter-spacing: -0.03em;
+      }
+
+      .eyebrow {
+        margin: 0 0 10px;
+        color: var(--muted-2);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(29px, 7vw, 40px);
+        line-height: 1.05;
+        letter-spacing: -0.04em;
+      }
+
+      p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 16px;
+        line-height: 1.55;
+      }
+
+      form {
+        display: grid;
+        gap: 12px;
+        margin-top: 26px;
+      }
+
+      label {
+        color: var(--muted);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      input {
+        min-height: 54px;
+        width: 100%;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: #fbfaf8;
+        color: var(--ink);
+        font: inherit;
+        padding: 0 16px;
+        outline: none;
+      }
+
+      input:focus {
+        border-color: rgba(59, 130, 246, 0.58);
+        box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.12);
+      }
+
+      .button-row {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 26px;
+      }
+
+      button,
+      a.button {
+        appearance: none;
+        border: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 52px;
+        padding: 0 22px;
+        border-radius: 999px;
+        background: var(--blue);
+        color: white;
+        text-decoration: none;
+        font: inherit;
+        font-weight: 750;
+        cursor: pointer;
+      }
+
+      button:hover,
+      a.button:hover { background: var(--blue-pressed); }
+
+      button:disabled {
+        cursor: default;
+        opacity: 0.58;
+      }
+
+      a.secondary {
+        background: #f0efed;
+        color: var(--ink);
+      }
+
+      a.secondary:hover { background: #e7e5e1; }
+
+      .status {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        margin: 0 0 18px;
+        padding: 10px 13px;
+        border-radius: 999px;
+        color: var(--muted);
+        background: #f2f1ef;
+        font-size: 14px;
+        font-weight: 650;
+      }
+
+      .status.success {
+        color: var(--success);
+        background: rgba(22, 128, 61, 0.1);
+      }
+
+      .status.error {
+        color: var(--danger);
+        background: rgba(194, 65, 12, 0.1);
+      }
+
+      .fine-print {
+        margin-top: 20px;
+        color: var(--muted-2);
+        font-size: 13px;
+      }
+
+      .hidden { display: none !important; }
+
+      @media (max-width: 520px) {
+        body { padding: 18px; }
+        main { padding: 30px 22px 26px; border-radius: 24px; }
+        .button-row { display: grid; }
+        button, a.button { width: 100%; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="brand">
+        <img src="/assets/wearra-logo.jpg" alt="Wearra" />
+        <span>Wearra</span>
+      </div>
+
+      <div id="status" class="status">Checking your link...</div>
+      <p id="eyebrow" class="eyebrow">Account</p>
+      <h1 id="title">One moment.</h1>
+      <p id="message">We are finishing this securely with Firebase Auth.</p>
+
+      <form id="resetForm" class="hidden">
+        <div>
+          <label for="password">New password</label>
+          <input id="password" type="password" autocomplete="new-password" minlength="8" required />
+        </div>
+        <div>
+          <label for="confirmPassword">Confirm password</label>
+          <input id="confirmPassword" type="password" autocomplete="new-password" minlength="8" required />
+        </div>
+        <button id="submitPassword" type="submit">Save New Password</button>
+      </form>
+
+      <div id="actions" class="button-row hidden">
+        <a id="continueButton" class="button" href="https://wearra.app/">Back to Wearra</a>
+      </div>
+
+      <p id="finePrint" class="fine-print hidden"></p>
+    </main>
+
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+      import {
+        getAuth,
+        applyActionCode,
+        confirmPasswordReset,
+        verifyPasswordResetCode
+      } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyAW8U69jZi7F3sZhuIFv09ZI-SUPePXUVw",
+        authDomain: "al-outfits.firebaseapp.com",
+        projectId: "al-outfits",
+        storageBucket: "al-outfits.firebasestorage.app",
+        messagingSenderId: "338691991899",
+        appId: "1:338691991899:ios:88bb13294f0339caf2927e"
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const auth = getAuth(app);
+      const params = new URLSearchParams(window.location.search);
+      const mode = params.get("mode");
+      const oobCode = params.get("oobCode");
+      const continueUrl = safeContinueURL(params.get("continueUrl"));
+
+      const statusEl = document.getElementById("status");
+      const eyebrowEl = document.getElementById("eyebrow");
+      const titleEl = document.getElementById("title");
+      const messageEl = document.getElementById("message");
+      const formEl = document.getElementById("resetForm");
+      const passwordEl = document.getElementById("password");
+      const confirmPasswordEl = document.getElementById("confirmPassword");
+      const submitPasswordEl = document.getElementById("submitPassword");
+      const actionsEl = document.getElementById("actions");
+      const continueButton = document.getElementById("continueButton");
+      const finePrintEl = document.getElementById("finePrint");
+
+      continueButton.href = continueUrl;
+
+      function safeContinueURL(raw) {
+        if (!raw) return "https://wearra.app/";
+        try {
+          const url = new URL(raw);
+          if (url.protocol === "https:" && (url.hostname === "wearra.app" || url.hostname.endsWith(".wearra.app"))) {
+            return url.toString();
+          }
+        } catch (_err) {
+          return "https://wearra.app/";
+        }
+        return "https://wearra.app/";
+      }
+
+      function setView({ state, eyebrow, title, message, showForm = false, showActions = false, finePrint = "" }) {
+        statusEl.textContent = state === "loading" ? "Checking your link..." : state === "success" ? "Done" : "Needs attention";
+        statusEl.className = `status ${state === "success" ? "success" : state === "error" ? "error" : ""}`;
+        eyebrowEl.textContent = eyebrow;
+        titleEl.textContent = title;
+        messageEl.textContent = message;
+        formEl.classList.toggle("hidden", !showForm);
+        actionsEl.classList.toggle("hidden", !showActions);
+        finePrintEl.textContent = finePrint;
+        finePrintEl.classList.toggle("hidden", !finePrint);
+      }
+
+      function friendlyError(error) {
+        const code = error && error.code ? String(error.code) : "";
+        if (code.includes("expired-action-code")) {
+          return "This link has expired. Please request a fresh email from Wearra.";
+        }
+        if (code.includes("invalid-action-code")) {
+          return "This link is no longer valid. Please request a fresh email from Wearra.";
+        }
+        if (code.includes("weak-password")) {
+          return "Please choose a stronger password.";
+        }
+        return "We could not finish that link. Please request a fresh email from Wearra.";
+      }
+
+      async function handleVerifyEmail() {
+        try {
+          await applyActionCode(auth, oobCode);
+          setView({
+            state: "success",
+            eyebrow: "Email verified",
+            title: "You are all set.",
+            message: "Your email is confirmed. Return to Wearra and your free renders will unlock shortly.",
+            showActions: true,
+          });
+        } catch (error) {
+          setView({
+            state: "error",
+            eyebrow: "Email link",
+            title: "This link did not work.",
+            message: friendlyError(error),
+            showActions: true,
+          });
+        }
+      }
+
+      async function handlePasswordReset() {
+        try {
+          const email = await verifyPasswordResetCode(auth, oobCode);
+          setView({
+            state: "success",
+            eyebrow: "Password reset",
+            title: "Choose a new password.",
+            message: `We found the account for ${email}. Pick something secure and easy for you to remember.`,
+            showForm: true,
+            finePrint: "Your password is updated securely through Firebase Auth.",
+          });
+        } catch (error) {
+          setView({
+            state: "error",
+            eyebrow: "Password reset",
+            title: "This reset link did not work.",
+            message: friendlyError(error),
+            showActions: true,
+          });
+        }
+      }
+
+      formEl.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        const password = passwordEl.value;
+        const confirmPassword = confirmPasswordEl.value;
+        if (password.length < 8) {
+          setView({
+            state: "error",
+            eyebrow: "Password reset",
+            title: "Use at least 8 characters.",
+            message: "A slightly longer password keeps your Wearra account safer.",
+            showForm: true,
+          });
+          return;
+        }
+        if (password !== confirmPassword) {
+          setView({
+            state: "error",
+            eyebrow: "Password reset",
+            title: "Passwords do not match.",
+            message: "Check both fields and try again.",
+            showForm: true,
+          });
+          return;
+        }
+
+        submitPasswordEl.disabled = true;
+        submitPasswordEl.textContent = "Saving...";
+        try {
+          await confirmPasswordReset(auth, oobCode, password);
+          setView({
+            state: "success",
+            eyebrow: "Password updated",
+            title: "You are back in.",
+            message: "Your Wearra password has been updated. You can return to the app and sign in.",
+            showActions: true,
+          });
+        } catch (error) {
+          submitPasswordEl.disabled = false;
+          submitPasswordEl.textContent = "Save New Password";
+          setView({
+            state: "error",
+            eyebrow: "Password reset",
+            title: "We could not save that.",
+            message: friendlyError(error),
+            showForm: true,
+          });
+        }
+      });
+
+      if (!mode || !oobCode) {
+        setView({
+          state: "error",
+          eyebrow: "Account link",
+          title: "This link is missing a code.",
+          message: "Please open the newest email from Wearra or request a fresh one in the app.",
+          showActions: true,
+        });
+      } else if (mode === "verifyEmail") {
+        handleVerifyEmail();
+      } else if (mode === "resetPassword") {
+        handlePasswordReset();
+      } else {
+        setView({
+          state: "error",
+          eyebrow: "Account link",
+          title: "This link type is not supported.",
+          message: "Please return to Wearra and request a fresh email.",
+          showActions: true,
+        });
+      }
+    </script>
+  </body>
+</html>
