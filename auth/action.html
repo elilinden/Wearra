@@ -222,7 +222,7 @@
       </form>
 
       <div id="actions" class="button-row hidden">
-        <a id="continueButton" class="button" href="https://wearra.app/">Back to Wearra</a>
+        <a id="continueButton" class="button" href="wearra://login">Open Wearra</a>
       </div>
 
       <p id="finePrint" class="fine-print hidden"></p>
@@ -252,6 +252,9 @@
       const mode = params.get("mode");
       const oobCode = params.get("oobCode");
       const continueUrl = safeContinueURL(params.get("continueUrl"));
+      const wearraLoginURL = "wearra://login";
+      const wearraVerifiedURL = "wearra://home?verified=true";
+      const wearraPasswordResetURL = "wearra://login?passwordReset=true";
 
       const statusEl = document.getElementById("status");
       const eyebrowEl = document.getElementById("eyebrow");
@@ -264,8 +267,6 @@
       const actionsEl = document.getElementById("actions");
       const continueButton = document.getElementById("continueButton");
       const finePrintEl = document.getElementById("finePrint");
-
-      continueButton.href = continueUrl;
 
       function safeContinueURL(raw) {
         if (!raw) return "https://wearra.app/";
@@ -280,7 +281,24 @@
         return "https://wearra.app/";
       }
 
-      function setView({ state, eyebrow, title, message, showForm = false, showActions = false, finePrint = "" }) {
+      function attemptOpenApp(url) {
+        window.setTimeout(() => {
+          window.location.href = url;
+        }, 1000);
+      }
+
+      function setView({
+        state,
+        eyebrow,
+        title,
+        message,
+        showForm = false,
+        showActions = false,
+        finePrint = "",
+        actionHref = wearraLoginURL,
+        actionLabel = "Open Wearra",
+        autoOpen = false
+      }) {
         statusEl.textContent = state === "loading" ? "Checking your link..." : state === "success" ? "Done" : "Needs attention";
         statusEl.className = `status ${state === "success" ? "success" : state === "error" ? "error" : ""}`;
         eyebrowEl.textContent = eyebrow;
@@ -288,8 +306,13 @@
         messageEl.textContent = message;
         formEl.classList.toggle("hidden", !showForm);
         actionsEl.classList.toggle("hidden", !showActions);
+        continueButton.href = actionHref || continueUrl;
+        continueButton.textContent = actionLabel;
         finePrintEl.textContent = finePrint;
         finePrintEl.classList.toggle("hidden", !finePrint);
+        if (autoOpen && actionHref) {
+          attemptOpenApp(actionHref);
+        }
       }
 
       function friendlyError(error) {
@@ -312,9 +335,13 @@
           setView({
             state: "success",
             eyebrow: "Email verified",
-            title: "You are all set.",
-            message: "Your email is confirmed. Return to Wearra and your free renders will unlock shortly.",
+            title: "Email verified",
+            message: "You can now return to Wearra.",
             showActions: true,
+            actionHref: wearraVerifiedURL,
+            actionLabel: "Open Wearra",
+            autoOpen: true,
+            finePrint: "If Wearra does not open automatically, tap the button.",
           });
         } catch (error) {
           setView({
@@ -323,6 +350,8 @@
             title: "This link did not work.",
             message: friendlyError(error),
             showActions: true,
+            actionHref: wearraLoginURL,
+            actionLabel: "Open Wearra",
           });
         }
       }
@@ -345,6 +374,8 @@
             title: "This reset link did not work.",
             message: friendlyError(error),
             showActions: true,
+            actionHref: wearraLoginURL,
+            actionLabel: "Open Wearra",
           });
         }
       }
@@ -380,14 +411,29 @@
           await confirmPasswordReset(auth, oobCode, password);
           setView({
             state: "success",
-            eyebrow: "Password updated",
-            title: "You are back in.",
-            message: "Your Wearra password has been updated. You can return to the app and sign in.",
+            eyebrow: "Password reset",
+            title: "Password reset",
+            message: "You can now sign in to Wearra.",
             showActions: true,
+            actionHref: wearraPasswordResetURL,
+            actionLabel: "Open Wearra",
           });
         } catch (error) {
           submitPasswordEl.disabled = false;
           submitPasswordEl.textContent = "Save New Password";
+          const code = error && error.code ? String(error.code) : "";
+          if (code.includes("expired-action-code") || code.includes("invalid-action-code")) {
+            setView({
+              state: "error",
+              eyebrow: "Password reset",
+              title: "This reset link did not work.",
+              message: friendlyError(error),
+              showActions: true,
+              actionHref: wearraLoginURL,
+              actionLabel: "Open Wearra",
+            });
+            return;
+          }
           setView({
             state: "error",
             eyebrow: "Password reset",
@@ -405,6 +451,8 @@
           title: "This link is missing a code.",
           message: "Please open the newest email from Wearra or request a fresh one in the app.",
           showActions: true,
+          actionHref: wearraLoginURL,
+          actionLabel: "Open Wearra",
         });
       } else if (mode === "verifyEmail") {
         handleVerifyEmail();
@@ -417,6 +465,8 @@
           title: "This link type is not supported.",
           message: "Please return to Wearra and request a fresh email.",
           showActions: true,
+          actionHref: wearraLoginURL,
+          actionLabel: "Open Wearra",
         });
       }
     </script>
