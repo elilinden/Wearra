@@ -299,8 +299,26 @@
         actionLabel = "Open Wearra",
         autoOpen = false
       }) {
-        statusEl.textContent = state === "loading" ? "Checking your link..." : state === "success" ? "Done" : "Needs attention";
-        statusEl.className = `status ${state === "success" ? "success" : state === "error" ? "error" : ""}`;
+        // The previous version always wrote "Done" the moment the
+        // link verified, even when the user still had to type a new
+        // password into the form below. Users were closing the tab
+        // thinking the reset was complete and then "couldn't sign
+        // in with their new password" — because they'd never set
+        // one. Use a "Pending" pill while the form is still up,
+        // reserve "Done" for views that genuinely don't need more
+        // input.
+        let statusText;
+        if (state === "loading") {
+          statusText = "Checking your link...";
+        } else if (state === "success" && showForm) {
+          statusText = "Action needed";
+        } else if (state === "success") {
+          statusText = "Done";
+        } else {
+          statusText = "Needs attention";
+        }
+        statusEl.textContent = statusText;
+        statusEl.className = `status ${state === "success" && !showForm ? "success" : state === "error" ? "error" : ""}`;
         eyebrowEl.textContent = eyebrow;
         titleEl.textContent = title;
         messageEl.textContent = message;
@@ -325,6 +343,23 @@
         }
         if (code.includes("weak-password")) {
           return "Please choose a stronger password.";
+        }
+        if (code.includes("user-disabled")) {
+          return "This Wearra account has been disabled. Contact support@wearra.app.";
+        }
+        if (code.includes("user-not-found")) {
+          return "We couldn't find that Wearra account. Sign up again to create one.";
+        }
+        if (code.includes("network-request-failed")) {
+          return "Network error. Check your connection and try the link again.";
+        }
+        // Surface the raw code so support has something to grep when a
+        // user reports an unexpected failure. The previous generic
+        // message hid useful info — admins had no way to tell whether
+        // the issue was rate limiting, a quota, or a real Firebase
+        // outage.
+        if (code) {
+          return `We couldn't finish that link (${code}). Please request a fresh email from Wearra.`;
         }
         return "We could not finish that link. Please request a fresh email from Wearra.";
       }
@@ -390,6 +425,22 @@
             eyebrow: "Password reset",
             title: "Use at least 8 characters.",
             message: "A slightly longer password keeps your Wearra account safer.",
+            showForm: true,
+          });
+          return;
+        }
+        // Reject leading/trailing whitespace. Password managers on iOS
+        // Safari frequently paste a trailing space, and the user then
+        // types the password without the space into the iOS app — Firebase
+        // rejects the mismatch as a wrong password and they think the
+        // reset didn't work. Surface the mismatch up front instead of
+        // silently writing a whitespace-padded password.
+        if (password !== password.trim()) {
+          setView({
+            state: "error",
+            eyebrow: "Password reset",
+            title: "Remove the extra space.",
+            message: "Your password starts or ends with a space — that's usually a paste/autofill glitch. Retype it without the leading or trailing space.",
             showForm: true,
           });
           return;
