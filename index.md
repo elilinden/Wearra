@@ -80,4 +80,4 @@ You can revoke any permission at any time in iOS Settings → Wearra.
 - [Privacy Policy](privacy.md) — what we collect and why
 - [Terms of Service](terms.md) — billing, acceptable use, disclaimers
 - [Support & FAQ](support.md) — how-to guides and answers
-- Email: [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com) (response within 3 business days)
+- Email: [Support@wearra.app](mailto:Support@wearra.app) (response within 3 business days)

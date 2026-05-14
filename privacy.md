@@ -2,7 +2,7 @@
 
 *Wearra · Effective April 20, 2026*
 
-This Privacy Policy explains what information Wearra collects when you use the app, why we collect it, and the choices you have. We try to say this in plain English — if anything is unclear, email us at [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com).
+This Privacy Policy explains what information Wearra collects when you use the app, why we collect it, and the choices you have. We try to say this in plain English — if anything is unclear, email us at [Support@wearra.app](mailto:Support@wearra.app).
 
 Wearra is operated by Eli Linden, a sole developer operating in the United States ("we," "us," or "Wearra").
 
@@ -138,7 +138,7 @@ If you live in California, you have the right to:
 - Opt out of the "sale" or "sharing" of your personal information. **We do not sell or share your personal information** as those terms are defined by the CCPA.
 - Not be discriminated against for exercising these rights.
 
-To exercise any of these rights, email [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com). We verify requests using the email address associated with your account.
+To exercise any of these rights, email [Support@wearra.app](mailto:Support@wearra.app). We verify requests using the email address associated with your account.
 
 ### EU / UK residents (GDPR / UK GDPR)
 
@@ -169,11 +169,11 @@ You may delete your account at any time from **Settings → Danger Zone → Dele
 
 After 30 days, all user-identifying data (profile, photos, outfits, credit history, reports) is permanently and irrevocably deleted. We retain a minimal audit record (email, deletion date) for up to 12 months for fraud prevention and regulatory compliance.
 
-To cancel a scheduled deletion, email [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com) within the 30-day window.
+To cancel a scheduled deletion, email [Support@wearra.app](mailto:Support@wearra.app) within the 30-day window.
 
 ## Children's privacy
 
-Wearra is not directed at children under 13, and we do not knowingly collect personal information from anyone under 13. If you believe a child under 13 has given us information, email [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com) and we will delete it.
+Wearra is not directed at children under 13, and we do not knowingly collect personal information from anyone under 13. If you believe a child under 13 has given us information, email [Support@wearra.app](mailto:Support@wearra.app) and we will delete it.
 
 ## Security
 
@@ -185,4 +185,4 @@ If we make material changes, we'll update the effective date at the top of this 
 
 ## Contact
 
-Questions, requests, or concerns? Email [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com). We respond within 3 business days.
+Questions, requests, or concerns? Email [Support@wearra.app](mailto:Support@wearra.app). We respond within 3 business days.

@@ -4,7 +4,7 @@ We're a small, solo-developer operation. Here's how to get in touch and quick an
 
 ## Contact
 
-- **Email:** [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com)
+- **Email:** [Support@wearra.app](mailto:Support@wearra.app)
 - **Typical response time:** within 3 business days
 
 When you email, it helps if you include: your account email, iPhone model + iOS version, what you were trying to do, and (if relevant) a screenshot.
@@ -67,7 +67,7 @@ Inside the app, go to **Settings → Danger Zone → Delete Account**. This star
 
 After 30 days, all user-identifying data (profile, photos, outfits, credit history, reports) is permanently deleted. We keep a minimal audit record (email + deletion date) for up to 12 months for fraud prevention and compliance.
 
-If you change your mind during the 30-day window, email [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com) and we'll cancel the deletion. If you can't access the in-app option at all, email us from the address linked to your account and we'll handle it manually.
+If you change your mind during the 30-day window, email [Support@wearra.app](mailto:Support@wearra.app) and we'll cancel the deletion. If you can't access the in-app option at all, email us from the address linked to your account and we'll handle it manually.
 
 Wardrobe items, outfits, and trip data stored locally on your iPhone are removed when you uninstall the app.
 

@@ -4,7 +4,7 @@
 
 This is a single-fetch concatenation of every markdown mirror on https://elilinden.github.io/Wearra/, intended for LLM ingestion when one request is preferred over four. Each section below is the full text of the corresponding `.md` file with no summarization or truncation. The original source files remain canonical and are listed in [llms.txt](https://elilinden.github.io/Wearra/llms.txt).
 
-Operator: Eli Linden, sole developer, United States. Contact: batchcompressvideos@gmail.com.
+Operator: Eli Linden, sole developer, United States. Contact: Support@wearra.app.
 
 ---
 
@@ -94,7 +94,7 @@ You can revoke any permission at any time in iOS Settings → Wearra.
 - [Privacy Policy](privacy.md) — what we collect and why
 - [Terms of Service](terms.md) — billing, acceptable use, disclaimers
 - [Support & FAQ](support.md) — how-to guides and answers
-- Email: [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com) (response within 3 business days)
+- Email: [Support@wearra.app](mailto:Support@wearra.app) (response within 3 business days)
 
 ---
 
@@ -106,7 +106,7 @@ Source: https://elilinden.github.io/Wearra/privacy.md
 
 *Wearra · Effective April 20, 2026*
 
-This Privacy Policy explains what information Wearra collects when you use the app, why we collect it, and the choices you have. We try to say this in plain English — if anything is unclear, email us at [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com).
+This Privacy Policy explains what information Wearra collects when you use the app, why we collect it, and the choices you have. We try to say this in plain English — if anything is unclear, email us at [Support@wearra.app](mailto:Support@wearra.app).
 
 Wearra is operated by Eli Linden, a sole developer operating in the United States ("we," "us," or "Wearra").
 
@@ -242,7 +242,7 @@ If you live in California, you have the right to:
 - Opt out of the "sale" or "sharing" of your personal information. **We do not sell or share your personal information** as those terms are defined by the CCPA.
 - Not be discriminated against for exercising these rights.
 
-To exercise any of these rights, email [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com). We verify requests using the email address associated with your account.
+To exercise any of these rights, email [Support@wearra.app](mailto:Support@wearra.app). We verify requests using the email address associated with your account.
 
 ### EU / UK residents (GDPR / UK GDPR)
 
@@ -273,11 +273,11 @@ You may delete your account at any time from **Settings → Danger Zone → Dele
 
 After 30 days, all user-identifying data (profile, photos, outfits, credit history, reports) is permanently and irrevocably deleted. We retain a minimal audit record (email, deletion date) for up to 12 months for fraud prevention and regulatory compliance.
 
-To cancel a scheduled deletion, email [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com) within the 30-day window.
+To cancel a scheduled deletion, email [Support@wearra.app](mailto:Support@wearra.app) within the 30-day window.
 
 ## Children's privacy
 
-Wearra is not directed at children under 13, and we do not knowingly collect personal information from anyone under 13. If you believe a child under 13 has given us information, email [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com) and we will delete it.
+Wearra is not directed at children under 13, and we do not knowingly collect personal information from anyone under 13. If you believe a child under 13 has given us information, email [Support@wearra.app](mailto:Support@wearra.app) and we will delete it.
 
 ## Security
 
@@ -289,7 +289,7 @@ If we make material changes, we'll update the effective date at the top of this 
 
 ## Contact
 
-Questions, requests, or concerns? Email [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com). We respond within 3 business days.
+Questions, requests, or concerns? Email [Support@wearra.app](mailto:Support@wearra.app). We respond within 3 business days.
 
 ---
 
@@ -349,7 +349,7 @@ Cancellation takes effect at the end of the current billing period. You'll keep 
 
 ### Refunds
 
-All purchases are processed by Apple. Refund requests are handled by Apple, not by us. To request a refund, use [reportaproblem.apple.com](https://reportaproblem.apple.com). If a charge was clearly made in error, we're happy to help advocate with Apple — email [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com).
+All purchases are processed by Apple. Refund requests are handled by Apple, not by us. To request a refund, use [reportaproblem.apple.com](https://reportaproblem.apple.com). If a charge was clearly made in error, we're happy to help advocate with Apple — email [Support@wearra.app](mailto:Support@wearra.app).
 
 ## 4. Acceptable use
 
@@ -391,7 +391,7 @@ You may delete your account at any time from **Settings → Danger Zone → Dele
 
 After 30 days, all user-identifying data (profile, photos, outfits, credit history, reports) is permanently and irrevocably deleted. We retain a minimal audit record (email, deletion date) for up to 12 months for fraud prevention and regulatory compliance.
 
-To cancel a scheduled deletion, email [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com) within the 30-day window.
+To cancel a scheduled deletion, email [Support@wearra.app](mailto:Support@wearra.app) within the 30-day window.
 
 ## 8. Third-party services
 
@@ -431,7 +431,7 @@ Wearra is distributed through Apple's App Store. These Terms are between you and
 
 ## 16. Contact
 
-Questions about these Terms? Email [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com).
+Questions about these Terms? Email [Support@wearra.app](mailto:Support@wearra.app).
 
 ---
 
@@ -445,7 +445,7 @@ We're a small, solo-developer operation. Here's how to get in touch and quick an
 
 ## Contact
 
-- **Email:** [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com)
+- **Email:** [Support@wearra.app](mailto:Support@wearra.app)
 - **Typical response time:** within 3 business days
 
 When you email, it helps if you include: your account email, iPhone model + iOS version, what you were trying to do, and (if relevant) a screenshot.
@@ -508,7 +508,7 @@ Inside the app, go to **Settings → Danger Zone → Delete Account**. This star
 
 After 30 days, all user-identifying data (profile, photos, outfits, credit history, reports) is permanently deleted. We keep a minimal audit record (email + deletion date) for up to 12 months for fraud prevention and compliance.
 
-If you change your mind during the 30-day window, email [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com) and we'll cancel the deletion. If you can't access the in-app option at all, email us from the address linked to your account and we'll handle it manually.
+If you change your mind during the 30-day window, email [Support@wearra.app](mailto:Support@wearra.app) and we'll cancel the deletion. If you can't access the in-app option at all, email us from the address linked to your account and we'll handle it manually.
 
 Wardrobe items, outfits, and trip data stored locally on your iPhone are removed when you uninstall the app.
 

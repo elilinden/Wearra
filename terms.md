@@ -50,7 +50,7 @@ Cancellation takes effect at the end of the current billing period. You'll keep 
 
 ### Refunds
 
-All purchases are processed by Apple. Refund requests are handled by Apple, not by us. To request a refund, use [reportaproblem.apple.com](https://reportaproblem.apple.com). If a charge was clearly made in error, we're happy to help advocate with Apple — email [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com).
+All purchases are processed by Apple. Refund requests are handled by Apple, not by us. To request a refund, use [reportaproblem.apple.com](https://reportaproblem.apple.com). If a charge was clearly made in error, we're happy to help advocate with Apple — email [Support@wearra.app](mailto:Support@wearra.app).
 
 ## 4. Acceptable use
 
@@ -92,7 +92,7 @@ You may delete your account at any time from **Settings → Danger Zone → Dele
 
 After 30 days, all user-identifying data (profile, photos, outfits, credit history, reports) is permanently and irrevocably deleted. We retain a minimal audit record (email, deletion date) for up to 12 months for fraud prevention and regulatory compliance.
 
-To cancel a scheduled deletion, email [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com) within the 30-day window.
+To cancel a scheduled deletion, email [Support@wearra.app](mailto:Support@wearra.app) within the 30-day window.
 
 ## 8. Third-party services
 
@@ -132,4 +132,4 @@ Wearra is distributed through Apple's App Store. These Terms are between you and
 
 ## 16. Contact
 
-Questions about these Terms? Email [batchcompressvideos@gmail.com](mailto:batchcompressvideos@gmail.com).
+Questions about these Terms? Email [Support@wearra.app](mailto:Support@wearra.app).
