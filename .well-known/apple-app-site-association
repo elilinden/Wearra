@@ -1,0 +1,20 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["G384VP5SNB.com.elilindenDinematch.Al-Outfits"],
+        "components": [
+          {
+            "/": "/auth/action.html",
+            "?": { "mode": "?*", "oobCode": "?*" },
+            "comment": "Password reset / email verification — open directly in the iOS app instead of bouncing through Safari."
+          },
+          {
+            "/": "/auth/*",
+            "comment": "Catch-all for any other auth flows we add later (e.g. /auth/verify, /auth/2fa)."
+          }
+        ]
+      }
+    ]
+  }
+}
