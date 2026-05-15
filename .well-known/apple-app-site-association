@@ -2,7 +2,10 @@
   "applinks": {
     "details": [
       {
-        "appIDs": ["G384VP5SNB.com.elilindenDinematch.Al-Outfits"],
+        "appIDs": [
+          "FYGW4LHN42.com.elilindenDinematch.Al-Outfits",
+          "G384VP5SNB.com.elilindenDinematch.Al-Outfits"
+        ],
         "components": [
           {
             "/": "/auth/action.html",
