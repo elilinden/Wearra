@@ -22,6 +22,145 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500;1,700;1,800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://elilinden.github.io/Wearra/" },
+        { "@type": "ListItem", "position": 2, "name": "Support & FAQ", "item": "https://elilinden.github.io/Wearra/support.html" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do credits work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Each virtual try-on render costs one credit. Free tier: 2 lifetime renders that do not reset. Pro subscription: 30 renders per month that reset each billing period. 5-render top-up pack: a one-time $1.99 consumable for Pro subscribers that stacks on top of the monthly allowance and never expires. Your balance is shown on the Home screen and in Settings → Credits & Subscription."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Pro subscription include?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pro gives you 30 try-on renders per month, plus AI stylist chat and personalized outfit suggestions tied to your wardrobe. Pro is billed through your Apple ID as an auto-renewing monthly subscription at $6.99/month and renews until you cancel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "I need more renders this month — can I buy extras?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. You can buy a 5-render top-up pack for $1.99 from the paywall. Top-up credits stack on top of your Pro allowance and never expire."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I cancel my subscription?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Subscriptions are managed by Apple, not by us. Open the Settings app on your iPhone, tap your name at the top, tap Subscriptions, tap Wearra, then tap Cancel Subscription. You'll keep Pro access until the end of the current billing period."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I request a refund?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "All charges are processed by Apple, so refunds come from Apple too. Request one at reportaproblem.apple.com. If you think a charge is clearly wrong, email us and we'll help you with the request to Apple."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A try-on render came out bad. What can I do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI-generated renders are not perfect. Use a clear, front-facing avatar photo with good lighting, a garment photo on a plain background, and try re-running the render — results vary each time. If a render is badly broken, tap Report bad render on the result screen. For cases where a render clearly fails, email us and we'll credit you back."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I delete my account and data?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Inside the app, go to Settings → Danger Zone → Delete Account. This starts a 30-day grace period during which you're signed out and your data is hidden but retained for chargeback and dispute handling. After 30 days, all user-identifying data is permanently deleted. We keep a minimal audit record (email + deletion date) for up to 12 months for fraud prevention and compliance. Email Support@wearra.app within the 30-day window to cancel deletion."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why didn't I get free credits on a new account?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We use Apple's DeviceCheck to prevent the same iPhone from creating unlimited free accounts. It stores two bits of information on Apple's servers per device — it does not identify you and cannot be used to track you across other apps. It only tells us this device has already claimed free starter credits. If you believe this is a mistake (for example, you bought a used iPhone that had the app before), email us."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What data does the app collect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Short version: your email and display name (via Google Sign-In), photos you upload for try-on, the wardrobe items you enter, device/usage telemetry via Firebase Analytics, and crash logs via Firebase Crashlytics. Full details are in our Privacy Policy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where does my photo actually go when I render?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your avatar and garment photo(s) are sent to Google's Gemini and Vertex AI try-on endpoints. Only the photos are sent — no email, display name, or account identifier is attached to the render call."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are my photos used to train AI models?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We don't train AI models on your photos. Your avatar and garment photos are sent to Google's Gemini API only to generate the render you requested. Per Google's Gemini API terms, data sent through the API is not used to train Google's models and is retained only for the time required to process the request."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does the app want my calendar / location?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Both are optional. Calendar access is used to tailor outfit suggestions to your day; calendar contents are read on-device, and only event titles for events you ask the assistant about are sent to Google's Gemini API. Location is used to fetch the weather forecast — your latitude and longitude are sent to Open-Meteo with no account identifier attached. You can revoke either permission at any time in iOS Settings → Wearra."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "The app crashed / a feature isn't working.",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "First, make sure you're on the latest version from the App Store and your iPhone is running iOS 18 or later. If the issue persists, email us with your iPhone model, iOS version, and a description (screenshots help). Crash reports are automatically collected via Firebase Crashlytics."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Wearra available on Android or web?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not right now. Wearra is an iOS-only app for iPhone running iOS 18 or later."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a minimum age?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — you must be at least 13 years old to use Wearra."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -47,7 +186,7 @@
 <article class="article">
   <p class="article__kicker">Help</p>
   <h1>Support &amp; <em>FAQ</em></h1>
-  <p class="meta">We're a small, solo-developer operation. Here's how to get in touch and quick answers to common questions.</p>
+  <p class="meta">We're a small, solo-developer operation. Here's how to get in touch and quick answers to common questions. New to the app? <a href="index.html">See what Wearra does</a> or learn <a href="index.html#how">how it works</a>.</p>
 
   <div class="contact-card">
     <h3 style="margin-top:0">Contact</h3>
@@ -68,7 +207,7 @@
         <li><strong>Pro subscription:</strong> 30 renders per month. Renders reset at the start of each billing period.</li>
         <li><strong>5-render top-up pack:</strong> a one-time $1.99 consumable available to Pro subscribers. Top-up credits stack on top of your monthly Pro allowance and never expire.</li>
       </ul>
-      <p>Your current credit balance is shown on the Home screen and in Settings → Credits &amp; Subscription.</p>
+      <p>Your current credit balance is shown on the Home screen and in Settings → Credits &amp; Subscription. New here? <a href="index.html#download">Download Wearra</a> to get started.</p>
     </details>
 
     <details>
@@ -169,6 +308,7 @@
   </div>
 
   <h2>Legal</h2>
+  <p>For details on what Wearra does, see our <a href="index.html">homepage</a> or how <a href="index.html#stylist">the AI Stylist</a> works.</p>
   <ul>
     <li><a href="privacy.html">Privacy Policy</a></li>
     <li><a href="terms.html">Terms of Service</a></li>

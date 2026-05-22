@@ -1,7 +1,13 @@
 {
   "permissions": {
     "allow": [
-      "Bash(grep -n -i -E \"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\\\.[a-zA-Z]{2,}\" /Users/elilinden/Desktop/WearraPages/index.html /Users/elilinden/Desktop/WearraPages/support.html /Users/elilinden/Desktop/WearraPages/terms.html /Users/elilinden/Desktop/WearraPages/privacy.html /Users/elilinden/Desktop/WearraPages/index.md /Users/elilinden/Desktop/WearraPages/support.md /Users/elilinden/Desktop/WearraPages/terms.md /Users/elilinden/Desktop/WearraPages/privacy.md /Users/elilinden/Desktop/WearraPages/llms-full.txt /Users/elilinden/Desktop/WearraPages/llms.txt /Users/elilinden/Desktop/WearraPages/ai.txt /Users/elilinden/Desktop/WearraPages/sitemap.xml /Users/elilinden/Desktop/WearraPages/robots.txt /Users/elilinden/Desktop/WearraPages/styles.css /Users/elilinden/Desktop/WearraPages/auth/action.html)"
+      "Bash(grep -n -i -E \"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\\\.[a-zA-Z]{2,}\" /Users/elilinden/Desktop/WearraPages/index.html /Users/elilinden/Desktop/WearraPages/support.html /Users/elilinden/Desktop/WearraPages/terms.html /Users/elilinden/Desktop/WearraPages/privacy.html /Users/elilinden/Desktop/WearraPages/index.md /Users/elilinden/Desktop/WearraPages/support.md /Users/elilinden/Desktop/WearraPages/terms.md /Users/elilinden/Desktop/WearraPages/privacy.md /Users/elilinden/Desktop/WearraPages/llms-full.txt /Users/elilinden/Desktop/WearraPages/llms.txt /Users/elilinden/Desktop/WearraPages/ai.txt /Users/elilinden/Desktop/WearraPages/sitemap.xml /Users/elilinden/Desktop/WearraPages/robots.txt /Users/elilinden/Desktop/WearraPages/styles.css /Users/elilinden/Desktop/WearraPages/auth/action.html)",
+      "Bash(find /Users/elilinden -maxdepth 3 -type d \\\\\\( -name \"*.xcodeproj\" -o -name \"*.xcworkspace\" -o -name \"Wearra*\" \\\\\\) 2>/dev/null | head -30)",
+      "Bash(find /Users/elilinden -maxdepth 4 -type f \\\\\\( -name \"*Stylist*\" -o -name \"*stylist*\" \\\\\\) 2>/dev/null | head -30)",
+      "Bash(xcodebuild -project WardrobeApp.xcodeproj -scheme WardrobeApp -destination 'generic/platform=iOS Simulator' -configuration Debug build)",
+      "Bash(xcodebuild -project WardrobeApp.xcodeproj -scheme WardrobeApp -destination 'platform=iOS Simulator,name=iPhone 17,OS=latest' test)",
+      "Bash(git -C /Users/elilinden/Desktop/WardrobeApp log --oneline -3 project.yml)",
+      "Bash(python3 -c ' *)"
     ]
   }
 }
