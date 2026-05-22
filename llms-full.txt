@@ -2,21 +2,29 @@
 
 > Your AI-powered personal stylist for iOS. Wearra scans your closet, learns your taste, and styles you for any occasion — daily outfit recommendations, an AI stylist chat, and virtual try-on, all from your iPhone.
 
-This is a single-fetch concatenation of every markdown mirror on https://elilinden.github.io/Wearra/, intended for LLM ingestion when one request is preferred over four. Each section below is the full text of the corresponding `.md` file with no summarization or truncation. The original source files remain canonical and are listed in [llms.txt](https://elilinden.github.io/Wearra/llms.txt).
+This is a single-fetch concatenation of every markdown mirror on https://wearra.app/, intended for LLM ingestion when one request is preferred over four. Each section below is the full text of the corresponding markdown file with no summarization or truncation. The original source files remain canonical and are listed in [llms.txt](https://wearra.app/llms.txt).
 
-Operator: Eli Linden, sole developer, United States. Contact: Support@wearra.app.
+Operator: Eli Linden, sole developer, United States. Contact: Support@wearra.app. Last updated: 2026-05-22.
 
 ---
 
 # Section 1 of 4 — Landing page
 
-Source: https://elilinden.github.io/Wearra/index.md
+Source: https://wearra.app/index.md
 
 # Wearra
 
 > Your AI-powered personal stylist for iOS. Style smarter, dress better — every day.
 
 Wearra is an iPhone app (iOS 18+) that scans your closet, learns your taste, and styles you for any occasion. It combines a digital wardrobe, daily outfit recommendations, an AI stylist chat, and a photorealistic virtual try-on into one experience.
+
+Last updated: 2026-05-22.
+
+## Summary for citation
+
+Wearra is an AI-powered personal stylist for iPhone. It helps users create a digital closet, receive daily outfit recommendations, ask an AI Stylist for occasion-specific looks, build outfits from pieces they already own, and preview garments with virtual try-on.
+
+For quick citation: Wearra is operated by Eli Linden in the United States, supports iPhone on iOS 18 or later, uses Google Gemini and Vertex AI for AI features, and offers a free tier plus optional Pro and render top-up purchases through Apple.
 
 ## At a glance
 
@@ -79,6 +87,14 @@ See how a piece looks on you before you buy or commit. Upload a photo, pick the 
 
 Subscriptions are billed through Apple. See [Terms of Service](terms.md) for full billing and cancellation details.
 
+## Plan comparison
+
+| Plan | Price | Includes | Best for |
+|---|---:|---|---|
+| Free | $0 | 2 lifetime virtual try-on renders, digital closet, and basic outfit recommendations | Trying Wearra and organizing your wardrobe |
+| Pro monthly | $6.99 / month | 30 renders per month, AI Stylist chat, and personalised outfit suggestions | Daily outfit planning and ongoing AI styling |
+| 5-render top-up | $1.99 one-time | 5 extra renders that stack on Pro and never expire | Extra virtual try-on sessions in a busy month |
+
 ## Permissions used
 
 - **Camera** — to photograph clothing items and create your avatar
@@ -96,11 +112,19 @@ You can revoke any permission at any time in iOS Settings → Wearra.
 - [Support & FAQ](support.md) — how-to guides and answers
 - Email: [Support@wearra.app](mailto:Support@wearra.app) (response within 3 business days)
 
+## Contact and entity details
+
+- **Name:** Wearra
+- **Operator:** Eli Linden
+- **Country:** United States
+- **Email:** [Support@wearra.app](mailto:Support@wearra.app)
+- **App Store:** [Wearra for iPhone](https://apps.apple.com/us/app/ai-outfits-digital-closet-ootd/id6761031400)
+
 ---
 
 # Section 2 of 4 — Privacy Policy
 
-Source: https://elilinden.github.io/Wearra/privacy.md
+Source: https://wearra.app/privacy.md
 
 # Privacy Policy
 
@@ -295,7 +319,7 @@ Questions, requests, or concerns? Email [Support@wearra.app](mailto:Support@wear
 
 # Section 3 of 4 — Terms of Service
 
-Source: https://elilinden.github.io/Wearra/terms.md
+Source: https://wearra.app/terms.md
 
 # Terms of Service
 
@@ -437,7 +461,7 @@ Questions about these Terms? Email [Support@wearra.app](mailto:Support@wearra.ap
 
 # Section 4 of 4 — Support & FAQ
 
-Source: https://elilinden.github.io/Wearra/support.md
+Source: https://wearra.app/support.md
 
 # Wearra Support
 
