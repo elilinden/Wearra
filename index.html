@@ -106,6 +106,60 @@
       ],
       "publisher": { "@id": "https://elilinden.github.io/Wearra/#org" },
       "author": { "@id": "https://elilinden.github.io/Wearra/#org" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://elilinden.github.io/Wearra/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Wearra?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wearra is an iOS app that turns your closet into a digital wardrobe and uses AI to recommend daily outfits, chat as a personal stylist, and render virtual try-ons."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Wearra free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — Wearra is free to download with 2 lifetime virtual try-on renders. Pro is $6.99/month for 30 renders, AI Stylist chat, and personalised suggestions. A 5-render top-up pack is also available for $1.99."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the AI Stylist work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ask in natural language — date night, job interview, weekend brunch — and the AI Stylist replies in seconds with outfits pulled straight from your closet, factoring in weather and dress code."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are my photos private?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Your wardrobe photos stay on your device. Avatar and garment photos used for try-on are sent to Google Gemini only to generate the render — they are not used to train AI models. See our privacy policy for full details."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Wearra available on Android?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not yet. Wearra is iOS-only and requires an iPhone running iOS 18 or later."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I cancel my subscription?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Subscriptions are managed through Apple. Open Settings, tap your name, tap Subscriptions, tap Wearra, then tap Cancel Subscription. You will keep Pro access until the end of the current billing period."
+          }
+        }
+      ]
     }
   ]
 }
@@ -439,6 +493,37 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .cta .appstore{background:#fff;color:#000}
 .cta .appstore:hover{background:#fff}
 
+/* ---------- FAQ ---------- */
+.faq{max-width:760px;margin:0 auto}
+.faq details{
+  background:var(--bg-soft);
+  border:1px solid var(--border);
+  border-radius:var(--radius-md);
+  padding:18px 22px;
+  margin-bottom:12px;
+  transition:border-color .2s var(--ease),box-shadow .2s var(--ease);
+}
+.faq details:hover{border-color:var(--border-strong)}
+.faq details[open]{box-shadow:var(--shadow-sm);border-color:var(--border-strong)}
+.faq summary{
+  list-style:none;cursor:pointer;
+  font-weight:600;font-size:17px;color:var(--fg);
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+  letter-spacing:-0.01em;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"";width:20px;height:20px;flex-shrink:0;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231F7BFF' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+  background-repeat:no-repeat;background-position:center;background-size:contain;
+  transition:transform .2s var(--ease);
+}
+.faq details[open] summary::after{transform:rotate(180deg)}
+.faq details > *:not(summary){margin-top:14px}
+.faq details p{color:var(--fg-soft);line-height:1.6;margin:14px 0 0}
+.faq details a{color:var(--primary);text-decoration:none;transition:color .2s var(--ease)}
+.faq details a:hover{color:var(--primary-hover);text-decoration:underline}
+
 /* ---------- Footer ---------- */
 .footer{padding:64px 0 40px;color:var(--fg-muted);font-size:14px;border-top:1px solid var(--border)}
 .footer__top{display:grid;grid-template-columns:1fr;gap:36px;margin-bottom:40px}
@@ -594,7 +679,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
       <div class="feature__copy">
         <span class="feature__num">04</span>
         <h3 class="feature__title">An AI Stylist <em class="lav">for any occasion</em>.</h3>
-        <p class="feature__desc">Date night, job interview, wedding, weekend brunch — ask away. Your AI Stylist replies in seconds, with looks pulled straight from your closet.</p>
+        <p class="feature__desc">Date night, job interview, wedding, weekend brunch — ask away. Your AI Stylist replies in seconds, with looks pulled straight from your closet. Your <a href="privacy.html">photos stay private</a> — we never train AI models on them.</p>
         <ul class="feature__bullets">
           <li>Natural-language chat trained on style fundamentals</li>
           <li>Context-aware suggestions: weather, dress code, vibe</li>
@@ -612,7 +697,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
       <div class="feature__copy">
         <span class="feature__num">05</span>
         <h3 class="feature__title">Try it on, <em>virtually</em>.</h3>
-        <p class="feature__desc">See how a piece looks on you before you buy or commit. Upload a photo, pick the item, let Wearra do the rest.</p>
+        <p class="feature__desc">See how a piece looks on you before you buy or commit. Upload a photo, pick the item, let Wearra do the rest. See <a href="support.html">how credits and Pro work</a>.</p>
         <ul class="feature__bullets">
           <li>Photorealistic try-on in under a minute</li>
           <li>Compare looks side-by-side</li>
@@ -688,6 +773,43 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
           <div><div class="quote__name">Sara L.</div><div class="quote__role">Los Angeles, CA</div></div>
         </figcaption>
       </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section" id="faq" aria-labelledby="faq-title">
+  <div class="container">
+    <header class="section__head reveal">
+      <span class="section__kicker">Questions, answered</span>
+      <h2 class="section__title" id="faq-title">Frequently asked <em>questions</em>.</h2>
+      <p class="section__sub">Quick answers about Wearra. Need more? Visit our <a href="support.html">support page</a>.</p>
+    </header>
+    <div class="faq reveal">
+      <details>
+        <summary>What is Wearra?</summary>
+        <p>Wearra is an iOS app that turns your closet into a digital wardrobe and uses AI to recommend daily outfits, chat as a personal stylist, and render virtual try-ons. <a href="#features">See all features</a>.</p>
+      </details>
+      <details>
+        <summary>Is Wearra free?</summary>
+        <p>Yes &mdash; Wearra is free to download with 2 lifetime virtual try-on renders. Pro is $6.99/month for 30 renders, AI Stylist chat, and personalised suggestions. <a href="support.html">See full pricing details</a>.</p>
+      </details>
+      <details>
+        <summary>How does the AI Stylist work?</summary>
+        <p>Ask in natural language &mdash; date night, job interview, weekend brunch &mdash; and the AI Stylist replies in seconds with outfits pulled straight from your closet, factoring in weather and dress code. <a href="#stylist">Learn more about AI Stylist</a>.</p>
+      </details>
+      <details>
+        <summary>Are my photos private?</summary>
+        <p>Yes. Your wardrobe photos stay on your device. Avatar and garment photos used for try-on are sent to Google Gemini only to generate the render &mdash; they're not used to train AI models. See our <a href="privacy.html">privacy policy</a> for full details.</p>
+      </details>
+      <details>
+        <summary>Is Wearra available on Android?</summary>
+        <p>Not yet. Wearra is iOS-only and requires an iPhone running iOS 18 or later. <a href="support.html">Contact us</a> to be notified about future platforms.</p>
+      </details>
+      <details>
+        <summary>How do I cancel my subscription?</summary>
+        <p>Subscriptions are managed through Apple. Open <strong>Settings &rarr; [your name] &rarr; Subscriptions &rarr; Wearra &rarr; Cancel Subscription</strong>. <a href="support.html">Full cancellation instructions</a> are on our support page.</p>
+      </details>
     </div>
   </div>
 </section>
