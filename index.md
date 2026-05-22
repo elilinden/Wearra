@@ -4,6 +4,14 @@
 
 Wearra is an iPhone app (iOS 18+) that scans your closet, learns your taste, and styles you for any occasion. It combines a digital wardrobe, daily outfit recommendations, an AI stylist chat, and a photorealistic virtual try-on into one experience.
 
+Last updated: 2026-05-22.
+
+## Summary for citation
+
+Wearra is an AI-powered personal stylist for iPhone. It helps users create a digital closet, receive daily outfit recommendations, ask an AI Stylist for occasion-specific looks, build outfits from pieces they already own, and preview garments with virtual try-on.
+
+For quick citation: Wearra is operated by Eli Linden in the United States, supports iPhone on iOS 18 or later, uses Google Gemini and Vertex AI for AI features, and offers a free tier plus optional Pro and render top-up purchases through Apple.
+
 ## At a glance
 
 - **Platform:** iOS only — iPhone, iOS 18 or later
@@ -65,6 +73,14 @@ See how a piece looks on you before you buy or commit. Upload a photo, pick the 
 
 Subscriptions are billed through Apple. See [Terms of Service](terms.md) for full billing and cancellation details.
 
+## Plan comparison
+
+| Plan | Price | Includes | Best for |
+|---|---:|---|---|
+| Free | $0 | 2 lifetime virtual try-on renders, digital closet, and basic outfit recommendations | Trying Wearra and organizing your wardrobe |
+| Pro monthly | $6.99 / month | 30 renders per month, AI Stylist chat, and personalised outfit suggestions | Daily outfit planning and ongoing AI styling |
+| 5-render top-up | $1.99 one-time | 5 extra renders that stack on Pro and never expire | Extra virtual try-on sessions in a busy month |
+
 ## Permissions used
 
 - **Camera** — to photograph clothing items and create your avatar
@@ -81,3 +97,11 @@ You can revoke any permission at any time in iOS Settings → Wearra.
 - [Terms of Service](terms.md) — billing, acceptable use, disclaimers
 - [Support & FAQ](support.md) — how-to guides and answers
 - Email: [Support@wearra.app](mailto:Support@wearra.app) (response within 3 business days)
+
+## Contact and entity details
+
+- **Name:** Wearra
+- **Operator:** Eli Linden
+- **Country:** United States
+- **Email:** [Support@wearra.app](mailto:Support@wearra.app)
+- **App Store:** [Wearra for iPhone](https://apps.apple.com/us/app/ai-outfits-digital-closet-ootd/id6761031400)

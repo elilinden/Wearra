@@ -1,11 +1,12 @@
-# robots.txt for Wearra — https://elilinden.github.io/Wearra/
+# robots.txt for Wearra — https://wearra.app/
 # All HTML pages and markdown mirrors are intended for indexing.
 
 User-agent: *
+Content-Signal: search=yes,ai-input=yes,ai-train=yes
 Allow: /
 
 # --- AI / LLM crawlers (explicit allow) ---
-# Change Allow: / to Disallow: / under any of these to opt that bot out.
+# Change the allow rules below only if you intentionally want to opt a bot out.
 
 User-agent: ClaudeBot
 Allow: /
@@ -46,4 +47,4 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
-Sitemap: https://elilinden.github.io/Wearra/sitemap.xml
+Sitemap: https://wearra.app/sitemap.xml

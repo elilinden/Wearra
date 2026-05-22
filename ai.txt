@@ -1,6 +1,6 @@
 # ai.txt — AI usage permissions for Wearra
-# Site: https://elilinden.github.io/Wearra/
-# Last updated: 2026-04-30
+# Site: https://wearra.app/
+# Last updated: 2026-05-22
 # Spec: https://spawning.ai/ai-txt
 #
 # This file expresses AI training and inference permissions in
@@ -13,7 +13,7 @@
 # Wearra is an indie iOS app marketing site — the goal is for
 # AI agents to discover and accurately describe it.
 #
-# To opt out a specific bot, flip its Allow: / to Disallow: /.
+# Change the allow rules below only if you intentionally want to opt a bot out.
 
 # --- All AI agents ---
 User-Agent: *
@@ -60,4 +60,4 @@ Allow: /
 User-Agent: cohere-ai
 Allow: /
 
-Sitemap: https://elilinden.github.io/Wearra/sitemap.xml
+Sitemap: https://wearra.app/sitemap.xml

@@ -4,6 +4,8 @@
 
 Wearra is a solo-developer iOS app (iPhone only, iOS 18+) that lets users digitize their wardrobe, get daily AI-generated outfit recommendations, chat with an AI stylist, and preview clothes virtually before buying. The app uses Google Gemini and Vertex AI for AI features and Firebase for backend services. It is operated by Eli Linden in the United States.
 
+Last updated: 2026-05-22.
+
 Each markdown file below is a direct mirror of the corresponding HTML page on the live site, optimised for LLM consumption (no styling or scripts).
 
 ## Docs

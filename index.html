@@ -7,21 +7,29 @@
 <meta name="theme-color" content="#FAF6EE">
 <title>Wearra — Your AI-powered personal stylist</title>
 <meta name="description" content="Wearra scans your closet, learns your taste, and styles you for any occasion. Daily outfit recommendations, an AI stylist, and virtual try-on — all on your iPhone.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="googlebot" content="index, follow, max-image-preview:large">
+<meta name="last-modified" content="2026-05-22">
 <meta property="og:title" content="Wearra — Your AI-powered personal stylist">
 <meta property="og:description" content="Daily outfit recommendations, an AI stylist, and virtual try-on. All on your iPhone.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://elilinden.github.io/Wearra/">
+<meta property="og:url" content="https://wearra.app/">
 <meta property="og:site_name" content="Wearra">
-<meta property="og:image" content="https://elilinden.github.io/Wearra/og-image.png">
+<meta property="og:image" content="https://wearra.app/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Wearra — Style smarter, dress better. iPhone screenshot of an organized digital closet.">
+<meta property="article:published_time" content="2026-04-20T00:00:00-04:00">
+<meta property="article:modified_time" content="2026-05-22T02:40:00-04:00">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Wearra — Your AI-powered personal stylist">
 <meta name="twitter:description" content="Daily outfit recommendations, an AI stylist, and virtual try-on. All on your iPhone.">
-<meta name="twitter:image" content="https://elilinden.github.io/Wearra/og-image.png">
+<meta name="twitter:image" content="https://wearra.app/og-image.png">
 <meta name="apple-itunes-app" content="app-id=6761031400">
-<link rel="canonical" href="https://elilinden.github.io/Wearra/">
+<link rel="canonical" href="https://wearra.app/">
+<link rel="alternate" hreflang="en" href="https://wearra.app/">
+<link rel="alternate" hreflang="en-US" href="https://wearra.app/">
+<link rel="alternate" hreflang="x-default" href="https://wearra.app/">
 <link rel="icon" type="image/jpeg" href="AppleIcon.jpg">
 <link rel="apple-touch-icon" href="AppleIcon.jpg">
 <link rel="alternate" type="text/markdown" href="index.md" title="Wearra — Markdown mirror for LLMs">
@@ -36,43 +44,85 @@
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://elilinden.github.io/Wearra/#org",
+      "@id": "https://wearra.app/#org",
       "name": "Wearra",
-      "url": "https://elilinden.github.io/Wearra/",
+      "url": "https://wearra.app/",
       "founder": {
         "@type": "Person",
+        "@id": "https://wearra.app/#eli-linden",
         "name": "Eli Linden"
       },
       "email": "Support@wearra.app",
-      "logo": "https://elilinden.github.io/Wearra/og-image.png"
+      "logo": "https://wearra.app/og-image.png",
+      "sameAs": [
+        "https://apps.apple.com/us/app/ai-outfits-digital-closet-ootd/id6761031400"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://wearra.app/#eli-linden",
+      "name": "Eli Linden",
+      "email": "Support@wearra.app",
+      "jobTitle": "Founder and developer",
+      "worksFor": { "@id": "https://wearra.app/#org" }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://wearra.app/#local-business",
+      "name": "Wearra",
+      "url": "https://wearra.app/",
+      "image": "https://wearra.app/og-image.png",
+      "logo": "https://wearra.app/AppleIcon.jpg",
+      "email": "Support@wearra.app",
+      "priceRange": "$0-$6.99",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "founder": { "@id": "https://wearra.app/#eli-linden" }
     },
     {
       "@type": "WebSite",
-      "@id": "https://elilinden.github.io/Wearra/#website",
-      "url": "https://elilinden.github.io/Wearra/",
+      "@id": "https://wearra.app/#website",
+      "url": "https://wearra.app/",
       "name": "Wearra",
       "description": "Your AI-powered personal stylist for iOS. Daily outfit recommendations, an AI stylist, and virtual try-on.",
-      "publisher": { "@id": "https://elilinden.github.io/Wearra/#org" },
-      "inLanguage": "en-US"
+      "publisher": { "@id": "https://wearra.app/#org" },
+      "inLanguage": "en-US",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.google.com/search?q=site%3Awearra.app+{search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
     },
     {
       "@type": "MobileApplication",
-      "@id": "https://elilinden.github.io/Wearra/#app",
+      "@id": "https://wearra.app/#app",
       "name": "Wearra",
       "applicationCategory": "LifestyleApplication",
       "applicationSubCategory": "Fashion",
       "operatingSystem": "iOS 18.0",
-      "url": "https://elilinden.github.io/Wearra/",
+      "softwareVersion": "1.0",
+      "url": "https://wearra.app/",
       "description": "Wearra scans your closet, learns your taste, and styles you for any occasion. Daily outfit recommendations, an AI stylist chat, and virtual try-on, all from your iPhone.",
-      "image": "https://elilinden.github.io/Wearra/og-image.png",
+      "image": "https://wearra.app/og-image.png",
       "screenshot": [
-        "https://elilinden.github.io/Wearra/screenshots/home.jpg",
-        "https://elilinden.github.io/Wearra/screenshots/closet.jpg",
-        "https://elilinden.github.io/Wearra/screenshots/recommendations.jpg",
-        "https://elilinden.github.io/Wearra/screenshots/builder.jpg",
-        "https://elilinden.github.io/Wearra/screenshots/stylist.jpg",
-        "https://elilinden.github.io/Wearra/screenshots/tryon.jpg"
+        "https://wearra.app/screenshots/home.jpg",
+        "https://wearra.app/screenshots/closet.jpg",
+        "https://wearra.app/screenshots/recommendations.jpg",
+        "https://wearra.app/screenshots/builder.jpg",
+        "https://wearra.app/screenshots/stylist.jpg",
+        "https://wearra.app/screenshots/tryon.jpg"
       ],
+      "datePublished": "2026-04-20",
+      "dateModified": "2026-05-22",
       "featureList": [
         "Digital wardrobe with auto-categorization",
         "Daily AI-generated outfit recommendations",
@@ -104,12 +154,126 @@
           "description": "5 extra renders that stack on Pro and never expire"
         }
       ],
-      "publisher": { "@id": "https://elilinden.github.io/Wearra/#org" },
-      "author": { "@id": "https://elilinden.github.io/Wearra/#org" }
+      "publisher": { "@id": "https://wearra.app/#org" },
+      "author": { "@id": "https://wearra.app/#org" }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://wearra.app/#product",
+      "name": "Wearra",
+      "brand": { "@id": "https://wearra.app/#org" },
+      "description": "An AI-powered personal stylist app for iPhone that digitizes your closet, recommends outfits, supports AI stylist chat, and offers virtual try-on.",
+      "image": "https://wearra.app/og-image.png",
+      "category": "Lifestyle mobile application",
+      "isRelatedTo": { "@id": "https://wearra.app/#app" },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Free",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/us/app/ai-outfits-digital-closet-ootd/id6761031400"
+        },
+        {
+          "@type": "Offer",
+          "name": "Wearra Pro monthly subscription",
+          "price": "6.99",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/us/app/ai-outfits-digital-closet-ootd/id6761031400"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://wearra.app/#webpage",
+      "url": "https://wearra.app/",
+      "name": "Wearra — Your AI-powered personal stylist",
+      "description": "Wearra scans your closet, learns your taste, and styles you for any occasion.",
+      "isPartOf": { "@id": "https://wearra.app/#website" },
+      "about": { "@id": "https://wearra.app/#product" },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://wearra.app/og-image.png",
+        "width": 1200,
+        "height": 630
+      },
+      "breadcrumb": { "@id": "https://wearra.app/#breadcrumb" },
+      "datePublished": "2026-04-20",
+      "dateModified": "2026-05-22",
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://wearra.app/#article",
+      "headline": "Wearra — Your AI-powered personal stylist",
+      "description": "A concise overview of Wearra, the iOS app for digital closets, daily outfit recommendations, AI stylist chat, and virtual try-on.",
+      "image": "https://wearra.app/og-image.png",
+      "author": { "@id": "https://wearra.app/#eli-linden" },
+      "publisher": { "@id": "https://wearra.app/#org" },
+      "mainEntityOfPage": { "@id": "https://wearra.app/#webpage" },
+      "datePublished": "2026-04-20",
+      "dateModified": "2026-05-22",
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://wearra.app/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://wearra.app/"
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://wearra.app/#how-to",
+      "name": "How to use Wearra",
+      "description": "Set up Wearra by building your closet, training your AI stylist, and getting daily outfit recommendations.",
+      "totalTime": "PT5M",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Build your closet",
+          "text": "Snap photos of clothing you own or import them from your camera roll so Wearra can crop, tag, and categorize everything."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Train your stylist",
+          "text": "Rate looks, save favorites, and chat with the AI Stylist so recommendations match your taste."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Get styled daily",
+          "text": "Open Wearra for daily outfit recommendations, occasion-based styling, and virtual try-on before you commit."
+        }
+      ]
+    },
+    {
+      "@type": "QAPage",
+      "@id": "https://wearra.app/#qa",
+      "mainEntity": {
+        "@type": "Question",
+        "name": "What does Wearra help users do?",
+        "answerCount": 1,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Wearra helps iPhone users digitize their closet, get daily outfit recommendations, ask an AI stylist for occasion-specific looks, and preview clothes with virtual try-on.",
+          "dateCreated": "2026-05-22",
+          "url": "https://wearra.app/#faq"
+        }
+      }
     },
     {
       "@type": "FAQPage",
-      "@id": "https://elilinden.github.io/Wearra/#faq",
+      "@id": "https://wearra.app/#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -355,6 +519,12 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 @media (prefers-reduced-motion: reduce){
   .phone__float--top,.phone__float--bot{animation:none}
 }
+@media (max-width:520px){
+  .phone__float{padding:10px 12px;border-radius:14px;font-size:12px}
+  .phone__float .ico{width:28px;height:28px}
+  .phone__float--top{left:8px}
+  .phone__float--bot{right:8px}
+}
 
 /* ---------- Trust bar ---------- */
 .trust{padding:32px 0 16px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--bg-soft)}
@@ -524,6 +694,39 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .faq details a{color:var(--primary);text-decoration:none;transition:color .2s var(--ease)}
 .faq details a:hover{color:var(--primary-hover);text-decoration:underline}
 
+/* ---------- Extractable content blocks ---------- */
+.summary-band{background:var(--bg-soft);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.summary{display:grid;grid-template-columns:1fr;gap:28px;align-items:start}
+@media (min-width:860px){.summary{grid-template-columns:1.15fr .85fr}}
+.summary__copy{max-width:680px}
+.summary__copy p{font-size:17px;color:var(--fg-soft);line-height:1.65;margin:0 0 18px}
+.summary__copy p:last-child{margin-bottom:0}
+.summary__facts{
+  display:grid;gap:14px;padding:24px;border:1px solid var(--border);
+  background:var(--bg-tint);border-radius:var(--radius-md);
+}
+.summary__facts h3{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin:0;color:var(--fg)}
+.summary__facts dl{display:grid;gap:12px;margin:0}
+.summary__facts div{display:grid;grid-template-columns:120px 1fr;gap:14px;align-items:start}
+.summary__facts dt{font-size:13px;font-weight:700;color:var(--fg)}
+.summary__facts dd{margin:0;font-size:14px;color:var(--fg-muted)}
+.updated{font-size:13px;color:var(--fg-muted);margin-top:18px}
+.updated time{font-weight:700;color:var(--fg-soft)}
+.pricing-table{overflow-x:auto;border:1px solid var(--border);border-radius:var(--radius-md);background:var(--bg-soft);box-shadow:var(--shadow-sm)}
+.pricing-table table{width:100%;border-collapse:collapse;min-width:680px}
+.pricing-table caption{text-align:left;padding:18px 20px;font-weight:700;color:var(--fg);border-bottom:1px solid var(--border)}
+.pricing-table th,.pricing-table td{padding:16px 20px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+.pricing-table th{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--fg);background:var(--bg-tint)}
+.pricing-table td{font-size:15px;color:var(--fg-soft)}
+.pricing-table tr:last-child td{border-bottom:0}
+.contact-grid{display:grid;grid-template-columns:1fr;gap:20px}
+@media (min-width:760px){.contact-grid{grid-template-columns:repeat(3,1fr)}}
+.contact-card{background:var(--bg-soft);border:1px solid var(--border);border-radius:var(--radius-md);padding:24px}
+.contact-card h3{margin:0 0 10px;font-size:18px;letter-spacing:-.01em;color:var(--fg)}
+.contact-card p{margin:0;color:var(--fg-muted);font-size:15px;line-height:1.55}
+.contact-card a{color:var(--primary);font-weight:600}
+.contact-card a:hover{text-decoration:underline}
+
 /* ---------- Footer ---------- */
 .footer{padding:64px 0 40px;color:var(--fg-muted);font-size:14px;border-top:1px solid var(--border)}
 .footer__top{display:grid;grid-template-columns:1fr;gap:36px;margin-bottom:40px}
@@ -551,9 +754,11 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
       <em>Wearra</em>
     </a>
     <nav class="nav__links" aria-label="Primary">
+      <a href="#summary">Summary</a>
       <a href="#features">Features</a>
       <a href="#how">How it works</a>
       <a href="#stylist">AI Stylist</a>
+      <a href="#pricing">Pricing</a>
       <a href="#download">Download</a>
     </nav>
     <a class="btn btn--primary" href="https://apps.apple.com/us/app/ai-outfits-digital-closet-ootd/id6761031400" target="_blank" rel="noopener">Get the app</a>
@@ -578,7 +783,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
       </div>
       <div class="hero__meta">
         <span class="hero__stars" aria-hidden="true">★★★★★</span>
-        <span>Loved by early users · iOS 17+</span>
+        <span>Loved by early users · iOS 18+</span>
       </div>
     </div>
 
@@ -608,7 +813,30 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
     <div class="trust__item reveal"><div class="trust__num">100<em>%</em></div><div class="trust__lbl">On-device privacy</div></div>
     <div class="trust__item reveal"><div class="trust__num">5<em>×</em></div><div class="trust__lbl">Daily outfit picks</div></div>
     <div class="trust__item reveal"><div class="trust__num">∞</div><div class="trust__lbl">Closet capacity</div></div>
-    <div class="trust__item reveal"><div class="trust__num">iOS<em> 17+</em></div><div class="trust__lbl">Built for iPhone</div></div>
+    <div class="trust__item reveal"><div class="trust__num">iOS<em> 18+</em></div><div class="trust__lbl">Built for iPhone</div></div>
+  </div>
+</section>
+
+<!-- ===== Summary ===== -->
+<section class="section summary-band" id="summary" aria-labelledby="summary-title">
+  <div class="container summary">
+    <div class="summary__copy reveal">
+      <span class="section__kicker">Summary</span>
+      <h2 class="section__title" id="summary-title">Wearra in one <em>readable answer</em>.</h2>
+      <p>Wearra is an AI-powered personal stylist for iPhone. It helps you create a digital closet, receive daily outfit recommendations, ask an AI Stylist for occasion-specific looks, build outfits from pieces you already own, and preview garments with virtual try-on.</p>
+      <p>For AI citation and quick scanning: Wearra is operated by Eli Linden in the United States, supports iPhone on iOS 18 or later, uses Google Gemini and Vertex AI for AI features, and offers a free tier plus optional Pro and render top-up purchases through Apple.</p>
+      <p class="updated">Last updated <time datetime="2026-05-22">May 22, 2026</time>. Freshness signals are also published in the sitemap, Open Graph metadata, and JSON-LD schema.</p>
+    </div>
+    <aside class="summary__facts reveal" aria-labelledby="facts-title">
+      <h3 id="facts-title">Quick facts</h3>
+      <dl>
+        <div><dt>Category</dt><dd>AI stylist, digital closet, virtual try-on</dd></div>
+        <div><dt>Platform</dt><dd>iPhone running iOS 18 or later</dd></div>
+        <div><dt>Pricing</dt><dd>Free tier, Pro monthly subscription, and Pro render top-ups</dd></div>
+        <div><dt>Operator</dt><dd>Wearra, operated by Eli Linden in the United States</dd></div>
+        <div><dt>Support</dt><dd><a href="mailto:Support@wearra.app">Support@wearra.app</a></dd></div>
+      </dl>
+    </aside>
   </div>
 </section>
 
@@ -741,6 +969,50 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   </div>
 </section>
 
+<!-- ===== Pricing ===== -->
+<section class="section" id="pricing" aria-labelledby="pricing-title">
+  <div class="container">
+    <header class="section__head reveal">
+      <span class="section__kicker">Pricing</span>
+      <h2 class="section__title" id="pricing-title">Clear options for <em>every closet</em>.</h2>
+      <p class="section__sub">This table mirrors the app offer details so search engines and AI agents can extract the plan structure cleanly.</p>
+    </header>
+    <div class="pricing-table reveal">
+      <table>
+        <caption>Wearra plan comparison</caption>
+        <thead>
+          <tr>
+            <th scope="col">Plan</th>
+            <th scope="col">Price</th>
+            <th scope="col">Includes</th>
+            <th scope="col">Best for</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Free</th>
+            <td>$0</td>
+            <td>2 lifetime virtual try-on renders, digital closet, and basic outfit recommendations.</td>
+            <td>Trying Wearra and organizing your wardrobe.</td>
+          </tr>
+          <tr>
+            <th scope="row">Pro monthly</th>
+            <td>$6.99 per month</td>
+            <td>30 renders per month, AI Stylist chat, and personalised outfit suggestions.</td>
+            <td>Daily outfit planning and ongoing AI styling.</td>
+          </tr>
+          <tr>
+            <th scope="row">5-render top-up</th>
+            <td>$1.99 one time</td>
+            <td>5 extra renders that stack on Pro and never expire.</td>
+            <td>Extra virtual try-on sessions in a busy month.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
 <!-- ===== Testimonials ===== -->
 <section class="section testimonials">
   <div class="container">
@@ -810,6 +1082,31 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
         <summary>How do I cancel my subscription?</summary>
         <p>Subscriptions are managed through Apple. Open <strong>Settings &rarr; [your name] &rarr; Subscriptions &rarr; Wearra &rarr; Cancel Subscription</strong>. <a href="support.html">Full cancellation instructions</a> are on our support page.</p>
       </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Contact / entity details ===== -->
+<section class="section" id="contact" aria-labelledby="contact-title">
+  <div class="container">
+    <header class="section__head reveal">
+      <span class="section__kicker">Contact</span>
+      <h2 class="section__title" id="contact-title">Official Wearra <em>details</em>.</h2>
+      <p class="section__sub">Use these details for support, citation, and entity matching across search and AI systems.</p>
+    </header>
+    <div class="contact-grid">
+      <address class="contact-card reveal">
+        <h3>Wearra</h3>
+        <p>Operated by Eli Linden<br>United States</p>
+      </address>
+      <div class="contact-card reveal">
+        <h3>Email</h3>
+        <p><a href="mailto:Support@wearra.app">Support@wearra.app</a><br>Response target: within 3 business days.</p>
+      </div>
+      <div class="contact-card reveal">
+        <h3>App Store</h3>
+        <p><a href="https://apps.apple.com/us/app/ai-outfits-digital-closet-ootd/id6761031400" target="_blank" rel="noopener">Wearra for iPhone</a><br>Available for iOS 18 or later.</p>
+      </div>
     </div>
   </div>
 </section>
