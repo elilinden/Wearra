@@ -55,7 +55,54 @@
       "email": "Support@wearra.app",
       "logo": "https://wearra.app/og-image.png",
       "sameAs": [
-        "https://apps.apple.com/us/app/ai-outfits-digital-closet-ootd/id6761031400"
+        "https://apps.apple.com/us/app/ai-outfits-digital-closet-ootd/id6761031400",
+        "https://github.com/elilinden/Wearra",
+        "https://www.instagram.com/wearraapp/",
+        "https://www.tiktok.com/@funniestvideos"
+      ],
+      "knowsAbout": [
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://en.wikipedia.org/wiki/Artificial_intelligence",
+          "name": "Artificial intelligence",
+          "url": "https://en.wikipedia.org/wiki/Artificial_intelligence",
+          "inDefinedTermSet": "https://en.wikipedia.org/"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://en.wikipedia.org/wiki/Generative_artificial_intelligence",
+          "name": "Generative artificial intelligence",
+          "url": "https://en.wikipedia.org/wiki/Generative_artificial_intelligence",
+          "inDefinedTermSet": "https://en.wikipedia.org/"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://en.wikipedia.org/wiki/Capsule_wardrobe",
+          "name": "Capsule wardrobe",
+          "url": "https://en.wikipedia.org/wiki/Capsule_wardrobe",
+          "inDefinedTermSet": "https://en.wikipedia.org/"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://en.wikipedia.org/wiki/Personal_shopper",
+          "name": "Personal stylist",
+          "url": "https://en.wikipedia.org/wiki/Personal_shopper",
+          "inDefinedTermSet": "https://en.wikipedia.org/"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://en.wikipedia.org/wiki/Fashion",
+          "name": "Fashion",
+          "url": "https://en.wikipedia.org/wiki/Fashion",
+          "inDefinedTermSet": "https://en.wikipedia.org/"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://en.wikipedia.org/wiki/Computer_vision",
+          "name": "Computer vision",
+          "url": "https://en.wikipedia.org/wiki/Computer_vision",
+          "inDefinedTermSet": "https://en.wikipedia.org/"
+        }
       ]
     },
     {
@@ -93,6 +140,10 @@
       "description": "An AI closet, stylist, virtual try-on, weekly outfit planner, and packing list builder for iPhone.",
       "publisher": { "@id": "https://wearra.app/#org" },
       "inLanguage": "en-US",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".hero__title", ".hero__sub", ".section__title", ".section__sub", ".faq summary", ".faq details p"]
+      },
       "potentialAction": {
         "@type": "SearchAction",
         "target": {
@@ -205,7 +256,11 @@
       "breadcrumb": { "@id": "https://wearra.app/#breadcrumb" },
       "datePublished": "2026-04-20",
       "dateModified": "2026-05-22",
-      "inLanguage": "en-US"
+      "inLanguage": "en-US",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".hero__title", ".hero__sub", ".quick-facts", ".section__title", ".faq summary", ".faq details p"]
+      }
     },
     {
       "@type": "Article",
@@ -218,7 +273,11 @@
       "mainEntityOfPage": { "@id": "https://wearra.app/#webpage" },
       "datePublished": "2026-04-20",
       "dateModified": "2026-05-22",
-      "inLanguage": "en-US"
+      "inLanguage": "en-US",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".hero__title", ".hero__sub", ".quick-facts", ".section__title"]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -283,6 +342,10 @@
     {
       "@type": "FAQPage",
       "@id": "https://wearra.app/#faq",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".faq summary", ".faq details p"]
+      },
       "mainEntity": [
         {
           "@type": "Question",
@@ -547,7 +610,8 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .trust{padding:32px 0 16px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--bg-soft)}
 .trust__row{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;text-align:center}
 @media (min-width:720px){.trust__row{grid-template-columns:repeat(4,1fr)}}
-.trust__item{padding:8px}
+.trust__item{padding:8px;margin:0}
+.stat-callout{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px}
 .trust__num{font-size:28px;font-weight:800;letter-spacing:-0.02em;color:var(--fg)}
 .trust__num em{font-style:italic;color:var(--primary)}
 .trust__lbl{font-size:13px;color:var(--fg-muted);margin-top:4px}
@@ -615,8 +679,9 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 
 /* ---------- How it works ---------- */
 .how{background:var(--bg-warm);position:relative}
-.how__grid{display:grid;grid-template-columns:1fr;gap:24px;counter-reset:step}
-@media (min-width:760px){.how__grid{grid-template-columns:repeat(3,1fr)}}
+.how__grid{display:grid;grid-template-columns:1fr;gap:24px;counter-reset:step;list-style:none;padding:0;margin:0}
+@media (min-width:760px){.how__grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1080px){.how__grid{grid-template-columns:repeat(4,1fr)}}
 .step{
   position:relative;background:var(--bg-soft);border:1px solid var(--border);
   border-radius:var(--radius-lg);padding:32px 28px;
@@ -827,10 +892,22 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 <!-- ===== Trust bar ===== -->
 <section class="trust" aria-label="At a glance">
   <div class="container trust__row">
-    <div class="trust__item reveal"><div class="trust__num">100<em>%</em></div><div class="trust__lbl">On-device privacy</div></div>
-    <div class="trust__item reveal"><div class="trust__num">5<em>×</em></div><div class="trust__lbl">Daily outfit picks</div></div>
-    <div class="trust__item reveal"><div class="trust__num">∞</div><div class="trust__lbl">Closet capacity</div></div>
-    <div class="trust__item reveal"><div class="trust__num">iOS<em> 18+</em></div><div class="trust__lbl">Built for iPhone</div></div>
+    <figure class="trust__item stat-callout reveal" role="group" aria-label="On-device privacy: 100%">
+      <div class="trust__num"><data value="100">100<em>%</em></data></div>
+      <figcaption class="trust__lbl">On-device privacy</figcaption>
+    </figure>
+    <figure class="trust__item stat-callout reveal" role="group" aria-label="Daily outfit picks: 5x">
+      <div class="trust__num"><data value="5">5<em>×</em></data></div>
+      <figcaption class="trust__lbl">Daily outfit picks</figcaption>
+    </figure>
+    <figure class="trust__item stat-callout reveal" role="group" aria-label="Closet capacity: unlimited">
+      <div class="trust__num">∞</div>
+      <figcaption class="trust__lbl">Closet capacity</figcaption>
+    </figure>
+    <figure class="trust__item stat-callout reveal" role="group" aria-label="Built for iPhone running iOS 18 or later">
+      <div class="trust__num">iOS<em> 18+</em></div>
+      <figcaption class="trust__lbl">Built for iPhone</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -1000,31 +1077,31 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   <div class="container">
     <header class="section__head reveal">
       <span class="section__kicker">How it works</span>
-      <h2 class="section__title">Four steps to a <em>smarter closet</em>.</h2>
-      <p class="section__sub">Set up in minutes, then let the AI help with daily styling, weekly planning, and packing.</p>
+      <h2 class="section__title">How does Wearra <em>actually work</em>?</h2>
+      <p class="section__sub">Four steps. Set up in minutes, then let the AI help with daily styling, weekly planning, and packing.</p>
     </header>
-    <div class="how__grid">
-      <article class="step reveal">
-        <div class="step__num">1</div>
+    <ol class="how__grid" aria-label="Steps to set up Wearra">
+      <li class="step reveal">
+        <div class="step__num" aria-hidden="true">1</div>
         <h3>Build your closet</h3>
         <p>Snap photos, import from your camera roll, or import from brands you shop. Wearra cuts backgrounds, tags details, and categorizes everything.</p>
-      </article>
-      <article class="step reveal">
-        <div class="step__num">2</div>
+      </li>
+      <li class="step reveal">
+        <div class="step__num" aria-hidden="true">2</div>
         <h3>Train your stylist</h3>
         <p>Rate looks, save favorites, and chat with the AI Stylist. The more you interact, the sharper its picks become.</p>
-      </article>
-      <article class="step reveal">
-        <div class="step__num">3</div>
+      </li>
+      <li class="step reveal">
+        <div class="step__num" aria-hidden="true">3</div>
         <h3>Plan and try on</h3>
         <p>Get daily outfits, plan looks around your schedule, and preview outfits on your own body before you wear them.</p>
-      </article>
-      <article class="step reveal">
-        <div class="step__num">4</div>
+      </li>
+      <li class="step reveal">
+        <div class="step__num" aria-hidden="true">4</div>
         <h3>Pack the trip</h3>
         <p>Tell Wearra where you're going and for how long. It builds a capsule packing list from what you own and the forecast.</p>
-      </article>
-    </div>
+      </li>
+    </ol>
   </div>
 </section>
 
@@ -1033,7 +1110,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   <div class="container">
     <header class="section__head reveal">
       <span class="section__kicker">Pricing</span>
-      <h2 class="section__title" id="pricing-title">Clear options for <em>every closet</em>.</h2>
+      <h2 class="section__title" id="pricing-title">How much does <em>Wearra cost</em>?</h2>
       <p class="section__sub">This table mirrors the app offer details so search engines and AI agents can extract the plan structure cleanly.</p>
     </header>
     <div class="pricing-table reveal">
@@ -1077,7 +1154,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   <div class="container">
     <header class="section__head reveal">
       <span class="section__kicker">Loved by early users</span>
-      <h2 class="section__title">No more <em>"nothing to wear"</em>.</h2>
+      <h2 class="section__title">Why do users <em>love Wearra</em>?</h2>
     </header>
     <div class="testimonials__grid">
       <figure class="quote reveal">
