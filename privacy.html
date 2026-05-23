@@ -48,7 +48,11 @@
         "name": "Wearra",
         "logo": { "@type": "ImageObject", "url": "https://wearra.app/og-image.png" }
       },
-      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wearra.app/privacy.html" }
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wearra.app/privacy.html" },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".article h1", ".article h2", ".article > p"]
+      }
     }
   ]
 }
@@ -84,7 +88,7 @@
 
   <p>Wearra is operated by Eli Linden, a sole developer operating in the United States ("we," "us," or "Wearra").</p>
 
-  <h2>What we collect</h2>
+  <h2>What does Wearra collect?</h2>
 
   <h3>Information you give us directly</h3>
   <ul>
@@ -136,7 +140,7 @@
     <li><code>/redeemCodes/{code}</code> — promo code state (we manage this; it isn't user-editable)</li>
   </ul>
 
-  <h2>How we use it</h2>
+  <h2>How does Wearra use your data?</h2>
   <ul>
     <li><strong>Virtual try-on rendering.</strong> We send your avatar and garment photos to Google's Gemini and Vertex AI try-on models so they can generate the rendered image you requested.</li>
     <li><strong>AI chat and outfit suggestions.</strong> Your prompts and the wardrobe context you share with the assistant are sent to Google Gemini 2.5 Flash.</li>
@@ -150,7 +154,7 @@
 
   <p>We do not sell or share your personal information. We do not show ads. We do not use your photos to train AI models on our end, and Google receives photos only to return a render to you. Google's Gemini API terms (linked below) cover how that data is handled on their side.</p>
 
-  <h2>Third-party AI processing</h2>
+  <h2>Which third parties process your data with AI?</h2>
 
   <p>Wearra uses Google's Gemini API to power its AI features. The following data is transmitted to Google for processing:</p>
   <ul>
@@ -216,7 +220,7 @@
     <strong>About retention on Google's side.</strong> Once data reaches Google's Gemini API, retention and handling are governed by Google's terms (linked above). We do not separately control or store that data on Google's side.
   </div>
 
-  <h2>Your rights</h2>
+  <h2>What are your privacy rights?</h2>
 
   <h3>Everyone</h3>
   <ul>
@@ -247,7 +251,7 @@
   </ul>
   <p>Our legal bases for processing are: <strong>contract</strong> (to provide the try-on service you requested), <strong>legitimate interest</strong> (abuse prevention, debugging, improving the app), and <strong>consent</strong> (optional analytics and notifications where required). When your data is transferred outside the EEA/UK — for example, to our US-based backend or to Google's US-based Gemini API — we rely on standard contractual clauses or the provider's own transfer mechanisms.</p>
 
-  <h2>Data retention</h2>
+  <h2>How long does Wearra keep your data?</h2>
   <ul>
     <li><strong>Try-on photos.</strong> Stored briefly during processing and removed from our Firebase Storage after the render completes or within 30 days, whichever is sooner. Retention on Google's side is governed by the Gemini API terms.</li>
     <li><strong>Account data.</strong> Kept for as long as your account is active.</li>
@@ -255,26 +259,27 @@
     <li><strong>Analytics and crash logs.</strong> Retained according to Firebase's defaults (typically up to 14 months for analytics; shorter for crash logs).</li>
   </ul>
 
-  <h3>Account deletion and data retention</h3>
-  <p>You may delete your account at any time from <strong>Settings → Danger Zone → Delete Account</strong>. When you do, your account enters a <strong>30-day grace period</strong>. During this period:</p>
-  <ul>
-    <li>You are signed out of the app on all devices.</li>
-    <li>Your data is hidden from the app and inaccessible to you.</li>
-    <li>We retain your data internally so we can respond to chargebacks, fraud claims, and support disputes.</li>
-  </ul>
-  <p>After 30 days, all user-identifying data (profile, photos, outfits, credit history, reports) is permanently and irrevocably deleted. We retain a minimal audit record (email, deletion date) for up to 12 months for fraud prevention and regulatory compliance.</p>
-  <p>To cancel a scheduled deletion, email <a href="mailto:Support@wearra.app">Support@wearra.app</a> within the 30-day window.</p>
+  <h3>How do you delete your account?</h3>
+  <p>To delete your Wearra account and all associated data, follow these steps:</p>
+  <ol>
+    <li>Open the Wearra app and go to <strong>Settings</strong>.</li>
+    <li>Scroll to <strong>Danger Zone</strong>.</li>
+    <li>Tap <strong>Delete Account</strong> and confirm.</li>
+    <li>Your account enters a <strong>30-day grace period</strong>. During this window your data is hidden and you are signed out of every device, but we retain it internally to handle chargebacks, fraud claims, and support disputes.</li>
+    <li>After 30 days, all user-identifying data (profile, photos, outfits, credit history, reports) is permanently and irrevocably deleted.</li>
+  </ol>
+  <p>We retain a minimal audit record (email, deletion date) for up to 12 months for fraud prevention and regulatory compliance. To cancel a scheduled deletion, email <a href="mailto:Support@wearra.app">Support@wearra.app</a> within the 30-day window.</p>
 
-  <h2>Children's privacy</h2>
+  <h2>How does Wearra handle children's privacy?</h2>
   <p>Wearra is not directed at children under 13, and we do not knowingly collect personal information from anyone under 13. If you believe a child under 13 has given us information, email <a href="mailto:Support@wearra.app">Support@wearra.app</a> and we will delete it.</p>
 
-  <h2>Security</h2>
+  <h2>How is your data secured?</h2>
   <p>Data in transit is encrypted using TLS. Data at rest in Firebase is encrypted by Google. Access to our backend is restricted. No system is perfectly secure, but we take reasonable steps to protect your information.</p>
 
   <h2>Changes to this policy</h2>
   <p>If we make material changes, we'll update the effective date at the top of this page and, for significant changes, show a notice inside the app the next time you open it. Continuing to use Wearra after the change means you accept the updated policy. For the user agreement, see our <a href="terms.html">Terms of Service</a>.</p>
 
-  <h2>Contact</h2>
+  <h2>How can you contact Wearra about privacy?</h2>
   <p>Questions, requests, or concerns? Email <a href="mailto:Support@wearra.app">Support@wearra.app</a> or browse our <a href="support.html">Support &amp; FAQ</a>. We respond within 3 business days.</p>
 
 </article>

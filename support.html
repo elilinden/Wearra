@@ -35,6 +35,13 @@
     },
     {
       "@type": "FAQPage",
+      "@id": "https://wearra.app/support.html#faq",
+      "url": "https://wearra.app/support.html",
+      "inLanguage": "en-US",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".faq summary", ".faq details p"]
+      },
       "mainEntity": [
         {
           "@type": "Question",
@@ -195,6 +202,25 @@
     <p>When you email, it helps if you include: your account email, iPhone model + iOS version, what you were trying to do, and (if relevant) a screenshot.</p>
   </div>
 
+  <aside class="stat-block" aria-label="Wearra pricing at a glance" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;background:var(--bg-soft);border:1px solid var(--border);border-radius:var(--radius-md);padding:20px;margin:24px 0;">
+    <figure class="stat-callout" role="group" aria-label="Free tier: 2 lifetime renders" style="margin:0;text-align:center">
+      <div style="font-size:24px;font-weight:800;color:var(--fg);letter-spacing:-0.02em"><data value="0">$0</data></div>
+      <figcaption style="font-size:13px;color:var(--fg-muted);margin-top:4px">Free tier &mdash; 2 lifetime renders</figcaption>
+    </figure>
+    <figure class="stat-callout" role="group" aria-label="Pro subscription: $6.99 per month for 30 renders" style="margin:0;text-align:center">
+      <div style="font-size:24px;font-weight:800;color:var(--fg);letter-spacing:-0.02em"><data value="6.99">$6.99<span style="font-size:14px;color:var(--fg-muted);font-weight:500">/mo</span></data></div>
+      <figcaption style="font-size:13px;color:var(--fg-muted);margin-top:4px">Pro &mdash; 30 renders/month</figcaption>
+    </figure>
+    <figure class="stat-callout" role="group" aria-label="Top-up pack: $1.99 for 5 extra renders" style="margin:0;text-align:center">
+      <div style="font-size:24px;font-weight:800;color:var(--fg);letter-spacing:-0.02em"><data value="1.99">$1.99</data></div>
+      <figcaption style="font-size:13px;color:var(--fg-muted);margin-top:4px">Top-up &mdash; 5 extra renders</figcaption>
+    </figure>
+    <figure class="stat-callout" role="group" aria-label="Response time: within 3 business days" style="margin:0;text-align:center">
+      <div style="font-size:24px;font-weight:800;color:var(--fg);letter-spacing:-0.02em"><data value="3">3 days</data></div>
+      <figcaption style="font-size:13px;color:var(--fg-muted);margin-top:4px">Support response time</figcaption>
+    </figure>
+  </aside>
+
   <h2>Frequently asked questions</h2>
 
   <div class="faq">
@@ -307,7 +333,7 @@
 
   </div>
 
-  <h2>Legal</h2>
+  <h2>Where can you find Wearra's legal documents?</h2>
   <p>For details on what Wearra does, see our <a href="index.html">homepage</a> or how <a href="index.html#stylist">the AI Stylist</a> works.</p>
   <ul>
     <li><a href="privacy.html">Privacy Policy</a></li>
