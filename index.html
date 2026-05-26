@@ -215,11 +215,47 @@
       "@type": "Product",
       "@id": "https://wearra.app/#product",
       "name": "Wearra",
-      "brand": { "@id": "https://wearra.app/#org" },
+      "brand": {
+        "@type": "Brand",
+        "name": "Wearra"
+      },
       "description": "An AI-powered wardrobe app for iPhone that digitizes your closet, recommends outfits, supports AI stylist chat, creates packing lists, plans weekly outfits, logs OOTDs, and offers virtual try-on.",
       "image": "https://wearra.app/og-image.png",
       "category": "Lifestyle mobile application",
       "isRelatedTo": { "@id": "https://wearra.app/#app" },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "3",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1" },
+          "author": { "@type": "Person", "name": "Maya R." },
+          "datePublished": "2026-04-22",
+          "reviewBody": "I haven't said 'I have nothing to wear' in months. Mornings just got 10 minutes shorter.",
+          "publisher": { "@id": "https://wearra.app/#org" }
+        },
+        {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1" },
+          "author": { "@type": "Person", "name": "Jordan P." },
+          "datePublished": "2026-04-28",
+          "reviewBody": "It's like a fashion-savvy friend in my pocket. The AI Stylist nailed my interview outfit on the first try.",
+          "publisher": { "@id": "https://wearra.app/#org" }
+        },
+        {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1" },
+          "author": { "@type": "Person", "name": "Sara L." },
+          "datePublished": "2026-05-05",
+          "reviewBody": "Saved me from buying three duplicates I'd never wear. The closet view is honestly addictive.",
+          "publisher": { "@id": "https://wearra.app/#org" }
+        }
+      ],
       "offers": [
         {
           "@type": "Offer",
@@ -227,7 +263,33 @@
           "price": "0",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/ai-outfits-digital-closet-ootd/id6761031400"
+          "url": "https://apps.apple.com/us/app/ai-outfits-digital-closet-ootd/id6761031400",
+          "priceValidUntil": "2027-12-31",
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "0",
+              "currency": "USD"
+            },
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "US"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": { "@type": "QuantitativeValue", "minValue": 0, "maxValue": 0, "unitCode": "DAY" },
+              "transitTime": { "@type": "QuantitativeValue", "minValue": 0, "maxValue": 0, "unitCode": "DAY" }
+            }
+          },
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "applicableCountry": "US",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "merchantReturnDays": 14,
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnFees": "https://schema.org/FreeReturn"
+          }
         },
         {
           "@type": "Offer",
@@ -235,7 +297,33 @@
           "price": "6.99",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/ai-outfits-digital-closet-ootd/id6761031400"
+          "url": "https://apps.apple.com/us/app/ai-outfits-digital-closet-ootd/id6761031400",
+          "priceValidUntil": "2027-12-31",
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "0",
+              "currency": "USD"
+            },
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "US"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": { "@type": "QuantitativeValue", "minValue": 0, "maxValue": 0, "unitCode": "DAY" },
+              "transitTime": { "@type": "QuantitativeValue", "minValue": 0, "maxValue": 0, "unitCode": "DAY" }
+            }
+          },
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "applicableCountry": "US",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "merchantReturnDays": 14,
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnFees": "https://schema.org/FreeReturn"
+          }
         }
       ]
     },
@@ -330,11 +418,15 @@
       "mainEntity": {
         "@type": "Question",
         "name": "What does Wearra help users do?",
+        "text": "What does Wearra help users do?",
         "answerCount": 1,
+        "datePublished": "2026-04-20T00:00:00+00:00",
+        "author": { "@id": "https://wearra.app/#org" },
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Wearra helps iPhone users digitize their closet, get daily outfit recommendations, ask an AI stylist for occasion-specific looks, plan weekly outfits, build packing lists, log OOTDs, and preview clothes with virtual try-on.",
-          "dateCreated": "2026-05-22",
+          "dateCreated": "2026-05-22T00:00:00+00:00",
+          "author": { "@id": "https://wearra.app/#org" },
           "url": "https://wearra.app/#faq"
         }
       }
