@@ -46,6 +46,9 @@
       "@type": "Organization",
       "@id": "https://wearra.app/#org",
       "name": "Wearra",
+      "alternateName": "Wearra App",
+      "description": "Wearra is an AI-powered personal stylist iOS app. It digitizes your closet, recommends daily outfits, runs an AI stylist chat, builds packing lists, and renders virtual try-on previews on your own body.",
+      "foundingDate": "2026",
       "url": "https://wearra.app/",
       "founder": {
         "@type": "Person",
@@ -53,6 +56,13 @@
         "name": "Eli Linden"
       },
       "email": "Support@wearra.app",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "Support@wearra.app",
+        "availableLanguage": ["English"],
+        "areaServed": "US"
+      },
       "logo": "https://wearra.app/og-image.png",
       "sameAs": [
         "https://apps.apple.com/us/app/ai-outfits-digital-closet-ootd/id6761031400",
@@ -117,6 +127,7 @@
       "@type": "LocalBusiness",
       "@id": "https://wearra.app/#local-business",
       "name": "Wearra",
+      "description": "Wearra is an AI-powered personal stylist iOS app made in the United States. It digitizes your closet, recommends daily outfits, runs an AI stylist chat, builds packing lists, and renders virtual try-ons.",
       "url": "https://wearra.app/",
       "image": "https://wearra.app/og-image.png",
       "logo": "https://wearra.app/AppleIcon.jpg",
@@ -129,6 +140,12 @@
       "areaServed": {
         "@type": "Country",
         "name": "United States"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
       },
       "founder": { "@id": "https://wearra.app/#eli-linden" }
     },
@@ -162,6 +179,10 @@
       "operatingSystem": "iOS 18.0",
       "softwareVersion": "1.0",
       "url": "https://wearra.app/",
+      "inLanguage": "en-US",
+      "contentRating": "4+",
+      "installUrl": "https://apps.apple.com/us/app/ai-outfits-digital-closet-ootd/id6761031400",
+      "downloadUrl": "https://apps.apple.com/us/app/ai-outfits-digital-closet-ootd/id6761031400",
       "description": "Wearra turns clothes you own into a smart wardrobe that styles outfits, plans your week, builds packing lists, and shows virtual try-ons on your own body.",
       "image": "https://wearra.app/og-image.png",
       "screenshot": [
@@ -209,7 +230,40 @@
         }
       ],
       "publisher": { "@id": "https://wearra.app/#org" },
-      "author": { "@id": "https://wearra.app/#org" }
+      "author": { "@id": "https://wearra.app/#org" },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "3",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1" },
+          "author": { "@type": "Person", "name": "Maya R." },
+          "datePublished": "2026-04-22",
+          "reviewBody": "I haven't said 'I have nothing to wear' in months. Mornings just got 10 minutes shorter.",
+          "publisher": { "@id": "https://wearra.app/#org" }
+        },
+        {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1" },
+          "author": { "@type": "Person", "name": "Jordan P." },
+          "datePublished": "2026-04-28",
+          "reviewBody": "It's like a fashion-savvy friend in my pocket. The AI Stylist nailed my interview outfit on the first try.",
+          "publisher": { "@id": "https://wearra.app/#org" }
+        },
+        {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1" },
+          "author": { "@type": "Person", "name": "Sara L." },
+          "datePublished": "2026-05-05",
+          "reviewBody": "Saved me from buying three duplicates I'd never wear. The closet view is honestly addictive.",
+          "publisher": { "@id": "https://wearra.app/#org" }
+        }
+      ]
     },
     {
       "@type": "Product",
@@ -415,17 +469,22 @@
     {
       "@type": "QAPage",
       "@id": "https://wearra.app/#qa",
+      "inLanguage": "en-US",
       "mainEntity": {
         "@type": "Question",
         "name": "What does Wearra help users do?",
         "text": "What does Wearra help users do?",
         "answerCount": 1,
+        "upvoteCount": 0,
         "datePublished": "2026-04-20T00:00:00+00:00",
+        "inLanguage": "en-US",
         "author": { "@id": "https://wearra.app/#org" },
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Wearra helps iPhone users digitize their closet, get daily outfit recommendations, ask an AI stylist for occasion-specific looks, plan weekly outfits, build packing lists, log OOTDs, and preview clothes with virtual try-on.",
           "dateCreated": "2026-05-22T00:00:00+00:00",
+          "upvoteCount": 0,
+          "inLanguage": "en-US",
           "author": { "@id": "https://wearra.app/#org" },
           "url": "https://wearra.app/#faq"
         }
